@@ -11,7 +11,7 @@ namespace HelloWorld
             var currentDate = DateTime.Now;
             Console.WriteLine($"\nHello, {name}, on {currentDate:d} at {currentDate:t}!");
             Console.Write($"\nPress any key to exit...");
-            Console.ReadKey(true);
+            //Console.ReadKey(true);
         }
     }
 }
