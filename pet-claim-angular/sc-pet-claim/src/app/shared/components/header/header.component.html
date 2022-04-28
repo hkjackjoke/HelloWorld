@@ -1,9 +1,0 @@
-<div class="banner {{hideBanner ? 'hide' : ''}} {{showMenu ? 'menu-open' : ''}}" (window:resize)="onResize($event)">
-    <div class="w-c">
-        <div class="copy">
-            <h1 [innerHTML]="headerTitle"></h1>
-            <p [innerHTML]="headerSubtitle"></p>
-        </div>
-    </div>
-    <div class="header-svg-curve" [innerHTML]="svgValue  | safe: 'html'"></div>
-</div>

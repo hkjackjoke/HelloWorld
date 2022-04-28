@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
-    <g fill="none" fill-rule="evenodd">
-        <circle cx="21" cy="21" r="21" fill="#D92E43"/>
-        <g fill="#FFF" fill-rule="nonzero">
-            <path d="M26.375 13.366a1.25 1.25 0 0 1 1.768 1.768l-13.01 13.01a1.25 1.25 0 0 1-1.767-1.769l13.01-13.009z"/>
-            <path d="M28.143 26.375a1.25 1.25 0 0 1-1.768 1.768l-13.009-13.01a1.25 1.25 0 0 1 1.768-1.767l13.01 13.01z"/>
-        </g>
-    </g>
-</svg>
