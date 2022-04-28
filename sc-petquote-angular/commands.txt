@@ -1,7 +1,0 @@
-npm run start
-
-npm run build
-
-ng g c components/??
-
-{{type}}

@@ -1,5 +1,0 @@
-<app-header (toggleMenu)="toggleMenu($event)"></app-header>
-<app-progress-timeline [menuOpen]="menuOpen"></app-progress-timeline>
-<main [class]="menuOpen ? 'menu-open' : ''">
-        <router-outlet *ngIf="appReady"></router-outlet>
-</main>

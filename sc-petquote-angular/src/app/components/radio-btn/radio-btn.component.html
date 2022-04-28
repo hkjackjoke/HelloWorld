@@ -1,9 +1,0 @@
-<div class="radio-btn {{checked && checked !== undefined ? 'checked' : ''}} clearfix {{ disabled ? 'disabled' : ''}}" (click)="changeChecked()">
-    <div class="circle">
-      <div>&nbsp;</div>
-    </div>
-    <div *ngIf="label !== '' || smallLabel !== ''" class="label {{focus?'focus':''}}">
-      {{label}}
-      <span *ngIf="smallLabel !== ''" class="small-label">&nbsp;{{smallLabel}}</span>
-    </div>
-</div>

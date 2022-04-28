@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
-    <g fill="#D92E43" fill-rule="evenodd">
-        <circle cx="15.5" cy="15.5" r="15.5" fill-opacity=".12"/>
-        <text font-family="OmnesSemiBold, Omnes SemiBold" font-size="20" font-weight="500">
-            <tspan x="13.23" y="22">!</tspan>
-        </text>
-    </g>
-</svg>
