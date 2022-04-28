@@ -1,0 +1,192 @@
+<section #applySummary class="quote-summary" style="padding-bottom: 80px;">
+    <h2>Your application&nbsp;summary</h2>
+    <div class="policy-start-method relative-680 form-item clearfix">
+      <div class="table no-resize">
+        <div class="row">
+            <div class="cell label">
+                Policy start date
+            </div>
+            <div class="cell value">
+                {{ formatDate(quote.policyStartDate) }}
+            </div>
+        </div>
+        <div class="row spacer"></div>
+        <div class="row">
+            <div class="cell label">
+                Payment method
+            </div>
+            <div class="cell value">
+                {{ quote.paymentMethod.label }}
+            </div>
+        </div>
+        <div class="row spacer"></div>
+        <div class="row">
+            <div class="cell label">
+                Payment frequency
+            </div>
+            <div class="cell value">
+                  {{ quote.paymentFrequency.label }}
+            </div>
+        </div>
+      </div>
+      <div class="txt-btn" (click)="editDateStart()">Edit</div>
+    </div>
+
+    <app-pet-summary
+    (editPet)="editPet($event)"
+    (editPetHealth)="editPetHealth($event)"
+    (removePet)="removePet($event)"
+    *ngFor="let pet of quote.pets; index as i"
+    [index]="i"
+    [pet]="pet"
+    titleStart="Application"
+    showHealthDeclaration="true"
+    ></app-pet-summary>
+
+
+    <div class="authorised-person form-item relative-680 {{quote.addAnotherAuthorisedPerson? '':'hide'}}">
+        <h2>Authorised person</h2>
+        <div *ngIf="quote.addAnotherAuthorisedPerson" class="table no-resize">
+            <div class="row">
+                <div class="cell label">
+                    Title
+                </div>
+                <div class="cell value">
+                    {{quote.otherTitle.label}}
+                </div>
+            </div>
+            <div class="row spacer"></div>
+            <div class="row">
+                <div class="cell label">
+                    Full name
+                </div>
+                <div class="cell value">
+                    {{ quote.otherFirstname }} {{ quote.otherLastname }}
+                </div>
+            </div>
+            <div class="row spacer"></div>
+            <div class="row">
+                <div class="cell label">
+                    Date of birth
+                </div>
+                <div class="cell value">
+                      {{ otherDay }}
+                      <span>/</span>
+                      {{ otherMonth }}
+                      <span>/</span>
+                      {{ otherYear }}
+                </div>
+            </div>
+            <div class="row spacer"></div>
+            <div class="row">
+                <div class="cell label">
+                    Phone number
+                </div>
+                <div class="cell value">
+                      {{ quote.otherPhone }}
+                </div>
+            </div>
+            <div class="row spacer"></div>
+            <div class="row">
+                <div class="cell label">
+                    Email address
+                </div>
+                <div class="cell value">
+                      {{ quote.otherEmail }}
+                </div>
+            </div>
+          </div>
+
+        <div class="edit-remove clearfix">
+            <div class="txt-btn" (click)="editAuthorisedPerson()">Edit</div> <div class="pipe">|</div> <div class="txt-btn" (click)="removePerson()">Remove</div>
+        </div>
+    </div>
+
+
+    <div class="quote-totals relative-680">
+      <h2>
+         Application summary&nbsp;totals
+      </h2>
+      <div class="clearfix">
+          <div class="form-item">
+              <div class="table nooverflow no-resize">
+                  <div class="row mb"  *ngFor="let pet of quote.pets;" >
+                      <div class="cell ">
+                          {{ quote.paymentFrequency.label }} premium for {{pet.name}}
+                      </div>
+                      <div class="cell total">
+                        ${{pet.animalQuote.total.toFixed(2)}}
+                      </div>
+                  </div>
+              </div>
+              <div class="table total  no-resize">
+                  <div class="row line">
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                  </div>
+                  <div class="row">
+                      <div class="cell pad-top-bottom">Total {{ quote.paymentFrequency.label }} premium</div>
+                      <div class="cell total">${{total.toFixed(2)}}</div>
+                  </div>
+                  <div class="row line">
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="total-circle">
+              <div class="title">Total {{ quote.paymentFrequency.label }} premium</div>
+              <div class="circle circle-money">
+                <div class="circle-inner">
+                  <div class="amount">
+                      <sup>$</sup>{{totalDollars}}<sup>.{{totalCents}}</sup>
+                  </div>
+                  <div class="detail">total</div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    </div>
+    <div class="apply-nav clearfix">
+        <div class="btn back white" (click)="back()">
+            <span class="icon">
+                <img src="/quote/Content/images/pet-quote/icon-chevron-down-gold.svg" alt="Add another pet">
+              </span>
+              &nbsp;
+              Back
+            </div>
+            <div class="cancel-proceed">
+              <div class="txt-btn" (click)="cancel()">Cancel this application</div>
+              <div class="btn payment {{complete ? '' : 'disabled'}}" (click)="proceedPayment()">
+                Proceed to payment
+                &nbsp;
+                <span class="icon">
+                  <img src="/quote/Content/images/pet-quote/icon-chevron-right-white.svg" alt="Next">
+                </span>
+              </div>
+        </div>
+    </div>
+</section>
+<app-remove-pet-confirm #removePetPopup
+  [show]="confirmRemovePet"
+  [pageIndex]=7
+  (closePopup)="closeConfirmRemovePet();"
+  (confirmRemovePet)="hasRemovedPet()"
+  [petIndex]="confirmRemovePetIndex"
+  [pet]="confirmRemovePetModel"
+></app-remove-pet-confirm>
+<app-remove-authorised-person-confirm
+  #authorisedPersonPopup
+  [show]="confirmRemovePerson"
+  [quote]="quote"
+  (closePopup)="closeConfirmRemovePerson();"
+  (removePerson)="hasRemovedPerson()"
+  (editPerson)="editAuthorisedPerson()"
+></app-remove-authorised-person-confirm>
+<app-cancel-application
+  #cancelApplicationPopup
+  [show]="showCancelApplicationPopup"
+  (closePopup)="closeCancelApplicationPopup();"
+  (cancelApplication)="hasCancelledApplication();"
+></app-cancel-application>

@@ -1,0 +1,247 @@
+<section #petDetails class="pet-details">
+    <h2 [innerHtml]="getTitle()"></h2>
+
+
+      <!--
+    <div style="width: 450px;position: relative;margin:30px auto ;">
+        <app-address-search-input
+#addressSearch
+
+label="Your home address"
+inputId="search-address"
+errorMessage="Please input your address"
+placeholder="Just start typing&hellip;"
+[(ngModel)]="quote.address"
+[clearbutton]="true"
+[showManualFields]="true"
+classes="block-mobile"
+
+help="address-help"
+></app-address-search-input>
+</div>
+
+      <div style="width: 250px;position: relative;margin:30px auto ;">
+        <app-date-picker [(ngModel)]="quote.policyStartDate" [startRange]="dateMin"  [endRange]="dateMax"></app-date-picker>
+      </div>
+
+        <div style="width: 400px;position: relative;margin:13px auto ;">
+        <app-datepicker-input
+          #dob
+          tab="4"
+          label="Date of birth"
+          [value]="quote.dob"
+          [(ngModel)]="quote.dob"
+
+          errorMessage="This doesn’t look right. Please check."
+          clearbutton="true"
+
+          [hidepicker]="true"
+          [required]="true"
+          [isDOB]="true"
+          errorMessageRange="You must be over 18 to get a quote."
+          errorMessageOverRange="This doesn't look right. Please check."
+      ></app-datepicker-input>
+   </div>
+
+  <div style="width: 550px;position: relative;margin: auto;">
+        <app-bank-account [(ngModel)]="quote.bankAccountNumber"></app-bank-account>
+    </div>
+    -->
+
+
+
+    <div class="questions {{questionsStatus}}">
+        <div class="selected-pets {{quote.pets.length > 0 ? 'show' : ''}}">
+            <app-pet-item
+              #petItem
+             *ngFor="let pet of quote.pets; index as i"
+             [index]="i"
+             [pet]="pet"
+             (removePet)="removePet($event);"
+             [disabled]="addingAnotherPet"
+             [editIndex]="editAnotherPet"
+             [disableSave]="true"
+             (editPet)="editCompletePet(i)"
+             (cancelEdit)="cancelEditPet()"
+             (editPetSave)="editPetSave()"
+            ></app-pet-item>
+        </div>
+        <div #line1 class="question-line show line1">
+            <div class="question-inner">
+                <label for="petSpecies">My pet is a</label>
+                <app-pet-question-select
+                    class="petspecies-question"
+                    #speciesSelect
+                    (selectChange)="setSpecies($event);"
+                    selectClass="small"
+                    tab="0"
+                    [value]="pet.species"
+                    [items]="copyModel.species"
+                    [inputId]="'petSpecies'"
+                    >
+                </app-pet-question-select>
+            </div>
+        </div>
+        <div class="question-line {{ showLine2 }} line2">
+            <div class="question-inner">
+                      <app-pet-question-select
+                        class="petgender-question"
+                        [inputId]="'petGender'"
+                        #genderSelect
+                        (selectChange)="setGender($event);"
+                        selectClass="small"
+                        tab="0"
+                        [value]="pet.gender"
+                        [items]="copyModel.gender">
+                    </app-pet-question-select>
+                    <div class="label-wrap">
+                        <label for="petName">name is </label>
+                    </div>
+                    <input
+                        id="petName"
+                        type="text"
+                        #petName
+                        (focusin)="focusinField('add_pet_name')"
+                        [(ngModel)]="pet.name"
+                        #ctrl="ngModel"
+                        tabindex="0"
+                        (input)="checkShowLines(); setInputWidth(pet.name)"
+                        size="number"
+                        class="pet-name"
+                        maxlength="15"
+                        data-role="none"
+                        >
+                    <span id="petNameWidth" style="font:500 22px omnes-pro,Arial,sans-serif;">{{pet.name}}</span>
+                    &nbsp;&nbsp;<app-help-icon helpId="name-help"></app-help-icon>
+            </div>
+        </div>
+        <div class="question-line {{ showLine3 }} line3">
+            <div class="question-inner">
+                <div class="label-wrap">
+                    <label for="petBreed">{{pet.gender.id === 1 ? 'She' : 'He'}} is {{breedFirstLetter() === 'a'?'an':'a'}}</label>
+                </div>
+                <div class="breed-wrap">
+                  <div class="breed-wrap-inner">
+                    <app-pet-question-typeahead
+                        #breedSelect
+                        (selectChange)="setBreed($event);"
+                        tab="4"
+                        selectClass="breed"
+                        [value]="pet.breed"
+                        [items]="breeds"
+                        [popularOptionId]="popularId"
+                        [inputId]="'petBreed'">
+                    </app-pet-question-typeahead>
+                    &nbsp;&nbsp;<app-help-icon helpId="breed-help"></app-help-icon>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="question-line {{ showLine4 }} line4">
+            <div class="question-inner">
+                <div class="label-wrap">
+                    {{pet.gender.id === 1 ? 'She' : 'He'}} was born on
+                </div>
+                <div class="pet-age-wrap">
+                    <input data-role="none" id="dayBorn" placeholder="DD" type="text" #dayBorn [(ngModel)]="dayBornValue" #ctrl="ngModel" tabindex="0" (input)="updateDOB('0');"
+                    (focusout)="focusoutDate('dayBorn')"
+                    (focusin)="focusinField('add_pet_dob_day')"
+                    class=" center {{dayError?'error':''}}" maxlength="2" inputmode="numeric" pattern="[0-9]*" appDigitOnly>
+                    <span>/</span>
+                    <input data-role="none" id="monthBorn" placeholder="MM" type="text" #monthBorn [(ngModel)]="monthBornValue" #ctrl="ngModel" tabindex="0" (input)="updateDOB('1');"
+                    (focusout)="focusoutDate('monthBorn')"
+                    (focusin)="focusinField('add_pet_dob_month')"
+                    class=" center {{monthError?'error':''}}" maxlength="2" inputmode="numeric" pattern="[0-9]*" appDigitOnly>
+                    <span>/</span>
+                    <input data-role="none" id="yearBorn" placeholder="YYYY" type="text" #yearBorn [(ngModel)]="yearBornValue" #ctrl="ngModel" tabindex="0" (input)="updateDOB('2');"
+                    (focusout)="focusoutDate('yearBorn')"
+                    (focusin)="focusinField('add_pet_dob_year')"
+                    class=" center {{yearError?'error':''}}" maxlength="4" inputmode="numeric" pattern="[0-9]*" appDigitOnly>
+                </div>
+                <div class="ageError {{dayError||yearError||monthError?'show':''}}">Please enter a valid date of birth.</div>
+                <div class="ageError {{toOldError && !dayError && !monthError && !yearError ? 'show' : ''}}">{{toOldErrorMessage}}</div>
+            </div>
+        </div>
+        <div class="question-line {{ showLine5 }} line5">
+            <div class="dont-know-age">
+                <app-check-box [inputId]="'dontKnowAge'" fieldname="dontKnowAge" [checked]="pet.dontKnowAge" (checkChange)="toogleKnowAge()"></app-check-box>
+                <label for="dontKnowAge"><span (click)="toogleKnowAge()">I don’t know how old {{pet.gender.id === 1 ? 'she' : 'he'}} is</span></label>
+            </div>
+        </div>
+        <div class="question-line {{ pet.dontKnowAge ? 'animate show' : '' }} line6">
+            <div class="question-inner">
+
+                <label for="ageApprox" class="approx">{{pet.gender.id === 1 ? 'She' : 'He'}} is approximately</label>
+                <div class="approx-age-inner">
+                    <input data-role="none" id="ageApprox" type="text" #ageAprox [(ngModel)]="pet.ageAproxValue" #ctrl="ngModel" tabindex="{{ageAproxValueTab}}" (input)="aproxAgeValue()"
+                    (focusin)="focusinField('add_pet_approx_age_value')"
+                    class="center" maxlength="2" inputmode="numeric" pattern="[0-9]*" appDigitOnly>
+                    <label class="quiet-label" for="ageApproxUnit">Days, months, or years?</label>
+                    <app-pet-question-select
+                        [inputId]="'ageApproxUnit'"
+                        (selectChange)="selectAproxAge($event);"
+                        [tab]="ageAproxValueTab"
+                        selectClass="medium"
+                        [value]="pet.ageAproxType"
+                        [items]="approxAgeValues"
+                        [singularise]="pet.ageAproxValue === '1'"
+                    ></app-pet-question-select>
+                    <span>old</span>
+                </div>
+            </div>
+        </div>
+        <div class="question-line {{ pet.ageMessage !== '' ? 'animate show' : '' }} line7">
+            <div class="question-inner">
+                <p innerHtml="{{pet.ageMessage}}"></p>
+            </div>
+        </div>
+
+        <div class="pet-added-limit" *ngIf="quote.pets.length > 3">
+          <p>
+            No more pets can be added.<br>
+            To get a quote for more than 4 pets, call our friendly team on <span class="bold">0800 800 836</span> and they'll be happy to help.
+          </p>
+        </div>
+
+        <div class="questions-nav clearfix {{ pet.dontKnowAge?'':'extra-margin'}}">
+            <div class="{{addingAnotherPet ? 'hide' : ''}}">
+                <button aria-label="Add another pet"
+                class="btn left-side white {{ complete && (editAnotherPet === null) && quote.pets.length < 4 && quote.pets.length > 0 ? '' : 'hide'}} {{addPetTabFocus ? 'tab-focus' : ''}}"
+                (click)="addAnotherPet();" tabindex="{{addAnotherTabIndex}}" (focusout)="tabFromAddPet()" (focusin)="tabToAddPet()">
+                    <span class="icon">
+                        <img class="out" src="/quote/Content/images/pet-quote/icon-plus-gold.svg" alt="Add another pet">
+                        <img class="over" src="/quote/Content/images/pet-quote/icon-plus-white.svg" alt="Add another pet">
+                    </span>
+                    &nbsp;
+                    Add another pet
+                </button>
+
+                <button #nextButton aria-label="Next" class="btn right-side {{ complete && editAnotherPet === null ? '' : 'disabled'}} {{nextTabFocus ? 'tab-focus' : ''}}" (click)="next();"  tabindex="{{nextTabIndex}}"  (focusout)="tabFromNext()" (focusin)="tabToNext()">
+                    Next
+                    &nbsp;
+                    <span class="icon">
+                        <img class="out" src="/quote/Content/images/pet-quote/icon-chevron-right-white.svg" alt="Next">
+                        <img class="over" src="/quote/Content/images/pet-quote/icon-chevron-right-gold.svg" alt="Next">
+                    </span>
+                </button>
+
+            </div>
+            <div class="{{addingAnotherPet ? 'show' : ''}} add-another-nav">
+                <div class="cancel-bnt">
+                    <button class="txt-btn" (click)="cancelAddingPet();" tabindex="{{cancelTabIndex}}">Cancel adding</button>
+                </div>
+                <button class="add-btn" (click)="addThisPet();">
+                    <div class="btn {{ complete ? '' : 'disabled'}}" tabindex="{{addPetTabIndex}}">Add this pet</div>
+                </button>
+            </div>
+
+            <app-notice [content]="generalInformationNotice"></app-notice>
+        </div>
+    </div>
+</section>
+<app-remove-pet-confirm #removePetPopup
+[show]="confirmRemovePet"
+(confirmRemovePet)="hasRemovedPet()"
+(closePopup)="closeConfirmRemovePet();"
+[petIndex]="confirmRemovePetIndex"
+[pet]="confirmRemovePetModel"></app-remove-pet-confirm>

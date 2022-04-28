@@ -1,0 +1,18 @@
+[
+    {
+       "Code":"AUTOPAYM",
+       "Description":"Automatic payment"
+    },
+    {
+       "Code":"CHEQUE",
+       "Description":"Cheque payment"
+    },
+    {
+       "Code":"CREDIT",
+       "Description":"Credit Card"
+    },
+    {
+       "Code":"DD",
+       "Description":"Direct Debit"
+    }
+ ] 

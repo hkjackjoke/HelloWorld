@@ -1,0 +1,34 @@
+[
+    {
+      "Additional_Excess": 0,
+      "Benefit_Type": 1,
+      "Description": "Day to Day Care",
+      "Effective_From": "2014-06-05T00:00:00",
+      "Effective_To": "1753-01-01T00:00:00",
+      "External_Name": "Day to Day Care",
+      "Loading_Code": "",
+      "Loading_Description": "",
+      "Loading_No_": 0,
+      "Option_Code": "DAY2DAY",
+      "Option_No_": 56,
+      "Per": 0,
+      "Plan_No_": 103,
+      "timestamp": "AAAAAAC+9Ko="
+    },
+    {
+      "Additional_Excess": 0,
+      "Benefit_Type": 1,
+      "Description": "Dental Care Extra",
+      "Effective_From": "2014-06-05T00:00:00",
+      "Effective_To": "1753-01-01T00:00:00",
+      "External_Name": "Dental Care Extra",
+      "Loading_Code": "",
+      "Loading_Description": "",
+      "Loading_No_": 0,
+      "Option_Code": "DENTAL",
+      "Option_No_": 57,
+      "Per": 0,
+      "Plan_No_": 103,
+      "timestamp": "AAAAAAC+9LI="
+    }
+  ]

@@ -1,0 +1,247 @@
+<section class="pet-summary relative-680 {{showMore ? 'open' : ''}}">
+  <h2>{{titleStart}} summary for<br>{{pet.name}}</h2>
+  <div class="items clearfix mobile">
+    <div class="item icon">
+      <div class="title">
+        {{pet.name}}
+      </div>
+      <div class="circle icon">
+            <app-pet-animation #petAnimation type="{{pet.species.id === 1 ? 'cat' : 'dog'}}" size="large-circle"></app-pet-animation>
+      </div>
+    </div>
+</div>
+
+
+  <div class="txt-btn show-more" (click)="toggleShowMore()">
+    Show {{showMore ? 'less' : 'more'}}
+    &nbsp;
+    <img src="/quote/Content/images/pet-quote/icon-chevron-down-blue.svg" alt="Show more">
+  </div>
+  <div class="details  {{showHealthDeclaration ? 'width-declare' : ''}}">
+    <div class="details-content clearfix">
+        <div class="form-item">
+            <div class="table no-resize">
+              <div class="row">
+                  <div class="cell label">
+                    Breed
+                  </div>
+                  <div class="cell value">
+                    {{pet.breed.label}}
+                  </div>
+              </div>
+              <div class="row spacer"></div>
+              <div class="row">
+                  <div class="cell label">
+                      Age
+                  </div>
+                  <div class="cell value">
+                    {{pet.age(quote.policyStartDate)}}
+                  </div>
+              </div>
+              <div class="row spacer"></div>
+              <div class="row">
+                  <div class="cell label">
+                      Sex
+                  </div>
+                  <div class="cell value">
+                      {{pet.gender.gender}}
+                  </div>
+              </div>
+              <div class="row spacer"></div>
+              <div class="row">
+                  <div class="cell label">
+                      Chosen plan
+                  </div>
+                  <div class="cell value" [innerHTML]="pet.chosenPlan()+' - $'+ basePremium.toFixed(2) +' '+ quote.paymentFrequency.label"></div>
+              </div>
+              <div class="row spacer"></div>
+              <div class="row">
+                  <div class="cell label">
+                      Annual benefit limit
+                  </div>
+                  <div class="cell value">
+                    {{pet.annualBenefit()}}
+                  </div>
+              </div>
+              <div class="row spacer"></div>
+              <div class="row">
+                  <div class="cell label">
+                      Co-payment
+                  </div>
+                  <div class="cell value">
+                    {{pet.coPayment()}}
+                  </div>
+              </div>
+              <div class="row spacer"></div>
+              <div class="row">
+                  <div class="cell label">
+                      Extras
+                  </div>
+                  <div class="cell value">
+                      <div *ngIf="extas.length === 0">None added</div>
+                      <div *ngFor="let summary of extas;">{{summary}} added</div>
+                  </div>
+              </div>
+              <div class="row spacer"></div>
+              <div class="row vtop">
+                  <div class="cell label">
+                      Discount
+                  </div>
+                  <div class="cell value">
+                        <div *ngIf="discountSummary.length === 0">None added</div>
+                        <div class="value-item" *ngFor="let summary of discountSummary;">{{summary}}</div>
+                   </div>
+              </div>
+            </div>
+
+            <div *ngIf="showHealthDeclaration" class="edit-remove edit clearfix">
+                <div class="txt-btn" (click)="edit()">Edit</div>
+                <div class="pipe">|</div>
+                <div class="txt-btn" (click)="remove()">Remove</div>
+            </div>
+        </div>
+
+        <div *ngIf="showHealthDeclaration" class="health-declaration">
+            <h3>Health declaration</h3>
+            <div class="form-item">
+                <div class="table">
+                    <div class="row spacer"></div>
+                    <div class="row">
+                        <div class="cell label">
+                            Vet practice
+                        </div>
+                        <div class="cell value">
+                          {{regularVetName}}
+                        </div>
+                    </div>
+                    <div class="row spacer"></div>
+                    <div class="row">
+                        <div class="cell label">
+                            Lameness
+                        </div>
+                        <div class="cell value">
+                          {{pet.lameness ? 'Yes' : 'No'}}
+                        </div>
+                    </div>
+                    <div class="row spacer"></div>
+                    <div class="row">
+                        <div class="cell label">
+                            Vomiting or diarrhoea
+                        </div>
+                        <div class="cell value">
+                            {{pet.vomitingDiarrhoea ? 'Yes' : 'No'}}
+                        </div>
+                    </div>
+                    <div class="row spacer"></div>
+                    <div class="row">
+                        <div class="cell label">
+                            Skin, eye or ear conditions
+                        </div>
+                        <div class="cell value">
+                            {{pet.skinEyeEarConditions ? 'Yes' : 'No'}}
+                        </div>
+                    </div>
+                    <div class="row spacer"></div>
+                    <div class="row">
+                        <div class="cell label">
+                            Injuries from animal fights
+                        </div>
+                        <div class="cell value">
+                            {{pet.injuriesAnimalFights ? 'Yes' : 'No'}}
+                        </div>
+                    </div>
+                    <div class="row spacer"></div>
+                    <div class="row">
+                        <div class="cell label">
+                            Other conditions
+                        </div>
+                        <div class="cell value">
+                          {{pet.preExistingConditions ? 'Yes':'None'}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="showHealthDeclaration" class="edit-remove clearfix">
+              <div class="txt-btn no-float" (click)="editHealth()">Edit</div>
+            </div>
+        </div>
+        <div *ngIf="!showHealthDeclaration" class="edit-remove clearfix">
+          <div class="txt-btn" (click)="edit()">Edit</div> <div class="pipe">|</div> <div class="txt-btn" (click)="remove()">Remove</div>
+        </div>
+    </div>
+
+  </div>
+  <div class="items clearfix desktop {{showHealthDeclaration?'extra-top':''}}">
+    <div class="item icon">
+      <div class="title">
+        {{pet.name}}
+      </div>
+      <div class="circle icon">
+          <app-pet-animation #petAnimation type="{{pet.species.id === 1 ? 'cat' : 'dog'}}" size="large-circle"></app-pet-animation>
+      </div>
+    </div>
+    <div class="item summary-spacer"></div>
+    <div class="item premium">
+      <div class="title">
+          Premium&nbsp;for
+          {{pet.name}}
+      </div>
+      <div class="circle circle-money">
+        <div class="circle-inner">
+          <div class="amount">
+              <!-- <sup>$</sup>87<sup>.35</sup> -->
+              <sup>$</sup>{{premiumDollar}}<sup>.{{premiumCents}}</sup>
+          </div>
+          <div class="detail">premium</div>
+        </div>
+      </div>
+      <div class="summary">
+        <div>${{basePremium.toFixed(2)}} premium</div>
+        <div *ngFor="let summary of extasPremiums;">+{{summary}}</div>
+      </div>
+    </div>
+    <div class="item summary-spacer">
+        <div class="img-wrap">
+            <img src="/quote/Content/images/pet-quote/icon-minus.svg" alt=""/>
+        </div>
+    </div>
+    <div class="item discount">
+      <div class="title">
+          Discounts deducted
+      </div>
+      <div class="circle circle-money">
+        <div class="circle-inner">
+          <div class="amount">
+              <sup>$</sup>{{discountDollar}}<sup>.{{discountCents}}</sup>
+          </div>
+          <div class="detail">discount</div>
+        </div>
+      </div>
+      <div class="summary">
+          <div *ngFor="let summary of discountSummary;">{{summary}}</div>
+      </div>
+    </div>
+    <div class="item summary-spacer">
+        <div class="img-wrap">
+            <img src="/quote/Content/images/pet-quote/icon-equals.svg" alt=""/>
+        </div>
+    </div>
+    <div class="item monthly">
+      <div class="title">
+          {{ quote.paymentFrequency.label }} premium
+      </div>
+      <div class="circle circle-money">
+        <div class="circle-inner">
+          <div class="amount">
+            <!-- <sup>$</sup>82<sup>.99</sup> -->
+              <sup>$</sup>{{totalDollar}}<sup>.{{totalCents}}</sup>
+          </div>
+          <div class="detail">total</div>
+        </div>
+      </div>
+      <div class="summary">
+          Including GST
+      </div>
+    </div>
+  </div>
+</section>

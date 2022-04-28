@@ -1,0 +1,11 @@
+<div class="select-box-old {{open ? 'open' : ''}} {{disabled ? 'disabled' : ''}}"   (window:click)="close($event)">
+  <img class="arrow" src="/quote/Content/images/pet-quote/icon-chevron-down-blue.svg" alt="Open">
+  <div class="label" (click)="toggleOpen($event)">{{value !== null && value !== undefined ? (value.label === ''?placeholder:value.label) : placeholder}}</div>
+  <ul>
+      <li *ngFor="let item of items;let i = index;" attr.data-id="{{ item.id }}" [class]="(i === selectedIndex ? 'selected' : '')+( getid() === item.id?' chosen':'')"
+      (click)="setValue($event,item);">{{item.label}}</li>
+  </ul>
+  <div class="tab-field">
+    <input data-role="none" type="text" #tabInput tabindex="{{tab}}" readonly (focusin)="tabIn()"  (focusout)="tabOut()" (keydown)="keydown($event)">
+  </div>
+</div>

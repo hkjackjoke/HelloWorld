@@ -1,0 +1,63 @@
+  <div class="policy-start-payment relative-800 {{show}}">
+    <div class="table">
+        <div class="row">
+            <div class="cell label">
+                Choose a policy start date
+            </div>
+            <div class="cell input">
+                <app-date-picker 
+                [(ngModel)]="policyStartDate" 
+                [startRange]="policyStartRange" 
+                [endRange]="policyEndRange" 
+                (dateSelected)="choosePolicyStartDate($event)"
+                (calendarClosed)="calendarClosed()"
+                (calendarOpened)="calendarOpened()"
+                title="Select date"
+                ></app-date-picker>
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <div class="row">
+            <div class="cell label {{isFocus ? 'tab-in' : ''}}">
+                Payment method
+            </div>
+            <div class="cell input radio-cell">
+      
+
+                <app-radio-btn
+                    #paymentMethod1
+                    [label]="copy.paymentMethods[3].label"
+                    [checked]="quote.paymentMethod.Code === 'DD'"
+                    (outChecked)="updatePaymentMethod(copy.paymentMethods[3]);"
+                ></app-radio-btn>
+
+                <app-radio-btn
+                #paymentMethod0
+                [label]="copy.paymentMethods[2].label"
+                [checked]="quote.paymentMethod.Code === 'CREDIT'"
+                (outChecked)="updatePaymentMethod(copy.paymentMethods[2]);"
+                ></app-radio-btn>
+
+                <div class="tab-field">
+                  <input type="text" #tabInput tabindex="0" (focusin)="tabIn()" (focusout)="tabOut()" (keydown)="keydown($event)" data-role="none" >
+                </div>
+
+                <div class="note">
+                    2.5% discount for paying by Direct debit
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table">
+
+        <div class="row">
+            <div class="cell label">
+                Payment frequency
+            </div>
+            <div class="cell input">
+                <app-select-box-old [items]="copy.paymentFrequency" (selectChange)="freqChanged()" [(ngModel)]="quote.paymentFrequency"></app-select-box-old>
+            </div>
+        </div>
+    </div>
+</div>

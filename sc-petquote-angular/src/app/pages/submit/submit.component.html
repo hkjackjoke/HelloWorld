@@ -1,0 +1,34 @@
+<section class="submit-thanks">
+  <img  #submitThanks class="tock" src="/quote/Content/images/pet-quote/animated-tick.svg" alt="Thanks">
+  <h1>Thanks, we've got your application for<br>
+    <span [innerHTML]="title"></span>!</h1>
+  <p>
+    We'll review your application and email your policy documents within the next two working days. If your pet has
+    pre-existing conditions your application will take a little longer to process as we will get your pet’s history records from your vet.
+  </p>
+  <p class="space-bottom">
+    In the meantime, if you have any queries, you can <a class="link" href="https://www.southerncrosspet.co.nz/contact-us" target="_blank">contact us</a>
+    using your application number <strong>{{quote.quoteId}}</strong> as your reference.
+  </p>
+
+  <h5>Can I cancel?</h5>
+  <p>Make sure you have a read through your policy documents. If you aren't satisfied with the policy, and haven't submitted a claim, during the first 14 days, 
+    you can cancel it and we'll provide a full refund.</p>
+
+  <h5>I haven't received my policy documents</h5>
+  <p>If you don't receive your policy documents within 6 working days please call us on <b>0800 800 836</b> - Monday to Thursday, 8.30am - 5pm and Friday 9.00am to 5pm.</p>
+
+  <h5>Where can I see my plan details?</h5>
+  <p>You can see your plan details in your welcome pack, there are also online versions available: 
+    <a class="link" href="{{copy.policyLinks['petcare']}}" target="_blank">PetCare</a> and <a class="link" href="{{copy.policyLinks['accipet']}}" target="_blank">AcciPet</a>.</p>
+
+
+  <h2>Thanks for choosing Southern&nbsp;Cross Pet Insurance.</h2>
+
+  <div class="animation-wrap">
+    <app-pet-animation size="submit" type="{{species}}"></app-pet-animation>
+  </div>
+  <div class="social-links">
+    Follow us on <a href="https://www.facebook.com/SouthernCrossHealthSociety/" target="_blank">Facebook</a> and <a href="https://www.instagram.com/southerncrosshealthsociety/" target="_blank">Instagram</a>.
+  </div>
+</section>

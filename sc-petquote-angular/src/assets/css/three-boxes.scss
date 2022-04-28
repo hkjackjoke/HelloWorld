@@ -1,0 +1,99 @@
+// @import "variables.scss";
+// .three-boxes{
+//     position: relative;
+//     width: calc(100% - 40px);
+//     max-width: 810px;
+//     margin: 10px auto;
+
+//     .box{
+//         position: relative;
+//         float: left;
+//         width: 260px;
+//         margin: 0 5px;
+//         border-radius: 3px;
+//         &.no-overflow{
+//             overflow: hidden;
+//         }
+    
+//         font-size: 16px;
+//         color: $brown;
+//         &.dark{
+//             background: #f7f7f7;
+//             padding: 20px;
+//         }
+//         &.light{
+//             background: rgba(238, 238, 238, 0.2);
+//             padding: 20px;
+//             text-align: center;
+//             ul{
+//                 li{
+//                     display: block;
+//                     float: left;
+//                     clear: left;
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//         ul{
+//             list-style: none;
+//             margin: 0;
+//             padding: 0;
+//             li{
+//                 margin-bottom: 10px;
+//                 &:last-child{
+//                     margin-bottom:0px;
+//                 }
+//                 .check-box{
+//                     position: relative;
+//                     top:-2px;
+//                 }
+//                 .recommended{
+//                     margin-left: 10px;
+//                     font-size: 0.85em;
+//                     top: -2px;
+//                     position: absolute;
+//                     min-width: 100px;
+//                     display: inline;
+
+//                     @media all and (max-width: 990px){
+//                         font-size: 0.65em;
+//                         top:0;
+//                     }
+//                     @media all and (max-width: 460px){
+//                         display: block;
+//                         position: relative;
+//                         margin-left: 0;
+//                     }
+//                 }
+//             }
+//         }
+//         .limit-checkbox{
+//             // display: block;
+//             // float: left;
+//             position: relative;
+//         }
+//     }
+//     @media all and (max-width:990px){
+  
+//         .box{
+//             width:calc(50% - 4px);
+//             margin: 0;
+//             &.box-1,
+//             &.box-2{
+//                 margin-left: 8px;
+//             }
+//         }
+//         &.col-1{
+           
+//             .box-2{
+//                 display: none;
+//             }
+//         }
+//         &.col-2{
+           
+//             .box-1{
+//                 display: none;
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,10 @@
+.yes-no-radio{
+    .label{
+        &.tab-in{
+            text-decoration: underline;
+        }
+    }
+    &.table{
+        table-layout: auto;
+    }
+}

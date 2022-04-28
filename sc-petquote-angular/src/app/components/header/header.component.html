@@ -1,0 +1,18 @@
+<div class="banner {{hideBanner ? 'hide' : ''}} {{showMenu ? 'menu-open' : ''}}" (window:resize)="onResize($event)">
+    <span role="img" aria-label="Southern Cross Pet Insurance quote and buy"></span>
+    <div class="w-c">
+        <div class="copy">
+            <h1 [innerHTML]="headerTitle"></h1>
+            <p [innerHTML]="headerSubtitle"></p>
+      
+            <button *ngIf="headerButtonText !== ''" href="/compare-pet-insurance" class="btn" [innerHTML]="headerButtonText"></button>
+
+        </div>
+
+    </div>
+
+    <div id="header-svg-curve" class="header-svg-curve" [innerHTML]="svgValue  | safe: 'html'">
+
+    </div>
+
+</div>

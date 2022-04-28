@@ -1,0 +1,125 @@
+<section #quoteSummary class="quote-summary" style="padding-bottom: 50px;">
+  <h2>Your quote&nbsp;summary</h2>
+  <div class="policy-start-method relative-680 form-item clearfix">
+    <div class="table no-resize">
+      <div class="row">
+          <div class="cell label">
+              Policy start date
+          </div>
+          <div class="cell value">
+              {{ formatDate(quote.policyStartDate) }}
+          </div>
+      </div>
+      <div class="row spacer"></div>
+      <div class="row">
+          <div class="cell label">
+              Payment method
+          </div>
+          <div class="cell value">
+              {{ quote.paymentMethod.label }}
+          </div>
+      </div>
+      <div class="row spacer"></div>
+      <div class="row">
+          <div class="cell label">
+              Payment frequency
+          </div>
+          <div class="cell value">
+                {{ quote.paymentFrequency.label }}
+          </div>
+      </div>
+    </div>
+    <div class="txt-btn" (click)="editDateStart()">Edit</div>
+  </div>
+  <app-pet-summary *ngFor="let pet of quote.pets; index as i" [pet]="pet" [index]="i" (removePet)="removePet($event)" (editPet)="editPet($event)"></app-pet-summary>
+  <div class="quote-totals  relative-680">
+    <h2>
+        Quote summary totals
+    </h2>
+    <div class="clearfix">
+        <div class="form-item">
+            <div class="table nooverflow no-resize">
+                <div class="row mb"  *ngFor="let pet of quote.pets;" >
+                    <div class="cell ">
+                        {{ quote.paymentFrequency.label }} premium for {{pet.name}}
+                    </div>
+                    <div class="cell total">
+                        ${{pet.animalQuote.total.toFixed(2)}}
+                    </div>
+                </div>
+            </div>
+            <div class="table  no-resize total">
+                <div class="row line">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell pad-top-bottom">Total {{ quote.paymentFrequency.label }} premium</div>
+                    <div class="cell total">${{total.toFixed(2)}}</div>
+                </div>
+                <div class="row line">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="table print-email no-resize">
+                <div class="row">
+                  <ng-container  *ngIf="!showEmailSent">
+                    <div class="cell email {{showEmailForm? 'disabled':''}}" (click)="showEmailForm ? null : toggleShowEmailForm(true)">
+                        <span>Email quote</span>
+                        <img src="/quote/Content/images/pet-quote/icon-email.svg" alt="Print quote">
+                    </div>
+                  </ng-container>
+                  <ng-container  *ngIf="showEmailSent" >
+
+                    <div class="cell email email-sent">
+                      <span>Email Sent!</span>
+                      <img src="/quote/Content/images/pet-quote/icon-green-tick.svg" alt="Print quote">
+                  </div>
+                  </ng-container>
+                </div>
+            </div>
+        </div>
+        <div class="total-circle">
+            <div class="title">Total {{ quote.paymentFrequency.label }} premium</div>
+            <div class="circle circle-money">
+                <div class="circle-inner">
+                    <div class="amount">
+                        <sup>$</sup>{{totalDollars}}<sup>.{{totalCents}}</sup>
+                    </div>
+                    <div class="detail">total</div>
+                </div>
+            </div>
+            <div class="gst">Including GST</div>
+        </div>
+    </div>
+
+
+  </div>
+
+  <div class="clearfix send-email-section">
+    <app-send-email
+      #emailForm
+      [show]="showEmailForm"
+      (cancel)="toggleShowEmailForm()"
+      (send)="useReCaptchaForEmail ? captchaRef.execute() : sendEmail('Nothing')"
+    ></app-send-email>
+</div>
+<div class="apply-nav">
+    <div class="btn apply {{showEmailForm? 'disabled':''}}" (click)="apply()"> Apply Now <img src="/quote/Content/images/pet-quote/icon-chevron-right-white.svg"/></div>
+</div>
+
+<app-notice
+  [content]="'If you already have a pet insurance policy with another insurer, you should be aware that changing policies comes with risks and you may be worse off. For example, by changing insurer, you may lose any pre-existing condition cover your pet has under your current policy. We recommend that you don’t cancel any existing insurance until you have compared it with the cover offered by Southern Cross Pet Insurance. You can use the 14-day cooling-off period we offer to read our policy document and compare coverage terms.'"
+></app-notice>
+<app-recaptcha #captchaRef (resolved)="captchaResolved($event)"></app-recaptcha>
+</section>
+
+<app-remove-pet-confirm #removePetPopup
+[show]="confirmRemovePet"
+[pageIndex]=4
+[trackRemovePet]=true
+(closePopup)="closeConfirmRemovePet();"
+(confirmRemovePet)="hasRemovedPet($event)"
+[petIndex]="confirmRemovePetIndex"
+[pet]="confirmRemovePetModel"></app-remove-pet-confirm>

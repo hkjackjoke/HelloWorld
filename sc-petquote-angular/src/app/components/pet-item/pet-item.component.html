@@ -1,0 +1,196 @@
+<div class="pet-item clearfix {{ index === 0 ? 'no-brd' : ''}}">
+  <div class="pet-item-details">
+    <div class="name mobile">
+          {{ tmpPet.name }} has been added
+    </div>
+    <div class="image">
+      <app-pet-animation #petAnimation size="petItem" type="{{tmpPet.species.id === 1 ? 'cat' : 'dog'}}"></app-pet-animation>
+
+    </div>
+    <div class="name desktop">
+        <div>{{ tmpPet.name }} has been added</div>
+    </div>
+    <div class="menu">
+      <div>
+        <span (click)="edit(true);" class="txt-btn {{disabled || editForm || (editIndex !== null)?'disabled':''}}">Edit</span>
+        <span class="{{disabled || editForm || (editIndex !== null)?'disabled':''}}">&nbsp;|&nbsp;</span>
+        <span (click)="remove();" class="txt-btn {{disabled || editForm || (editIndex !== null)?'disabled':''}}">Remove</span>
+      </div>
+    </div>
+    <ng-container *ngIf="index !== 0">
+      <div class="show-discount">5% discount for insuring each additional pet</div>
+    </ng-container>
+  </div>
+
+  <div #editFormItem class="edit-form {{editForm && !disabled?'open':''}}">
+    <img src="/quote/Content/images/pet-quote/close-btn.svg" alt="Delete pet" class="delete-pet" (click)="cancel();">
+    <div class="edit-form-content clearfix">
+      <div class="form-item checkboxes">
+          <div class="table">
+            <div class="row">
+              <div class="cell label {{focus === 'species'? 'tab-in':''}}">
+                  Please select
+              </div>
+              <div class="cell radio">
+                <app-radio-btn label="Dog" (outChecked)="dog($event);" [checked]="tmpPet.species.id === 2"></app-radio-btn>
+              </div>
+              <div class="cell radio no-pad">
+                <app-radio-btn label="Cat" (outChecked)="cat($event);" [checked]="tmpPet.species.id === 1"></app-radio-btn>
+              </div>
+
+              <div class="tab-field">
+                <input type="text" #tabInput tabindex="0" (focusin)="tabIn('species')" (focusout)="tabOut()" (keydown)="keydown($event, 'species')" data-role="none">
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="form-item checkboxes">
+          <div class="table">
+            <div class="row">
+              <div class="cell label {{focus === 'sex'? 'tab-in':''}}">
+                  Sex
+              </div>
+              <div class="cell radio">
+                <app-radio-btn label="Male" (outChecked)="male($event);"  [checked]="tmpPet.gender.id === 2"></app-radio-btn>
+              </div>
+              <div class="cell radio no-pad">
+                <app-radio-btn label="Female" (outChecked)="female($event);"  [checked]="tmpPet.gender.id === 1"></app-radio-btn>
+              </div>
+              <div class="tab-field">
+                <input type="text" #tabInput tabindex="0" (focusin)="tabIn('sex')" (focusout)="tabOut()" (keydown)="keydown($event, 'sex')" data-role="none">
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="form-item">
+
+          <app-text-input
+            #petName
+            [label]="'Pet’s name'"
+            [(ngModel)]="tmpPet.name"
+            errorMessage="This field is required"
+            [required]="true"
+            [clearbutton]="true"
+            (inputChange)="validate()"
+            (inputFocusin)="focusinField('edit_pet_name')"
+            [capitalize]="true"
+            maxlength="15"
+          >
+          </app-text-input>
+      </div>
+      <div class="form-item">
+        <div class="table">
+          <div class="row">
+            <div class="cell label">
+                Breed
+            </div>
+            <div class="cell input">
+
+              <div class="txt-input {{editPetBreed ? 'hide' : ''}} {{breedError ? 'input-error' : ''}}">
+                  <div class="ellipsis">
+                    {{tmpPet.breed.label}}
+                  </div>
+            
+                  <img class="icon-clear" src="/quote/Content/images/pet-quote/icon-clear-field.svg" (click)="editBreed()">
+              </div>
+              <app-typeahead-input
+                #petBreed
+                class="typehead-input {{editPetBreed ? '' : 'hide'}}"
+                [error]="breedError"
+                [(ngModel)]="tmpPet.breed"
+                [items]="breeds"
+                [result]="breeds"
+                [popularId]="popularId"
+                [placeholder]="'Please select&hellip;'"
+                (inputFocusout)="validateBreed(); validate();"
+                (selectChange)="validateBreed(); validate(); focusinField('edit_pet_select_breed');">
+              </app-typeahead-input>
+
+            </div>
+          </div>
+          <div class="row error-message {{breedError ? 'show' : ''}}">
+              <div class="cell label"></div>
+              <div class="cell">
+                This field is required
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-item">
+          <div class="table">
+
+            <div class="row">
+              <div class="cell label">
+                  Age
+              </div>
+              <div class="cell input">
+                  <div class="txt-input">
+                    <div class="ellipsis">
+                      {{ editPetAge ? '' : petAgeString}}
+                    </div>
+                 
+                    <img *ngIf="!editPetAge" class="icon-clear" src="/quote/Content/images/pet-quote/icon-clear-field.svg" (click)="editAge()">
+                  </div>
+              </div>
+            </div>
+     
+          </div>
+      </div>
+      <div class="form-item {{editPetAge && !tmpPet.dontKnowAge ? '' : 'hide'}} dateofbirth-item">
+
+        <app-dobinput
+          #petAge
+          label="Date of birth"
+          value=""
+          errorMessage="This field is required'"
+          [required]="true"
+          seperator="/"
+          (valueChange)="updateAge($event); validate();"
+          (focusInField)="trackDOBField($event);"
+          [clearbutton]="true"
+        ></app-dobinput>
+        <div class="age-message" *ngIf="tmpPet.ageMessage !== ''" innerHtml="{{tmpPet.ageMessage}}"></div>
+
+      </div>
+      <div class="form-item {{editPetAge ? '' : 'hide'}} dontknowage">
+          <div class="table">
+            <div class="row">
+              <div class="cell label"></div>
+              <div class="cell input checkbox-input">
+                <app-check-box [checked]="tmpPet.dontKnowAge" (checkChange)="toggleDontKnowAge($event)" [value]="true"></app-check-box>
+                &nbsp;
+                <span>I don’t know how old {{tmpPet.gender.id === 1? 'she':'he'}} is</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="form-item {{editPetAge && tmpPet.dontKnowAge ? '' : 'hide'}} approx-dateofbirth-item">
+        <div class="table">
+          <div class="row">
+            <div class="cell label">
+              Approximate age
+            </div>
+            <div class="cell input approx-age-cell {{focusAge?'tab-in':''}}">
+                <input data-role="none" #inputAgeValue class="txt-input middle" type="text" [(ngModel)]="tmpPet.ageAproxValue" 
+                (focusin)="focusinField('edit_pet_approx_age_value')"
+                (blur)="validateAge(); " (input)="updateAge();  validateAge();" appDigitOnly>
+                <app-radio-btn [focus]="focusAge && tmpPet.ageAproxType.id === 1" label="Years" (outChecked)="setApproxAge(1);"  [checked]="tmpPet.ageAproxType.id === 1" (changed)="validate(); validateAge();"></app-radio-btn>
+                <app-radio-btn [focus]="focusAge && tmpPet.ageAproxType.id === 2" label="Months" (outChecked)="setApproxAge(2);"  [checked]="tmpPet.ageAproxType.id === 2" (changed)="validate(); validateAge()"></app-radio-btn>
+                <app-radio-btn [focus]="focusAge && tmpPet.ageAproxType.id === 3" label="Weeks" (outChecked)="setApproxAge(3);"  [checked]="tmpPet.ageAproxType.id === 3" (changed)="validate(); validateAge()"></app-radio-btn>
+
+            </div>
+            <div class="tab-field">
+              <input type="text" #tabInput tabindex="0" (focusin)="tabInAge()" (focusout)="tabOutAge()" (keydown)="keydownAge($event)" data-role="none">
+            </div>
+          </div>
+        </div>
+        <div class="age-message" *ngIf="tmpPet.ageMessage !== ''" innerHtml="{{tmpPet.ageMessage}}"></div>
+      </div>
+
+      <div class="form-nav">
+        <div class="txt-btn" (click)="cancel()">Cancel editing</div>
+        <div class="btn med {{disableSave ? 'disabled':'' }}" (click)="save()">Save edit</div>
+      </div>
+    </div>
+  </div>
+</div>

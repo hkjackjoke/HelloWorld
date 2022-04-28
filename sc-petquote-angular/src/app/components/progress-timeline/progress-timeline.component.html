@@ -1,0 +1,27 @@
+<div #progressTimeline class="progress-timeline {{hideProgress ? 'hide' : ''}} {{menuOpen ? 'menu-open' : ''}}">
+  <ul>
+    <li class="{{progress === 0 ? 'selected' : ''}} {{progress > 0 ? 'completed' : ''}}">
+      <div class="circle">
+        <span class="number">1</span>
+        <img class="tick" src="/quote/Content/images/pet-quote/icon-tick-white.svg" alt="Tell us about your pet">
+      </div>
+      <div class="line"></div>
+      <div class="label">Tell us about<br> your pet</div>
+    </li>
+    <li class="{{progress === 1 ? 'selected' : ''}}  {{progress > 1 ? 'completed' : ''}}">
+        <div class="circle">
+            <span class="number">2</span>
+            <img class="tick" src="/quote/Content/images/pet-quote/icon-tick-white.svg" alt="Choose a plan">
+        </div>
+        <div class="line"></div>
+        <div class="label">Choose a plan</div>
+    </li>
+    <li class="{{progress === 2 ? 'selected' : ''}}">
+        <div class="circle">
+            <span class="number">3</span>
+            <img class="tick" src="/quote/Content/images/pet-quote/icon-tick-white.svg" alt="Get a quote and apply">
+        </div>
+        <div class="label">Get a quote <br>and apply</div>
+    </li>
+  </ul>
+</div>

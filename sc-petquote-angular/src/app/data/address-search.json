@@ -1,0 +1,15 @@
+{
+   "result" : {
+        "addresses" : [
+            {
+                "addressId" :"0nONZLHgbhBwAAAAABAwEAAAB_CZkYghAAIAAAAAAAAAAA..9fAAAAAP....8AAAAAAAAAAAAAAAAAMTIzIEdyZWF0IFNvdXRoIFJvYWQA",
+                "partialAddress" : "123A Great South Road, Greenlane, Auckland   1051"
+            },
+            {
+                "addressId" :  "0TONZLHgbhBwAAAAABAwEAAABKSWEYghAAIAAAAAAAAAAA..9fAAAAAP....8AAAAAAAAAAAAAAAAAMTIzIEdyZWF0IFNvdXRoIFJvYWQA",
+                "partialAddress" : "123A Great South Road, Otahuhu, Auckland   1062 "
+            }
+        ],
+        "totalResults" : "2"
+    }          
+}

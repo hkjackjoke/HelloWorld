@@ -1,0 +1,71 @@
+<div class="three-boxes clearfix plans {{selectedColumn}}">
+    <div class="boxes">
+        <div class="box plan-for">
+            <div class="small-title">Choose a plan for</div>
+            <h4 class="{{nameClass}}">{{pet.name.substring(0,15)}}</h4>
+            <app-pet-animation #petAnimation type="{{pet.species.id === 1 ? 'cat' : 'dog'}}" size="full"></app-pet-animation>
+        </div>
+        <div class="box box-1 petcare pet-care no-overflow {{pet.selectedPlan === 'petcare' ? 'selected' : ''}} {{pet.overPetCareLimit?'petcare-disabled':''}}" (click)="setValue('petcare');">
+            <div class="box-header">
+                <div class="copy">
+                    <p>
+                        Comprehensive<br>
+                        cover
+                        </p>
+                    <h4>PetCare</h4>
+            
+                </div>
+
+                <div [class]="bouncePetCare ? 'circle big' : 'circle'"></div>
+                <div class="price">
+                <ng-container *ngIf="pet.overPetCareLimit">
+                    <span class="text">Not available for pets 7 years or older</span>
+                </ng-container>
+                <ng-container *ngIf="!pet.overPetCareLimit">
+                    <div [innerHTML]="petcarecharge"></div>
+                    <div class="per-mth">per {{perValue}}</div>
+                </ng-container>
+                </div>
+            </div>
+            <div class="box-cta-info {{pet.overPetCareLimit?'disabled':''}}">Select this plan to <br>find out more</div>
+            <div class="btn  {{pet.overPetCareLimit?'disabled':''}}">
+                {{petcareButton}}
+                <span class="tick">
+                    &nbsp;
+                    <img src="/quote/Content/images/pet-quote/icon-tick-copy-5.svg" alt="Choose PetCare">
+                </span>
+            </div>
+        </div>
+        <div class="box box-2 accipet acci-pet no-overflow {{pet.selectedPlan === 'accipet' ? 'selected' : ''}}" (click)="setValue('accipet');">
+            <div class="box-header">
+                <div class="copy">
+                    <p>
+                        Accident-only<br>
+                        cover
+                    </p>
+                    <h4>AcciPet</h4>
+            
+                </div>
+                <div  [class]="bounceAcciPet ? 'circle big' : 'circle'"></div>
+                <div class="price">
+                    <div>
+                        <div [innerHTML]="accipetcharge"></div>
+                    </div>
+                    <div class="per-mth">per {{perValue}}</div>
+                </div>
+            </div>
+            <div class="box-cta-info">Select this plan to <br>find out more</div>
+            <div class="btn no-hover">
+                {{accipetButton}}
+                <span class="tick">
+                    &nbsp;
+                    <img src="/quote/Content/images/pet-quote/icon-tick-copy-5.svg" alt="Choose AcciPet">
+                </span>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+

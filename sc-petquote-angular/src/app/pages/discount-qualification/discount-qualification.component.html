@@ -1,0 +1,56 @@
+<section #discountQualification class="discount-qualification">
+    <div class="discount-qualification-container">
+        <h2 tabindex="0">Do you qualify for an extra&nbsp;discount?</h2>
+
+        <div class="discount-qualification-form">
+
+            <div class="form-item">
+                <app-yes-no-radio-buttons (valueChange)="checkCompleted('insure');" tab="0" label="Do you already have a pet insured with us?" 
+                [(ngModel)]="quote.alreadyHavePetInsuranceUs"></app-yes-no-radio-buttons>
+                <div class="show-discount">5% discount for insuring each additional pet</div>
+            </div>
+
+
+            <div class="form-item keep-margin">
+                <app-yes-no-radio-buttons (valueChange)="checkCompleted('member')" tab="0" label="Are you a Southern Cross Health Society member?" 
+                [(ngModel)]="quote.southernCrossSocietyMember"></app-yes-no-radio-buttons>
+                <div class="show-discount">2.5% discount for SCHS members</div>
+            </div>
+
+
+            <div class="form-item keep-margin">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell label">
+                            Where did you hear about us?
+                        </div>
+                        <div class="cell input">
+                            <app-select-box
+                              [items]="referrals"
+                              [includeLabel] = false
+                              [includePlaceHolder]="true"
+                              (selectChange)="checkCompleted('referrals')"
+                              tab="0"
+                              [(ngModel)]="quote.whereHearAboutUs"
+                              placeholder="Please select&hellip;"
+                            ></app-select-box>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <app-text-input
+                    label="Do you have a promo code?"
+                    [(ngModel)]="quote.promoCode"
+                    tab="0"
+                    (inputFocusout)="focusinField('promo_code')"
+                    [placeholder]="'Optional'"
+                    [clearbutton]="true"
+                    (inputChange)="checkCompleted()" >
+                </app-text-input>
+            </div>
+        </div>
+    </div>
+    <app-next-back (goNext)="next()" (goBack)="back()" [enabledNext]="complete" nextTabIndex="0"></app-next-back>
+    <app-recaptcha #captchaRef (resolved)="submit($event)"></app-recaptcha>
+</section>

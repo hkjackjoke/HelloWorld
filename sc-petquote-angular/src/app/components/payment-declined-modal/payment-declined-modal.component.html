@@ -1,0 +1,20 @@
+<div class="popup {{show?'show':''}} payment-declined-popup">
+  <div class="popup-container">
+      <div class="popup-cell">
+          <div class="popup-curtain" (click)="cancel()"></div>
+          <div class="popup-window">
+              <img src="/quote/Content/images/pet-quote/close-btn.svg" class="close" alt="Close" (click)="cancel()">
+              <h2>
+                Your card issuer has declined&nbsp;payment.
+              </h2>
+              <p class="sub-heading">
+                You can try again or change your payment type below.
+              </p>
+              <div class="btn-wrap">
+                <div class="btn white" (click)="cancel()">Change payment type</div>
+                <div class="btn" (click)="confirm()">Try again</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

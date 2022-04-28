@@ -1,0 +1,19 @@
+[
+    {
+       "Code":"HALFYEARLY",
+       "Description":"Half Yearly"
+    },
+    {
+       "Code":"MONTHLY",
+       "Description":"Monthly"
+    },
+    {
+       "Code":"QUARTERLY",
+       "Description":"Quarterly"
+    },
+    {
+       "Code":"YEARLY",
+       "Description":"Yearly"
+    }
+ ]
+ 

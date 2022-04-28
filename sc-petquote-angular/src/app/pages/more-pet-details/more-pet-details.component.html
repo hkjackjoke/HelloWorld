@@ -1,0 +1,192 @@
+<section #morePetDetails class="more-pet-details" style="padding-bottom: 50px;">
+  <h2>
+      Some more pet&nbsp;details
+  </h2>
+  <div #petHealthDelcare>
+    <div class="more-pet-details-form clearfix">
+      <div class="animation-wrap">
+        <div class="animation-icon">
+            <app-pet-animation #petAnimation type="{{currentPet.species.id === 1 ? 'cat' : 'dog'}}" size="more-circle"></app-pet-animation>
+        </div>
+      </div>
+      <div class="form">
+          <div class="form-header">
+            <h3>Tell us about {{currentPet.name}}’s health history</h3>
+            <p>
+              <span class="bold">To determine what health conditions and treatments we can offer you cover for, we need to know if 
+                {{currentPet.name}} has any <a href="javascript:;" (click)="showPreExistingPopup = true">pre-existing conditions.</a></span>
+              <br><br>
+              Has {{currentPet.gender.id === 1?'she':'he'}} ever experienced or shown signs or symptoms, of any of the following :
+            </p>
+          </div>
+          <div class="questions">
+            <div class="form-item space-bottom">
+              <app-yes-no-radio-buttons 
+              [(ngModel)]="currentPet.lameness" tab="0" 
+              (valueChange)="validate('lameness')" 
+              label="Lameness" 
+              [help]="'lameness'"></app-yes-no-radio-buttons>
+            </div>
+     
+            <app-declaration-details
+              *ngIf="currentPet.lameness"
+              #ddLameness
+              [injuryStartRange]="injuryStartRange"
+              [show]="currentPet.lameness"
+
+              field="lameness"
+              [declaration]="currentPet.lamenessDeclaration"
+              (changeDetails)="validate();"
+            ></app-declaration-details>
+
+            <div class="form-item space-bottom">
+              <app-yes-no-radio-buttons [(ngModel)]="currentPet.vomitingDiarrhoea" tab="0" 
+              (valueChange)="validate('vomitingDiarrhoea')" label="Vomiting or diarrhoea in the last 12 months" [help]="'vomiting-diarrhoea'"></app-yes-no-radio-buttons>
+            </div>
+            <app-declaration-details
+              *ngIf="currentPet.vomitingDiarrhoea"
+              #ddVomitingDiarrhoea
+              [injuryStartRange]="injuryStartRange"
+              [show]="currentPet.vomitingDiarrhoea"
+
+              field="vomitingDiarrhoea"
+              [declaration]="currentPet.vomitingDiarrhoeaDeclaration"
+              (changeDetails)="validate();"
+            ></app-declaration-details>
+
+            <div class="form-item space-bottom">
+              <app-yes-no-radio-buttons [(ngModel)]="currentPet.skinEyeEarConditions" tab="0" 
+              (valueChange)="validate('skinEyeEarConditions')" label="Skin, eye or ear conditions" [help]="'skin-eye-ear'"></app-yes-no-radio-buttons>
+            </div>
+            <app-declaration-details
+              *ngIf="currentPet.skinEyeEarConditions"
+              #ddSkinEyeEarConditions
+              [injuryStartRange]="injuryStartRange"
+              [show]="currentPet.skinEyeEarConditions"
+
+              field="skinEyeEarConditions"
+              [declaration]="currentPet.skinEyeEarConditionsDeclaration"
+              (changeDetails)="validate();"
+            ></app-declaration-details>
+
+            <div class="form-item space-bottom">
+              <app-yes-no-radio-buttons [(ngModel)]="currentPet.injuriesAnimalFights" tab="0" 
+              (valueChange)="validate('injuriesAnimalFights')" label="Injuries sustained from animal fights" [help]="'fighting-injuries'"></app-yes-no-radio-buttons>
+            </div>
+            <app-declaration-details     
+              *ngIf="currentPet.injuriesAnimalFights" 
+              #ddInjuriesAnimalFights
+              [injuryStartRange]="injuryStartRange"
+              [show]="currentPet.injuriesAnimalFights"
+              field="injuriesAnimalFights"
+              [declaration]="currentPet.injuriesAnimalFightsDeclaration"
+              (changeDetails)="validate();"
+            ></app-declaration-details>
+
+            <div class="form-item space-bottom">
+              <app-yes-no-radio-buttons [(ngModel)]="currentPet.preExistingConditions" tab="0" 
+              (valueChange)="validate('preExistingConditions')" label="Does {{quote.pets[petIndex].name}} have any other pre-existing conditions?"></app-yes-no-radio-buttons>
+            </div>
+            <div class="form-item-wrap {{currentPet.preExistingConditions ? 'expanded' : ''}}">
+              <div class="form-item  space-bottom">
+                <app-text-input
+                  label="Please provide full details, including the name of the vet, the date of consultation or treatment and if you have not consulted a vet, the date your pet first displayed signs or symptoms of the condition."
+                  type="textarea"
+                  [maxlength]="250"
+                  [(ngModel)]="currentPet.preExistingConditionsText"
+                  [required]="currentPet.preExistingConditions"
+                  [displayMaxLength]="true"
+                  errorMessage="Please enter the pre-existing conditions"
+                  placeholder="Enter your details in here&hellip;"
+                  (inputChange)="validate();"
+                  (inputFocusin)="trackField('pre_existing_conditions_text')"
+                ></app-text-input>
+              </div>
+            </div>
+
+            <div class="form-item mobile-full-width space-bottom">
+                <div class="table">
+                  <div class="row">
+                    <div class="cell label">
+                      What is the name of {{currentPet.gender.id === 1 ? 'her' : 'his'}} regular vet practice?
+                    </div>
+                    <div class="cell input">
+                      <app-typeahead-input
+                        #regularVets
+                        [(ngModel)]="currentPet.regularVets"
+                        tab="0"
+                        placeholder="Please select..."
+                        [disabled]="currentPet.neverBeenToVet || this.currentPet.vetNotListed"
+                        [items]="copy.vetsList"
+                        (selectChange)="validate(); trackField('regular_vets')"
+                      ></app-typeahead-input>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="form-item mobile-full-width extra-margin">
+                <div class="table">
+                  <div class="row">
+                    <div class="cell label dt-only"></div>
+                    <div class="cell input checkbox-input">
+                      <app-check-box
+                      inputId="neverBeenToVet"
+                      [disabled]="disableNeverBeenVet"
+                      [value]="true"
+                      [checked]="currentPet.neverBeenToVet"
+                      (checkChange)="changeNeverBeenToVet($event); trackField('never_been_to_vet');"
+                      tab="0"
+                      ></app-check-box><span [class]="disableNeverBeenVet ? 'disabled' : ''">{{currentPet.name}} has never been to a vet</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="form-item mobile-full-width extra-margin">
+                <div class="table">
+
+                  <div class="row">
+                    <div class="cell label dt-only"></div>
+                    <div class="cell input checkbox-input">
+                      <app-check-box
+                        inputId="vetNotListed"
+                        [value]="true"
+                        [checked]="currentPet.vetNotListed"
+                        (checkChange)="changeVetNotListed($event); trackField('vet_not_listed');"
+                      ></app-check-box>{{currentPet.name}}’s vet isn’t listed here
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+            <div class="form-item mobile-full-width extra-margin nil-margin-top {{currentPet.vetNotListed === true? '':'collapsable'}}">
+              <app-text-input
+                label="Type-in the name of the vet’s practice"
+                [(ngModel)]="currentPet.otherVetPractise"
+                [clearbutton]="true"
+                (inputChange)="validate()"
+                (inputFocusin)="trackField('other_vet_practice_name')"
+                classes="capitalise-input"
+              ></app-text-input>
+            </div>
+
+
+        </div>
+      </div>
+      <app-notice
+        [content]="'Unless we specifically agree in writing, any pre-existing conditions '+currentPet.name +' may have, including any you may not have told us about, will not be covered under this policy. <br><br>If you do declare pre-existing conditions, we may contact your vet for further details of any consultation(s) and/or treatment(s). This process can take up to 10 days. The conditions listed may be excluded on your policy as pre-existing conditions. Please, refer to your certificate of insurance (which you’ll find in your welcome pack) for further details of any excluded pre-existing conditions.'"
+      ></app-notice>
+    </div>
+  </div>
+  <app-next-back (goBack)="back()" (goNext)="next()" [enabledNext]="complete"></app-next-back>
+</section>
+<app-popup-modal
+  #preExisitingConditions
+  windowClass="pre-exisiting-conditions"
+  [show]="showPreExistingPopup"
+  (closePopup)="closePreExistingPopup();"
+  [copy]="copy.preExistingConditionsCopy"
+  cancelText="OK, close this window"
+></app-popup-modal>
+

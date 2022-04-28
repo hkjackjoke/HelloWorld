@@ -1,0 +1,31 @@
+<div class="table">
+  <div class="row">
+    <div class="cell label {{classes}}" *ngIf="includeLabel">
+        {{label}}
+    </div>
+    <div class="cell input {{classes}} ">
+      <div class="select-box {{open ? 'open' : ''}} {{error ? 'input-error' : ''}} {{size}}"   (window:click)="close($event)">
+        <img class="arrow" src="/quote/Content/images/pet-quote/icon-chevron-down-blue.svg" alt="Open">
+        <div class="label" (click)="toggleOpen($event)">{{value !== null  && value !== undefined  ? (value.label === '' ? placeholder : value.label) : placeholder}}</div>
+        <ul>
+            <li class="reset" (click)="reset();">{{placeholder}}</li>
+            <li
+              *ngFor="let item of items;let i = index;"
+              attr.data-id="{{ item.id }}"
+              [class]="(i === selectedIndex ? 'selected' : '')+( getid() === item.id && getlabel() !== placeholder ?' chosen':'')"
+              (click)="setValue($event,item);"
+              >{{item.label}}</li>
+        </ul>
+        <div class="tab-field">
+          <input data-role="none" type="text" #tabInput tabindex="{{tab}}" readonly (focusin)="tabIn()"  (focusout)="tabOut()" (keydown)="keydown($event)">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row error-message {{error ? 'show' : ''}}">
+      <div class="cell label"></div>
+      <div class="cell">
+          {{errorMessage}}
+      </div>
+  </div>
+</div>

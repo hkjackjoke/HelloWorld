@@ -1,0 +1,21 @@
+<div class="popup {{show}}">
+    <div class="popup-container">
+        <div class="popup-cell">
+            <div class="popup-curtain" (click)="cancel()"></div>
+            <div class="popup-window">
+                    <img src="/quote/Content/images/pet-quote/close-btn.svg" class="close" alt="Close" (click)="cancel()">
+                    <h2>
+                        Are you sure you want to remove this&nbsp;pet?
+                    </h2>
+                    <div class="circle">
+                        <app-pet-animation size="remove" #petAnimation type="{{pet.species.id === 1 ? 'cat' : 'dog'}}"></app-pet-animation>
+                    </div>
+                    <div class="title">{{pet.name}}</div>
+                    <div class="nav clearfix">
+                        <div class="btn white left" (click)="cancel();trackCancel();">No, go back</div>
+                        <div class="btn right" (click)="yes()">Yes, remove</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

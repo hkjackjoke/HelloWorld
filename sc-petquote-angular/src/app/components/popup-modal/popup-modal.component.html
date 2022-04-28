@@ -1,0 +1,15 @@
+<div class="popup {{show?'show':''}} general-popup">
+  <div class="popup-container">
+      <div class="popup-cell">
+          <div class="popup-curtain" (click)="cancel()"></div>
+          <div class="popup-window {{windowClass}}">
+                  <img src="/quote/Content/images/pet-quote/close-btn.svg" class="close" alt="Close" (click)="cancel()">
+                  <h2 *ngIf="title !== ''">{{title}}</h2>
+                  <div class="scroll-wrap">
+                    <div [innerHtml]="copy"></div>
+                    <div class="btn" (click)="cancel()">{{cancelText}}</div>
+                  </div>
+          </div>
+      </div>
+  </div>
+</div>
