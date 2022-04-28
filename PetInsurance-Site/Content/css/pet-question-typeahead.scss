@@ -1,0 +1,124 @@
+﻿app-pet-question-typeahead {
+    display: inline-block;
+    margin: auto;
+}
+
+.pet-question-typeahead {
+    display: inline-block;
+    position: relative;
+    padding: 0 3px;
+    height: 33px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+
+    .typeahead-wrap {
+        border-bottom: 2px solid #008bce;
+        height: 33px;
+
+        input {
+            padding: 0;
+            overflow: hidden;
+            font-size: 22px;
+            font-weight: 500;
+            color: #008bce;
+            border-radius: 0;
+            height: 32px;
+            position: relative;
+            border: 0;
+            min-width: 80px;
+            width: 0px;
+            text-overflow: ellipsis;
+            transition: min-width 150ms cubic-bezier(.165,.84,.44,1);
+        }
+
+        @media all and (max-width: 767px) {
+            input {
+                max-width: 440px;
+            }
+
+            padding: 0;
+        }
+
+        @media all and (max-width: 480px) {
+            input {
+                max-width: 240px;
+            }
+
+            padding: 0;
+        }
+    }
+
+    img {
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+    }
+
+
+
+    .label {
+        height: 32px;
+        border-bottom: 2px solid #008bce;
+        overflow: hidden;
+    }
+
+    ul {
+        list-style: none;
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        padding: 3px;
+        margin: 0;
+        display: none;
+        z-index: 5000;
+        max-height: 240px;
+        border: none;
+        background-color: transparent !important;
+        -webkit-appearance: none;
+        border-radius: 0;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        transition: all 250ms cubic-bezier(.165,.84,.44,1);
+
+        li {
+            padding: 3px 5px;
+            border-radius: 3px;
+            &.title{
+                color:#525252;
+                pointer-events:none;
+                cursor:default;
+            }
+            &:hover,
+            &.selected {
+                background: #008bce;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &.open {
+        background: #f7f7f7;
+
+        input {
+            background-color: #f7f7f7;
+            min-width: 272px;
+            transition: min-width 150ms cubic-bezier(.165,.84,.44,1);
+        }
+    }
+
+    &.open.selectOpen {
+
+        ul {
+            display: block;
+            border-radius: 0 0 3px 3px;
+            width: 299px;
+            height: auto;
+            overflow: auto;
+            background: #f7f7f7;
+            background-color: #f7f7f7 !important;
+            -webkit-appearance: unset;
+        }
+    }
+}

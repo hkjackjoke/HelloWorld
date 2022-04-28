@@ -1,0 +1,159 @@
+﻿.sc-calendar {
+    position: absolute;
+    width: 335px;
+    height: 360px;
+    opacity: 0;
+
+    .title {
+        height: 42px;
+        border-radius: 4px 4px 0 0;
+        background-color: #f8b60d;
+        text-align: center;
+        color: #fff;
+        font-family: omnes-pro,Arial,sans-serif;
+        padding-top: 7px;
+        font-size: 16px;
+        margin-bottom:15px;
+    }
+
+    &.show {
+        opacity: 1;
+    }
+
+    &.six-rows {
+        height: 400px;
+    }
+
+    border-radius: 4px;
+    box-shadow: 0 1px 5px 0 rgba(49, 49, 49, 0.2);
+    background-color: #ffffff;
+    font-family: omnes-pro,Arial,sans-serif;
+    z-index: 999999;
+
+    .month-select {
+        position: relative;
+        display: table;
+        width: 300px;
+        margin: auto;
+        height: 30px;
+
+        .arrow {
+            display: table-cell;
+            width: 50px;
+            text-align: center;
+            cursor: pointer;
+
+            &.disabled {
+                cursor: default;
+                opacity: 0.5;
+            }
+        }
+
+        .label {
+            display: table-cell;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 500;
+
+            .year {
+                cursor: pointer;
+            }
+        }
+    }
+
+    table {
+        position: relative;
+        width: 280px;
+        margin: auto;
+
+        tr {
+            th {
+                font-size: 12px;
+                font-weight: normal;
+                color: #525252;
+                padding: 10px 0;
+            }
+
+            td {
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: normal;
+                text-align: center;
+                color: #8e8e8e;
+
+                span {
+                    padding: 8px 0;
+                    display: block;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 19px;
+                    cursor: pointer;
+                }
+
+                &.sd {
+                    color: #FFFFFF;
+
+                    span {
+                        background-color: #f8b60d;
+                    }
+                }
+
+                &.cd {
+                    span {
+                        background-color: rgba(225, 244, 254, 0.5);
+                    }
+                }
+
+                &.none {
+                    span {
+                        cursor: default;
+                    }
+                }
+
+                &.disabled {
+                    span {
+                        opacity: 0.5;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+
+        &.month-table {
+            height: calc(100% - 90px);
+
+            tr {
+                td {
+                    span {
+                        width: auto;
+                    }
+
+                    &.selected {
+                        span {
+                            display: block;
+                            height: 30px;
+                            border-radius: 4px;
+                            background-color: #f8b60d;
+                            color: #FFFFFF;
+                            padding: 4px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .select-button {
+        position: absolute;
+        width: 100%;
+        height: 42px;
+        border-radius: 0 0 4px 4px;
+        background-color: #f8b60d;
+        bottom: 0px;
+        text-align: center;
+        cursor: pointer;
+        color: #ffffff;
+        padding-top: 8px;
+    }
+}

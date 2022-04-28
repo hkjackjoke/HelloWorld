@@ -1,0 +1,132 @@
+﻿$light-blue: #E7F6FE;
+$sky-blue: #3093CC;
+$mid-blue: #1E77AB;
+$cerulean: #008bce;
+$dark-blue: #125687;
+$light-blue: #007db9;
+$green: #72A657;
+$dark-green: #4fa93c;
+$orange: #fd772e;
+$red: #D92E43;
+$white: #FFFFFF;
+$black: #000000;
+$almost-black: #313131;
+$maxWidth: 1200px;
+$maxWidthSmall: 546px;
+$amber: #f3b107;
+$brown: #525252;
+$offWhite: #f7f7f7;
+$lightGrey: #edeced;
+$grey: #525252;
+$medium-green: #469f35;
+$input-grey: #d2d2d2;
+$input-yellow: #f8b60d;
+$deepblue: #0a4e7f;
+
+@mixin easeQuartOut($time) {
+    -webkit-transition: all $time cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -moz-transition: all $time cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -o-transition: all $time cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    transition: all $time cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+@mixin placeholder-color($color) {
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: $color;
+        letter-spacing: -0.2px;
+    }
+
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $color;
+        letter-spacing: -0.2px;
+    }
+
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $color;
+        letter-spacing: -0.2px;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $color;
+        letter-spacing: -0.2px;
+    }
+
+    &:placeholder {
+        color: $color;
+        letter-spacing: -0.2px;
+    }
+}
+
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(10deg);
+        opacity: 1
+    }
+
+    40% {
+        transform: perspective(400px) rotateX(-3deg)
+    }
+
+    70% {
+        transform: perspective(400px) rotateX(3deg)
+    }
+
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1
+    }
+}
+
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateY(10deg);
+        opacity: 1
+    }
+
+    40% {
+        transform: perspective(400px) rotateY(-3deg)
+    }
+
+    70% {
+        transform: perspective(400px) rotateY(3deg)
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+        opacity: 1
+    }
+}
+
+
+@keyframes bounce {
+    0%,50%,100% {
+        border-width: 3px
+    }
+
+    0% {
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+        filter: alpha(enabled=false);
+        opacity: 1
+    }
+
+    50% {
+        -moz-transform: scale(1.5,1.5);
+        -ms-transform: scale(1.5,1.5);
+        -webkit-transform: scale(1.5,1.5);
+        transform: scale(1.5,1.5);
+        filter: alpha(Opacity=60);
+        opacity: .6
+    }
+
+    100% {
+        -moz-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+        filter: alpha(enabled=false);
+        opacity: 1
+    }
+}

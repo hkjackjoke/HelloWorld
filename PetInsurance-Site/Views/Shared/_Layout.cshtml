@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Organization">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>@ViewBag.Title</title>
+
+    <base href="@ViewBag.BaseHref" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="@ViewBag.Description" />
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="">
+    <meta property="og:title" content="@ViewBag.Title">
+    <meta property="og:image" content="@ViewBag.OGImage">
+    <meta property="og:description" content="@ViewBag.Description">
+    <meta property="og:url" content="@ViewBag.Canonical">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@ViewBag.Title">
+    <meta name="twitter:des" content="@ViewBag.Description">
+    <meta name="twitter:image" content="@ViewBag.OGImage">
+    <meta name="google-site-verification" content="wS-O3nxBZusYK1DpZk30n3-UYaZe7Oq2eUCmlF8MUaM" />
+
+
+    <link rel="canonical" href="@ViewBag.Canonical" />
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            originalLocation: document.location.protocol + '//' +
+                document.location.hostname +
+                document.location.pathname +
+                document.location.search
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        try {
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-WNW5TJ');
+        } catch (e) {
+
+        }
+
+        window.dataLayer = window.dataLayer || [];
+
+    </script>
+    <!-- End Google Tag Manager -->
+    @Styles.Render("~/Content/petquote")
+
+    <link rel="stylesheet" href="https://use.typekit.net/xnx4ddp.css" async>
+    <link rel="apple-touch-icon" sizes="57x57" href="/Content/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/Content/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/Content/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/Content/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/Content/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/Content/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/Content/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/Content/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Content/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Content/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Content/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/Content/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Content/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/Content/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/Content/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#008BCE">
+</head>
+
+<body id="mainbody">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNW5TJ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    @Html.Partial("_Header")
+    <main class="container body-content">
+        @RenderBody()
+    </main>
+
+    @Html.Partial("_Footer")
+
+    <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+    <script type='text/javascript'>
+        (function () {
+            var g = function (e, h, f, g) {
+                this.get = function (a) { for (var a = a + "=", c = document.cookie.split(";"), b = 0, e = c.length; b < e; b++) { for (var d = c[b]; " " == d.charAt(0);)d = d.substring(1, d.length); if (0 == d.indexOf(a)) return d.substring(a.length, d.length) } return null };
+                this.set = function (a, c) { var b = "", b = new Date; b.setTime(b.getTime() + 6048E5); b = "; expires=" + b.toGMTString(); document.cookie = a + "=" + c + b + "; path=/; " };
+                this.check = function () { var a = this.get(f); if (a) a = a.split(":"); else if (100 != e) "v" == h && (e = Math.random() >= e / 100 ? 0 : 100), a = [h, e, 0], this.set(f, a.join(":")); else return !0; var c = a[1]; if (100 == c) return !0; switch (a[0]) { case "v": return !1; case "r": return c = a[2] % Math.floor(100 / c), a[2]++ , this.set(f, a.join(":")), !c }return !0 };
+                this.go = function () { if (this.check()) { var a = document.createElement("script"); a.type = "text/javascript"; a.src = g; document.body && document.body.appendChild(a) } };
+                this.start = function () { var t = this; "complete" !== document.readyState ? window.addEventListener ? window.addEventListener("load", function () { t.go() }, !1) : window.attachEvent && window.attachEvent("onload", function () { t.go() }) : t.go() };
+            };
+            try { (new g(100, "r", "QSI_S_ZN_8IIi1Wf6UaV86zz", "https://zn8iii1wf6uav86zz-southerncross.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_8IIi1Wf6UaV86zz")).start() } catch (i) { }
+        })();
+    </script><div id='ZN_8IIi1Wf6UaV86zz'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--END WEBSITE FEEDBACK SNIPPET-->
+
+    @if (HttpContext.Current.IsDebuggingEnabled)
+    {
+        @Scripts.Render("~/bundles/petquote-dev")
+    }
+    else
+    {
+        @Scripts.Render("~/bundles/petquote")
+    }
+</body>
+</html>

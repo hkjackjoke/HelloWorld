@@ -1,0 +1,13 @@
+﻿@using PetInsurance_Site.Models
+@model BrowserDetectionModel
+
+@{
+    ViewBag.BaseHref = "/petquote";
+    ViewBag.Title = "Get a cat and dog insurance quote | Southern Cross Pet Insurance";
+    ViewBag.Description = "";
+    ViewBag.Keywords = "";
+    ViewBag.OGImage = "";
+    ViewBag.Canonical = "www.southerncrosspet.co.nz/quote";
+}
+
+@Html.Partial("_BrowserOSError", Model)

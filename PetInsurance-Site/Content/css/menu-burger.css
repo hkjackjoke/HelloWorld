@@ -1,0 +1,55 @@
+﻿.menu-burger {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 38px;
+  display: none;
+  left: 15px;
+  top: 7px;
+  z-index: 100;
+}
+.menu-burger > .menu-line {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #FFFFFF;
+  -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.menu-burger > .menu-line1 {
+  top: 10px;
+  left: 10px;
+}
+.menu-burger > .menu-line2 {
+  top: 16px;
+  left: 10px;
+}
+.menu-burger > .menu-line3 {
+  top: 22px;
+  left: 10px;
+}
+.menu-burger > .label {
+  font-size: 10px;
+  font-weight: 400;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  line-height: 1;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  width: 31px;
+  opacity: 1;
+  -webkit-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-family: Arial, sans-serif;
+}
+@media all and (max-width: 1023px) {
+  .menu-burger {
+    display: block;
+  }
+}
