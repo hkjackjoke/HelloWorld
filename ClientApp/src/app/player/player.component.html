@@ -1,0 +1,24 @@
+<h1 id="tableLabel">Football Players</h1>
+<p *ngIf="!players"><em>Loading...</em></p>
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="players">
+  <thead>
+    <tr>
+      <th>Shirt No</th>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Appearances</th>
+      <th>Goals</th>
+      <th>Goals per match</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{ player.shirtNo }}</td>
+      <td>{{ player.name }}</td>
+      <td>{{ player.positionName }}</td>
+      <td>{{ player.appearances }}</td>
+      <td>{{ player.goals }}</td>
+      <td>{{ player.goalsPerMatch }}</td>
+    </tr>
+  </tbody>
+</table>
