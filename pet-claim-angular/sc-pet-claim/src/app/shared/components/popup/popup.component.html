@@ -1,0 +1,79 @@
+<div class="popup {{popupType === 'time-out' ? 'time-out' : ''}} ">
+    <div class="bg"></div>
+    <div class="notice-box {{popupType}} {{popupType === 'free-cover-important' ? 'full-size ' : ''}}">
+
+
+
+        <h2 *ngIf="popupType !== 'max-upload-size'">{{title}}</h2>
+        <h1 *ngIf="popupType === 'max-upload-size'">{{title}}</h1>
+        <p *ngIf="popupType !== 'free-cover-important' && popupType !== 'free-cover-max' && popupType !== 'free-cover-min' && popupType !== 'max-upload-size' && popupType !== 'no-history-records'">
+            {{copy}}
+        </p>
+        <p *ngIf="popupType === 'max-upload-size'" [innerHTML]="copy">           
+        </p>
+        <div class="body"  *ngIf="popupType === 'no-history-records'" >  
+            You haven't attached any 
+            <div class="bold" >vet notes</div> or
+            <div class="bold" >history records</div> 
+            for this claim. You can still submit your claim without these, but we may need to contact your vet to provide more information, if so your claim will take longer to process.
+            <p >If you do have a copy, please attach the pages relevant to the items you're claiming for.</p>         
+        </div>
+        <div *ngIf="popupType === 'free-cover-important'">
+            <ul>
+                <li>Routine healthcare items such as shampoo, nail clipping, teeth descaling, food, worm and flea treatments are not covered</li>
+                <li>A $100 excess applies for each separate illness or injury</li>
+                <li>You can claim up to a maximum of $2,000 in total</li>
+                <li>Claims need to be submitted within 30 days of your 6 weeks Free Cover expiring</li>
+                <li>A 5 day stand down period applies for illness</li>
+                <li>Claims must be for treatment carried out during your 6 weeks Free Cover period</li>
+            </ul>
+             <p>
+                Read the <a href="https://www.southerncrosspet.co.nz/free-cover/terms-conditions" target="_blank">terms and conditions</a> 
+                for more detail, including exclusions.
+             </p>
+        </div>
+        <div *ngIf="popupType === 'free-cover-max'">
+             <p>
+                You can claim up to a maximum of $2,000 in total for treatment taking place during your 
+                6 weeks Free Cover period (a $100 excess applies to each separate illness or injury).
+             </p>
+        </div>
+        <div *ngIf="popupType === 'free-cover-min'">
+            <p>
+                A $100 excess applies to each separate illness or injury. As your claim is under $100 you won’t be eligible for any payment.
+            </p>
+       </div>
+        <div class="buttons" *ngIf="popupType === 'add-another-invoice'">
+            <div class="button outline" (click)="buttonClick(1)">Add another attachment</div>
+            <div class="button" (click)="buttonClick(2)">Next Step <span class="chevron-next"></span></div>
+        </div>
+        <div class="buttons {{popupType === 'no-history-records' ? 'leftalign' : ''}}" *ngIf="popupType === 'no-history-records'">
+            <div class="button {{popupType === 'no-history-records' ? 'inline' : ''}} outline" (click)="buttonClick(1)">Add a file</div>
+            <div class="button {{popupType === 'no-history-records' ? 'inline' : ''}}" (click)="buttonClick(2)">Next step </div>
+        </div>
+        <div class="buttons" *ngIf="popupType === 'delete-invoice'">
+            <div class="button outline" (click)="buttonClick(1)">Cancel</div>
+            <div class="button" (click)="buttonClick(2)">Delete Invoice</div>
+        </div>
+        <div class="buttons" *ngIf="popupType === 'delete-last-invoice'">
+            <div class="button outline" (click)="buttonClick(1)">Cancel</div>
+            <div class="button" (click)="buttonClick(2)">OK, got it</div>
+        </div>
+        <div class="buttons" *ngIf="popupType === 'ajax-error'">
+            <div class="button" (click)="buttonClick(1)">Close</div>
+        </div>        
+        <div class="buttons-max-upload-size" *ngIf="popupType === 'max-upload-size'">
+            <div class="button" (click)="buttonClick(1)">OK, got it</div>
+        </div>
+        <div class="buttons" *ngIf="
+        popupType === 'time-out'
+        || popupType === 'free-cover-min' 
+        || popupType === 'free-cover-max' 
+        || popupType === 'free-cover-important'
+        || popupType === 'file-select-error'
+        ">
+            <div class="button" (click)="buttonClick(1)">OK, got it</div>
+        </div>
+        <div class="close" (click)="buttonClick(1)"></div>
+    </div>
+</div>

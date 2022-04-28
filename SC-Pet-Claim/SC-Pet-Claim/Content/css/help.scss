@@ -1,0 +1,81 @@
+﻿@import "variables.scss";
+
+.help-container {
+
+    .w-3 {
+
+        @media all and (max-width: 820px) {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .col {
+
+            @media all and (max-width: 1150px) {
+                height: 154px;
+            }
+
+            @media all and (max-width: 990px) {
+                height: 214px;
+            }
+
+            @media all and (max-width: 820px) {
+                height: auto;
+                float: none;
+                position: relative;
+                width: 100%;
+                margin: 0 0 10px 0;
+                display: block;
+            }
+
+            @media all and (max-width: 480px) {
+                padding: 20px;
+            }
+
+            .icon {
+
+                @media all and (max-width: 990px) {
+                    float: none;
+                    position: relative;
+                    margin: 0 auto 15px auto;
+                }
+
+                @media all and (max-width: 820px) {
+                    float: left;
+                    position: static;
+                    margin-top: -5px;
+                    margin-bottom: 0;
+                    margin-right: 21px;
+                }
+            }
+
+            .clear {
+                display: block;
+            }
+
+            .copy {
+
+                @media all and (max-width: 990px) {
+                    float: none;
+                    position: relative;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                @media all and (max-width: 820px) {
+                    float: left;
+                    position: static;
+                    width: calc(100% - 73px);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:650px) {
+    .show-cart {
+        .help-container {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<div class="next-back">
+    <div [class]="allowBack ? 'button outline back' : 'button outline back disabled'" (click)="back()">
+        <span class="chevron-back"></span>
+        Back
+    </div>
+    <div [class]="allowNext ? (isFocused ? 'button next focused' : 'button next') : 'button next disabled'" (click)="next()">
+        {{nextLabel}}
+        <span class="chevron-next" *ngIf="nextArrow"></span>
+    </div>
+    <input type="text" (keydown)="checkEnter($event)"   (focusout)="onTabOut()" (focusin)="onTabIn()" tabindex="{{tabindexValue}}">
+</div>

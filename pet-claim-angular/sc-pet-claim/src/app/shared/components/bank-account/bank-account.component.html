@@ -1,0 +1,18 @@
+
+<div [class]="error ? 'bank-number-input error input-container' : 'bank-number-input input-container' ">
+  <div class="bank">
+    <input data-role="none" type="text" [tabindex]="tabindexValue" #bank maxlength="2" [(ngModel)]="bankValue" inputmode="numeric" pattern="[0-9]*" (keyup)="onInput($event,1)" appNumberOnly (paste)="onPaste($event)" placeholder="00">
+  </div>
+  <div class="branch">
+    <input data-role="none" type="text" [tabindex]="tabindexValue+1" #branch maxlength="4" [(ngModel)]="branchValue" inputmode="numeric" pattern="[0-9]*" (keyup)="onInput($event,2)" appNumberOnly (paste)="onPaste($event)" placeholder="0000">
+  </div>
+  <div class="account">
+    <input data-role="none" type="text" [tabindex]="tabindexValue+2" #account maxlength="7" [(ngModel)]="accountValue" inputmode="numeric" pattern="[0-9]*" (keyup)="onInput($event,3)" appNumberOnly (paste)="onPaste($event)" placeholder="0000000">
+  </div>
+  <div class="suffix">
+    <input data-role="none" type="text" [tabindex]="tabindexValue+4" #suffix maxlength="2" [(ngModel)]="suffixValue" inputmode="numeric" pattern="[0-9]*" (keyup)="onInput($event,4)" (focusout)="onInput($event,5)" appNumberOnly (paste)="onPaste($event)" placeholder="00">
+  </div>
+  <span class="icon-clear" *ngIf="complete" (click)="clear()"></span>
+</div>
+<div class="error-message" *ngIf="error">{{errorMessage}}</div>
+

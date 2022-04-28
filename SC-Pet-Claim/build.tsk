@@ -1,0 +1,32 @@
+REMOVE **/bin
+REMOVE **/obj
+
+EXITIF $ACTION -eq 'clean'
+
+Write-Host "Build the Angular code, angular.json & package.json direct the output to SC-Pet-Claim/SC-Pet-Claim/Scripts/libs"
+
+REFRSH $WORKSPACE/SC-Pet-Claim/favicon.ico $WORKSPACE/SC-Pet-Claim/Scripts/libs
+
+cd ..\pet-claim-angular\sc-pet-claim
+
+Write-Host "Cannot use Invoke-Expression with NPM in Windows Server 2019 as warning messages throw exceptions"
+& $SOLUTIONROOT\npm-server-2019.ps1
+
+dir $WORKSPACE/SC-Pet-Claim/Scripts/libs | Format-Table Name,Length
+
+cd $WORKSPACE
+
+Write-Host "Now build the ASP.NET solution"
+
+if ( $env:AZURE_DEVOPS_EXT_PAT ) { MD5MSK $env:AZURE_DEVOPS_EXT_PAT }
+
+MSTOOL
+
+if ( $env:AZURE_DEVOPS_EXT_PAT ) { & "$env:NUGET_PATH" sources add -name "Southern Cross" -source "https://pkgs.dev.azure.com/schsnz/_packaging/SouthernCross%40Local/nuget/v3/index.json" -username "." -password "$env:AZURE_DEVOPS_EXT_PAT" ; cmd /c "exit 0"}
+
+try { & "$env:NUGET_PATH" restore "$(pwd)\SC-Pet-Claim.sln" -Verbosity Detailed -NonInteractive 2>&1 } catch { Write-Host "`nException occurred: check for 401 auth errors." ; $_.Exception.Message }
+
+& "$env:MS_BUILD" "$(pwd)\SC-Pet-Claim.sln" /nologo /nr:false /p:Platform="any cpu" /p:configuration="release" /p:VisualStudioVersion="16.0" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true 2>&1
+
+# Cater for directory variation of Freecover compared with other components
+REFRSH .\SC-Pet-Claim\obj\Release\Package\ .\obj\Release\Package\

@@ -1,0 +1,67 @@
+<section class="claim-section npb">
+    <h1 *ngIf="invoices.length == 0 || (selectedInvoiceIndex == 0 && editInvoice)">Next, enter your invoice details</h1>
+    <h1 *ngIf="invoices.length > 0 && !(selectedInvoiceIndex == 0 && editInvoice)">Add another invoice for {{petName}}</h1>
+    <p class="txt-center">
+        <strong>
+            <div class="txt-inline" *ngIf="invoices.length == 0 || (selectedInvoiceIndex == 0 && editInvoice)">If you have multiple invoices, you can add more once you’ve added this one.
+                <app-help-icon [copy]="invoiceTip" helpId="invoiceTip"></app-help-icon>
+            </div>
+            <div class="txt-inline" *ngIf="invoices.length > 0 && !(selectedInvoiceIndex == 0 && editInvoice)">You can view and edit any added invoices in the cart</div>
+        </strong>
+        
+    </p>
+    <div *ngIf="!showErrorMessage" class="sub-title-spacer"></div>
+</section>
+<app-error-message specificType="invoice-details" (closeError)="showErrorMessage = false" *ngIf="showErrorMessage"></app-error-message>
+<section class="claim-section npt">
+    <fieldset>
+        <label>Treatment date</label>
+        <div class="input">
+            <app-text-input 
+                [tabindexValue]="1" 
+                interactionName="Treatment date"
+                type="calendar" 
+                [(ngModel)]="treatmentDate" 
+                [endRange]="maxDate" 
+                (calendarSelect)="focusNext()"
+                (inputChange)="validate($event)">
+            </app-text-input>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <label>Vet or treatment provider  <app-help-icon [copy]="providerTip" helpId="providerTip"></app-help-icon></label>
+        <div class="input">
+            <app-text-input 
+                type="search"
+                interactionName="Vet or treatment provider"
+                #vetSpecialistInput
+                [searchItems]="searchItems"
+                [tabindexValue]="2" 
+                maxlength="50" 
+                placeholder="eg: City Vets, Hamilton" 
+                [(ngModel)]="vetSpecialist" 
+                (inputChange)="validate($event)">
+            </app-text-input>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <label>
+            Invoice total
+            <app-help-icon [copy]="freeCover ? claimAmountCopyFree : claimAmountCopy" helpId="claimAmount"></app-help-icon>
+        </label>
+        <div class="input">
+            <app-text-input 
+            interactionName="Invoice total"
+            [tabindexValue]="3" 
+            type="currency" 
+            [preventPaste]="false"
+            [(ngModel)]="claimAmount" 
+            (inputChange)="validate($event)">
+            </app-text-input>
+        </div>
+    </fieldset>
+</section>
+<app-next-back (goNext)="next()" (goBack)="back()" [nextLabel]="nextLabel" [allowNext]="complete" [nextArrow]="!editInvoice"></app-next-back>
+<div #mobileCheck class="mobileCheck"></div>

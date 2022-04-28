@@ -1,0 +1,100 @@
+﻿.apply-steps {
+    position: relative;
+    width: calc(170px*4);
+    margin: 0 auto;
+    top: 31px;
+
+
+    .step {
+        float: left;
+        width: 160px;
+        text-align: center;
+        color: #8e8e8e;
+        font-size: 14px;
+
+
+        > div {
+            position: relative;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            border: 2px solid #d8d8d8;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1;
+            color: #d8d8d8;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            padding-top: 5px;
+        }
+
+        .title {
+            br {
+                display: none;
+            }
+            line-height: 1.29;
+        }
+
+        &.current {
+            color: #525252;
+
+            > div {
+                border: 2px solid #4fa93c;
+                color: #4fa93c;
+            }
+        }
+
+        &.complete {
+            color: #8e8e8e;
+
+
+            > div {
+                background: #f7f7f7 url("/make-a-claim/Content/images/icon-tick-copy-5.svg") no-repeat center;
+                color: #f7f7f7;
+                border: solid 2px #4fa93c;
+                background-color: #4fa93c;
+
+                span {
+                    display: none !important;
+                }
+            }
+        }
+
+        &.can-view {
+        }
+    }
+
+    .line {
+        float: left;
+        height: 2px;
+        background: #d8d8d8;
+        width: 131px;
+        margin: 13px -65px;
+    }
+
+    @media all and (max-width:990px) {
+        width: calc(77px*4);
+        top: 20px;
+
+        .step {
+            width: 50px;
+            text-align: center;
+
+            .title {
+                display: block;
+                width: 80px;
+                margin: 0 -15px;
+
+                br {
+                    display: block;
+                }
+            }
+        }
+
+        .line {
+            width: 54px;
+            margin: 13px -10px;
+        }
+    }
+}

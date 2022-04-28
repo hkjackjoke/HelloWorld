@@ -1,0 +1,290 @@
+﻿.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    width: 100%;
+
+    .bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(6, 32, 52, 0.85);
+    }
+
+    .notice-box {
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        margin-left: -167px;
+        width: 335px;
+        height: 279px;
+        padding: 35px 20px 25px;
+        border-radius: 4px;
+        background-color: #ffffff;
+
+        &.no-history-records {
+            .body {
+                text-align: center;
+                margin-top: 10px;
+
+                .bold {
+                    font-weight: 500;
+                    display: inline;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        &.add-another-invoice {
+            height: 310px;
+        }
+
+
+        h2 {
+            font-size: 22px;
+            font-weight: 500;
+            color: #008bce;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 500;
+            color: #008bce;
+            text-align: center;
+            margin: 0;
+
+            @media all and (max-width:767px) {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.38;
+            text-align: center;
+        }
+
+        .buttons {
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+
+            .button {
+                margin-top: 10px;
+            }
+        }
+
+        .buttons-max-upload-size {
+            position: absolute;
+            width: 220px;
+            margin-left: 240px;
+            left: 20px;
+            right: 20px;
+            bottom: 52px;
+
+            .button {
+                margin-top: 10px;
+            }
+
+            @media all and (max-width:767px) {
+                position: absolute;
+                left: 20px;
+                width: auto;
+                margin-left: 0px;
+                right: 20px;
+                bottom: 43px;
+
+                .button {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .close {
+            background: url(/make-a-claim/Content/images/x-grey.png) no-repeat center;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: 15px;
+            top: 15px;
+            cursor: pointer;
+        }
+
+        &.no-history-records,
+        &.free-cover-max,
+        &.free-cover-min,
+        &.free-cover-important {
+            width: 740px;
+            margin-left: -370px;
+            height: auto;
+            padding: 45px 120px 63px;
+
+            @media all and (max-width:767px) {
+                top: 20px;
+                padding: 45px 20px 42px;
+                width: calc(100% - 40px);
+                margin-left: 20px;
+                left: auto;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            ul {
+                padding: 0 0 0 10px;
+            }
+
+            p {
+                text-align: left;
+
+                &.center {
+                    text-align: center;
+                }
+            }
+
+            .buttons {
+                position: relative;
+                left: auto;
+                right: auto;
+                bottom: auto;
+
+                &.leftalign {
+                    left: 20px;
+                    right: 20px;
+                }
+
+
+
+                .button {
+                    width: 220px;
+                    margin: 35px auto 0;
+
+                    &.inline {
+                        display: inline-block;
+                        // margin-right: 10px;
+                        margin: 0px auto 0 10px;
+
+                        @media all and (max-width:480px) {
+                            margin: 15px auto 0 4px;
+                            display: block;
+                            width: 270px;
+                        }
+                    }
+
+                    @media all and (max-width:480px) {
+                        width: auto;
+                    }
+                }
+            }
+
+            &.full-size {
+                @media all and (max-width:480px) {
+                    padding: 40px 20px 20px;
+                    top: 0;
+                    left: 0;
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0;
+
+                    .buttons {
+                        position: absolute;
+                        bottom: 20px;
+                        width: calc(100% - 40px);
+
+                        .button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.max-upload-size {
+            width: 740px;
+            padding: 35px 110px 25px;
+            margin-left: -370px;
+
+            @media all and (max-width:767px) {
+                top: 20px;
+                padding: 45px 20px 42px;
+                width: calc(100% - 40px);
+                margin-left: 20px;
+                left: auto;
+            }
+        }
+
+        &.free-cover-important {
+            line-height: 1.38;
+            padding: 50px 125px 63px;
+
+            h2 {
+                margin: 0 0 -5px 0;
+            }
+
+            ul {
+                margin: 17px 0 21px;
+
+                li {
+                    margin: 0 0 7px;
+                }
+            }
+
+            .buttons {
+                margin-top: -3px;
+            }
+        }
+
+        &.free-cover-max {
+
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    &.time-out {
+        .notice-box {
+            position: relative;
+            width: 100%;
+            left: 0;
+            max-width: 740px;
+            margin: calc(50vh - 279px) auto 0;
+            height: 279px;
+            padding: 60px 20px 25px;
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .buttons {
+                position: relative;
+                left: auto;
+                right: auto;
+                bottom: auto;
+                width: 220px;
+                margin: 40px auto 0;
+
+                .button {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

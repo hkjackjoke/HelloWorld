@@ -1,0 +1,155 @@
+﻿.pet-animation {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    right: 0;
+    bottom: -15px;
+
+    @media all and (max-width: 768px) {
+        bottom: 0;
+    }
+
+    .cat {
+        position: absolute;
+        left: -35px;
+        width: 137px;
+        height: 92px;
+        top: -12px;
+        background-image: url("/make-a-claim/Content/images/animations/cat-sprites.png");
+        background-size: 548px 14904px;
+        background-repeat: no-repeat;
+        transform: scale(1.5, 1.5);
+
+        @media all and (max-width: 768px) {
+            top: 0;
+            background-image: url("/make-a-claim/Content/images/animations/cat-sprites.png");
+        }
+    }
+
+    .dog {
+        background-image: url("/make-a-claim/Content/images/animations/dog-sprites@2x.png");
+        position: absolute;
+        margin-left: 0px;
+        width: 86px;
+        top: -20px;
+        height: 111px;
+        background-position: 0px 0px;
+        background-size: 10406px 444px;
+        background-repeat: no-repeat;
+        transform: scale(1.5, 1.5);
+        left: -35px;
+
+        @media all and (min-width: 769px) {
+            background-image: url("/make-a-claim/Content/images/animations/dog-sprites@2x.png");
+            top: -24px;
+        }
+    }
+
+    &.remove {
+        .dog {
+            top: 7px;
+
+            @media all and (min-width: 769px) {
+                top: -13px;
+                left: -2px;
+            }
+        }
+    }
+
+    &.full {
+        width: auto;
+        height: auto;
+        right: unset;
+
+        .cat {
+            transform: none;
+            top: unset;
+            left: unset;
+            margin: auto;
+            position: relative;
+        }
+
+        .dog {
+            transform: none;
+            left: unset;
+            margin: auto;
+            position: relative;
+        }
+    }
+
+
+    &.petItem {
+        .dog {
+            @media all and (min-width: 769px) {
+                top: -10px;
+            }
+
+            @media all and (max-width: 768px) {
+                top: 10px;
+            }
+        }
+    }
+
+    &.submit {
+        .cat {
+            top: -23px;
+            transform: none;
+        }
+
+        .dog {
+            left: 6px;
+            transform: none;
+        }
+    }
+
+    &.large-circle {
+        .cat {
+            left: 50%;
+            margin-left: -60px;
+            transform: scale(0.8, 0.8);
+
+            @media all and (max-width: 768px) {
+                margin-top: 5px;
+                margin-left: -35px;
+            }
+        }
+
+        .dog {
+            left: 50%;
+            margin-left: -35px;
+            transform: scale(0.8, 0.8);
+            top: -7px;
+
+            @media all and (max-width: 768px) {
+                margin-top: -2px;
+                margin-left: -35px;
+            }
+        }
+    }
+
+    &.more-circle {
+        .cat {
+            top: -22px;
+            left: -35px;
+            transform: scale(0.55, 0.55);
+
+            @media all and (max-width: 768px) {
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+        }
+
+        .dog {
+            top: -20px;
+            left: -10px;
+            transform: scale(0.55, 0.55);
+
+            @media all and (max-width: 768px) {
+                top: -36px;
+                left: -29px;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+}

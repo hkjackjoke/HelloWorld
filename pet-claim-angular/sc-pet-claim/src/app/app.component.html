@@ -1,0 +1,12 @@
+<app-header></app-header>
+<app-progress-bar></app-progress-bar>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<app-shopping-cart></app-shopping-cart>
+<re-captcha 
+#captchaRef
+size="invisible"
+(resolved)="resolved($event)"
+[siteKey]="recaptchaKey"
+></re-captcha>

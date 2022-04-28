@@ -1,0 +1,12 @@
+<div [class]="value ? 'check-box checked' : 'check-box'" (click)="toggleCheck()">
+    <div [class]="isFocused ? 'box focused' : 'box'">
+        <div></div>
+        <input type="text" (keydown)="checkEnter($event)" (focusout)="onTabOut()" (focusin)="onTabIn()" tabindex="{{tabindexValue}}">
+    </div>
+    <div class="label">
+        <div *ngIf="title !== ''" class="title">{{title}}</div>
+        <div *ngIf="description !== ''" class="description">{{description}}</div>
+        <div *ngIf="html !== ''" class="description"  [innerHTML]="html  | safe: 'html'"></div>
+    </div>
+
+</div>

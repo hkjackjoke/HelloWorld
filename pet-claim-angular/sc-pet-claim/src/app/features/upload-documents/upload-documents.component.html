@@ -1,0 +1,83 @@
+<section class="claim-section npb">
+    <div class="intro">
+        <h1>Upload your documents</h1>
+        <p>
+            Please upload the receipts and invoices that relate to your claim.<br>
+            <span *ngIf="enabledHistoryUpload">
+                We also need you to provide your pet’s vet history records relating to the details of this claim.
+                <app-help-icon [copy]="uploadHistoryCopy" helpId="uploadHistory"></app-help-icon>
+            </span>
+        </p>
+    </div>
+    <div class="upload-invoices">
+        <h2>
+            Upload your invoices first
+        </h2>
+        <p>
+            Invoices should show:
+        </p>
+        <ul>
+            <li>Invoice number</li>
+            <li>Treatment date</li>
+            <li>Pet’s name</li>
+            <li>Vet or treatment provider</li>
+            <li>Treatment cost</li>
+        </ul>
+        <p>
+            You can add up to {{uploadTotal}} attachments (max {{maxUploadSize}}mb each)  of the following file types:
+        </p>
+        <p>
+            <strong>DOC, DOCX, PDF, JPEG, JPG or PNG</strong>
+        </p>
+        <div class="receipts">
+            <p>
+                Please make sure EFTPOS receipts don’t cover any information on the invoice or receipt.
+                <app-help-icon [copy]="eftposReceiptsCopy" helpId="eftposReceipts"></app-help-icon>
+            </p>
+            <div class="receipts-invoices">
+
+            </div>
+        </div>
+        <hr>
+        <div class="document-list clearfix">
+            <app-upload-multiple-files 
+            fieldName="invoice"
+            interactionName="Upload invoices"
+            (fileSelect)="invoiceFileSelect($event)"
+            (fileRemove)="invoiceFileRemove($event)"
+            (fileSelectError)="fileSelectError()"
+             [maxUploadSize]="maxUploadSize" [fileList]="invoiceUploads" [uploadTotal] ="uploadTotal" [uploadType]="uploadFileTypeInvoice"></app-upload-multiple-files >
+        </div>
+    </div>
+</section>
+<app-error-message (closeError)="closeError(1)" *ngIf="showMaxInvoiceError" type="upload-max" specificType="first"></app-error-message>
+<app-error-message (closeError)="closeError(3)" *ngIf="showInvoiceError" type="upload-size"  [maxUploadSize]="maxUploadSize" specificType="first"></app-error-message>
+<section class="claim-section npt">
+        <div class="history-upload" *ngIf="enabledHistoryUpload">
+            <hr>
+            <h2>
+                Next, upload the vet's history records
+            </h2>
+            <p>
+                You only need to attach the relevant pages of your vet's notes. They should include details of the diagnosis and treatment for this pet and claim.
+            </p>
+            <p>
+                You can add up to {{uploadTotal}} attachments (max {{maxUploadSize}}mb each)  of the following file types:
+            </p>
+            <p>
+                <strong>DOC, DOCX, PDF, JPEG, JPG or PNG</strong>
+            </p>
+            <div class="document-list clearfix">
+                <app-upload-multiple-files
+                fieldName="history"
+                interactionName="Upload history records"
+                (fileSelect)="historyFileSelect($event)"
+                (fileRemove)="historyFileRemove($event)"
+                (fileSelectError)="fileSelectError()"
+                 [maxUploadSize]="maxUploadSize" [fileList]="historyUploads" [uploadTotal] ="uploadTotal" [uploadType]="uploadFileTypeHistory"></app-upload-multiple-files>
+            </div>
+        </div>
+</section>
+<app-error-message (closeError)="closeError(2)" *ngIf="showMaxHistoryError" type="upload-history-max"></app-error-message>
+<app-error-message (closeError)="closeError(4)" *ngIf="showHistoryError" [maxUploadSize]="maxUploadSize" type="upload-size"></app-error-message>
+<app-next-back (goNext)="next()" (goBack)="back()" [allowNext]="complete"></app-next-back>

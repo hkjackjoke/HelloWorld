@@ -1,0 +1,92 @@
+<div class="error-message-box {{specificType}}" *ngIf="type === 'default'">
+    <div class="icon">
+        <div class="exclamation"></div>
+    </div>
+    <div class="label">
+        Maximum reached for this claim
+        <div class="mobile-copy">
+            You’ve reached the maximum number of invoice details you can add for this claim. 
+            If you have more items to claim for, please <a (click)="review()">complete and submit</a> the claim and 
+            then start a new claim.
+        </div>
+    </div>
+    <div class="arrow">
+        <div class="chevron-grey"></div>
+    </div>
+    <div class="copy">
+        You’ve reached the maximum number of invoice details you can add for this claim. 
+        If you have more items to claim for, please <a (click)="review()">complete and submit</a> the claim and 
+        then start a new claim.
+    </div>
+    <div class="close">
+        <div class="close-icon" (click)="close()"></div>
+    </div>
+</div>
+<div class="error-message-box red upload-size {{specificType}}" *ngIf="type === 'upload-size'">
+    <div class="icon">
+        <div class="exclamation"></div>
+    </div>
+    <div class="label">
+        Upload failed
+        <div class="mobile-copy">
+            File size exceeds the max file size of {{maxUploadSize}}mb. Please compress the file and try again.
+        </div>
+    </div>
+    <div class="arrow">
+        <div class="chevron-grey"></div>
+    </div>
+    <div class="copy">
+        File size exceeds the max file size of {{maxUploadSize}}mb. Please compress the file and try again.
+    </div>
+    <div class="close">
+        <div class="close-icon" (click)="close()"></div>
+    </div>
+</div>
+
+<div class="error-message-box upload-size upload-max {{specificType}}" *ngIf="type === 'upload-max'">
+    <div class="icon">
+        <div class="exclamation"></div>
+    </div>
+    <div class="label">
+        Document limit reached
+        <div class="mobile-copy">
+            You’ve reached the maximum number of invoice documents you can attach for this claim. Please add one file for every invoice item you entered.
+        </div>
+    </div>
+    <div class="arrow">
+        <div class="chevron-grey"></div>
+    </div>
+    <div class="copy">
+        You’ve reached the maximum number of invoice documents you can attach for this claim. Please add one file for every invoice item you entered.
+    </div>
+    <div class="close">
+        <div class="close-icon" (click)="close()"></div>
+    </div>
+</div>
+<div class="error-message-box upload-size upload-max {{specificType}}" *ngIf="type === 'upload-history-max'">
+    <div class="icon">
+        <div class="exclamation"></div>
+    </div>
+    <div class="label">
+        Document limit reached
+        <div class="mobile-copy">
+            You’ve reached the maximum number of history records you can attach for this claim. Please add one file for every invoice item you entered.
+        </div>
+    </div>
+    <div class="arrow">
+        <div class="chevron-grey"></div>
+    </div>
+    <div class="copy">
+        You’ve reached the maximum number of history records you can attach for this claim. Please add one file for every invoice item you entered.
+    </div>
+    <div class="close">
+        <div class="close-icon" (click)="close()"></div>
+    </div>
+</div>
+
+<div class="error-message-box free-cover-info" *ngIf="type === 'free-cover-info'">
+    <div>
+        Before you begin, check out the <a (click)="freeCoverInfo()">important things to know about claiming</a> including the 
+        <a href="https://www.southerncrosspet.co.nz/free-cover/terms-conditions" target="_blank">Free Cover terms and conditions</a>.
+    </div>
+</div>

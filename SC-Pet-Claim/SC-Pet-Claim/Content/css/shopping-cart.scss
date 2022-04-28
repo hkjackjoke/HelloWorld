@@ -1,0 +1,473 @@
+﻿@import "variables.scss";
+
+.shopping-cart {
+
+    .bg {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(6, 32, 52, 0.85);
+        opacity: 0;
+        @include easeInOutQuart(500ms,opacity);
+    }
+
+    .cart-panel {
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        right: -360px;
+
+        &.tran-in {
+            right: 0;
+        }
+
+        border: solid 1px #eeeeee;
+        background-color: #ffffff;
+        width: 350px;
+        height: 100%;
+        @include easeInOutQuart(500ms,right);
+
+        &.no-animate {
+            @include easeNone();
+        }
+
+        .circle-arrow {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+            position: absolute;
+            top: 24px;
+            left: -25px;
+            background: #e7f6fe url('/make-a-claim/Content/images/icon-chevron-grey-next.svg') no-repeat center center;
+            cursor: pointer;
+        }
+
+        .hide-claims {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+
+            span {
+                background: url("/make-a-claim/Content/images/icon-chevron-grey.svg") no-repeat center center;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                transform: rotate(-90deg);
+                position: relative;
+                top: 5px;
+                @include easeInOutQuart(500ms,transform);
+            }
+        }
+
+        .title {
+            padding: 96px 25px 10px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #007db9;
+            border-bottom: solid 1px #eaeaea;
+
+            &.no-border {
+                border-bottom: none;
+            }
+
+            span {
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                background-color: #007db9;
+                border-radius: 50%;
+                font-size: 12px;
+                font-weight: 600;
+                color: #FFFFFF;
+                text-align: center;
+                position: relative;
+                top: -3px;
+            }
+
+            div {
+                font-size: 20px;
+                font-weight: 400;
+                color: #525252;
+            }
+        }
+
+        .cart-base {
+            box-shadow: 0 -2px 7px 0 rgba(0, 0, 0, 0.12);
+            margin-top: 20px;
+            height: 378px;
+            background: #FFFFFF;
+
+            .total {
+                position: relative;
+                background-color: #f7f7f7;
+                height: 56px;
+                font-size: 18px;
+                font-weight: 500;
+                border-bottom: solid 1px #eaeaea;
+
+                .label {
+                    position: absolute;
+                    left: 21px;
+                    top: 15px;
+                }
+
+                .value {
+                    position: absolute;
+                    right: 20px;
+                    top: 15px;
+                }
+            }
+
+            .what-next {
+                font-size: 18px;
+                font-weight: 500;
+                text-align: center;
+                padding: 16px 0 27px;
+                color: #007db9;
+
+                &.small-padding {
+                    padding: 8px 0 8px;
+                }
+            }
+
+            .buttons {
+                padding: 0 18px 0 16px;
+
+                .button {
+                    width: 100%;
+                    padding: 9px 0;
+
+                    &.add {
+                        margin-bottom: 16px
+                    }
+
+                    &.next {
+                    }
+                }
+            }
+        }
+
+        .invoices {
+            .invoice {
+                border: solid 1px #eaeaea;
+                border-bottom: none;
+                height: 107px;
+
+                .name-price {
+                    position: relative;
+                    height: 45px;
+                    font-weight: 500;
+
+                    .name {
+                        position: absolute;
+                        left: 21px;
+                        top: 17px;
+                        width: calc(100% - 140px);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .price {
+                        position: absolute;
+                        right: 20px;
+                        top: 17px;
+                    }
+                }
+
+                .date-edit {
+                    width: 100%;
+                    position: relative;
+
+                    .date {
+                        position: absolute;
+                        left: 21px;
+                        top: 17px;
+                    }
+
+                    .edit {
+                        position: absolute;
+                        right: 18px;
+                        top: 17px;
+                        width: 123px;
+
+                        .just-added {
+                            position: absolute;
+                            top: 14px;
+                            left: 32px;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 14px;
+
+                            &.circle {
+                                top: 0;
+                                left: 25px;
+                                width: 28px;
+                                height: 28px;
+                                border-radius: 14px;
+                            }
+
+                            background-color: #4fa93c;
+                            color: #FFFFFF;
+                            font-size: 14px;
+                            @include easeInOutQuart(500ms,all);
+                            opacity: 1;
+
+                            .tick {
+                                position: absolute;
+                                left: 0;
+                                background: url(/make-a-claim/Content/images/icon-tick-white.svg) no-repeat center center;
+                                width: 28px;
+                                height: 28px;
+                                opacity: 0;
+                                @include easeInOutQuart(1000ms,opacity);
+
+                                &.show {
+                                    opacity: 1;
+                                }
+                            }
+
+                            .label {
+                                position: absolute;
+                                line-height: 1;
+                                left: 25px;
+                                top: 6px;
+                                right: 15px;
+                                font-weight: 400;
+                                opacity: 0;
+                                @include easeInOutQuart(1000ms,opacity);
+                                white-space: nowrap;
+
+                                &.show {
+                                    opacity: 1;
+                                }
+
+                                &.saved {
+                                    text-align: center;
+                                }
+                            }
+
+                            &.start {
+                                width: 105px;
+                            }
+                        }
+
+                        .view-edit {
+                            opacity: 0;
+                            font-size: 14px;
+                            position: absolute;
+                            width: 95px;
+                            cursor: pointer;
+                            color: #007db9;
+                            @include easeInOutQuart(1000ms,opacity);
+                            right: 0;
+
+                            &.show {
+                                opacity: 1;
+                            }
+
+                            .label {
+                                position: absolute;
+                                left: 0;
+                                top: 2px;
+                            }
+
+                            .bin {
+                                position: absolute;
+                                right: 20px;
+                                top: -3px;
+
+
+                                .bin-top {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('/make-a-claim/Content/images/icon-bin-top.svg') no-repeat center center;
+                                    width: 24px;
+                                    height: 26px;
+                                    @include easeInOutQuart(300ms,all);
+                                    transform-origin: 0px 9px;
+                                }
+
+                                .bin-bottom {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('/make-a-claim/Content/images/icon-bin-bottom.svg') no-repeat center center;
+                                    width: 24px;
+                                    height: 26px;
+                                    @include easeInOutQuart(300ms,all);
+                                }
+
+                                &.open,
+                                &:hover {
+                                    .bin-top {
+                                        transform: rotate(-25deg) translate(0px,0px);
+                                    }
+
+                                    .bin-bottom {
+                                        transform: translate(0px,3px);
+                                    }
+                                }
+
+                                @media all and (min-width:651px) {
+                                    transform: scale(0.7);
+                                    top: 2px;
+                                }
+                            }
+                        }
+
+                        &.completed {
+                            .just-added {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .confirm-container {
+                position: relative;
+                overflow: hidden;
+                height: 0;
+                @include easeInOutQuart(200ms,all);
+
+                &.show {
+                    height: 41px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .confirm {
+                display: table;
+                height: 41px;
+                width: 100%;
+                overflow: hidden;
+
+                > div {
+                    display: table-cell;
+                    width: 33.33%;
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    &.label {
+                        background-color: #FFFFFF;
+                        color: $blue;
+                    }
+
+                    &.cancel {
+                        border: solid 1px #f8b60d;
+                        background-color: #ffffff;
+                        cursor: pointer;
+                        color: #f8b60d;
+                    }
+
+                    &.delete {
+                        background-color: #f8b60d;
+                        color: #ffffff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    &.show {
+        .bg {
+            opacity: 1;
+
+            &.fade-bg {
+                opacity: 0;
+            }
+        }
+
+        .cart-panel {
+            .hide-claims {
+                span {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    @media all and (max-width:650px) {
+
+        &.hide {
+            display: none;
+        }
+
+        &.fixed {
+            position: fixed;
+            top: 0;
+        }
+
+        .circle-arrow {
+            display: none;
+        }
+
+        .cart-panel {
+            width: 100%;
+            @include easeNone();
+            right: 0;
+
+            .invoices {
+                .invoice {
+                    border: none;
+                    border-top: solid 1px #eaeaea;
+                }
+            }
+
+            .hide-claims {
+                display: block;
+
+                &.disabled {
+                    opacity: 0.2;
+                    cursor: default;
+                }
+            }
+
+            .title {
+                padding: 10px 20px 10px;
+                border-bottom: none;
+            }
+
+            .cart-base {
+                display: none;
+            }
+        }
+
+        &.show {
+            &.fixed {
+                position: absolute;
+                top: 0;
+            }
+
+            .cart-panel {
+                .cart-base {
+                    display: block;
+                    position: fixed;
+                    width: 100%;
+                    bottom: 0;
+                    height: 260px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+.mobileCheck {
+
+    @media all and (max-width:650px) {
+        display: block;
+    }
+}

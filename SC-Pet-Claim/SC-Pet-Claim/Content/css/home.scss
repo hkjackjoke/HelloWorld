@@ -1,0 +1,86 @@
+﻿.home {
+    h1 {
+        margin: 0 0 35px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        color: #007db9;
+        line-height: 1.17;
+        margin: 36px 0 0;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500;
+    }    
+
+    .home-cta {
+        display: table;
+        position: relative;
+        margin: 28px auto 0;
+
+        > div {
+            display: table-cell;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0 0 15px;
+            }
+
+            text-align: center;
+
+            .button {
+                width: 240px;
+                position: relative;
+                margin: auto;
+            }
+
+            &:first-child {
+                padding-right: 53px;
+            }
+
+            &:last-child {
+                padding-left: 53px;
+            }
+        }
+
+        @media all and (max-width:767px) {
+            display: block;
+
+            > div {
+                display: block;
+
+                &:first-child {
+                    padding-right: 0;
+                }
+
+                &:last-child {
+                    padding: 30px 0 0;
+                }
+            }
+        }
+    }
+
+    @media all and (max-width:480px) {
+        .home-cta {
+            > div {
+                .button {
+                    width: 100%;
+                }
+            }
+        }
+
+        .make-claim {
+            margin: 40px 0 35px;
+            max-width: 100%;
+        }
+
+        .button.claim-form {
+            max-width: 100%;
+        }
+    }
+}

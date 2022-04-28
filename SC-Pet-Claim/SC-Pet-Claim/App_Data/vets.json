@@ -1,0 +1,3698 @@
+[
+  {
+    "organisationName": "3 Stone Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0029011"
+  },
+  {
+    "organisationName": "Abbotts Way Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000220"
+  },
+  {
+    "organisationName": "Accident and Medical Feilding",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0075572"
+  },
+  {
+    "organisationName": "Active Paws",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022402"
+  },
+  {
+    "organisationName": "Acupet Veterinary Acupuncture",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018818"
+  },
+  {
+    "organisationName": "AEC - Animal Emergency Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000674"
+  },
+  {
+    "organisationName": "After Hours Veterinary Clinic - Christchurch",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018554"
+  },
+  {
+    "organisationName": "After Hours Veterinary Clinic - Wellington",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000663"
+  },
+  {
+    "organisationName": "Afterhours Vets Mid Canterbury",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0025056"
+  },
+  {
+    "organisationName": "Albany Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000050"
+  },
+  {
+    "organisationName": "Aldwins Road Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000006"
+  },
+  {
+    "organisationName": "Alternative Treatment Provider",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024915"
+  },
+  {
+    "organisationName": "Anatomie",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0052257"
+  },
+  {
+    "organisationName": "Anexa Animal Health - Huntly",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000345"
+  },
+  {
+    "organisationName": "Anexa Animal Health - Morrinsville / Cognosco",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000631"
+  },
+  {
+    "organisationName": "Anexa Animal Health - Ngaruawahia",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001143"
+  },
+  {
+    "organisationName": "Anexa Animal Health - Raglan",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000510"
+  },
+  {
+    "organisationName": "Anexa Animal Health - Te Aroha",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000329"
+  },
+  {
+    "organisationName": "Anexa Animal Health - Te Kauwhata",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000599"
+  },
+  {
+    "organisationName": "Anexa FVC - Coromandel Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000448"
+  },
+  {
+    "organisationName": "Anexa FVC - Gordonton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0069138"
+  },
+  {
+    "organisationName": "Anexa FVC - Maramarua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000777"
+  },
+  {
+    "organisationName": "Anexa FVC - Matamata Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001142"
+  },
+  {
+    "organisationName": "Anexa FVC - Ngatea",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000779"
+  },
+  {
+    "organisationName": "Anexa FVC - Paeroa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000781"
+  },
+  {
+    "organisationName": "Anexa FVC - Thames",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000548"
+  },
+  {
+    "organisationName": "Animal Action Ltd (House Call Vet)",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0036053"
+  },
+  {
+    "organisationName": "Animal and Bird Hospital - Waltham",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000230"
+  },
+  {
+    "organisationName": "Animal Care Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000408"
+  },
+  {
+    "organisationName": "Animal Dermatology Canterbury",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0036242"
+  },
+  {
+    "organisationName": "Animal Dermatology Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020599"
+  },
+  {
+    "organisationName": "Animal Dermatology NZ",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018763"
+  },
+  {
+    "organisationName": "Animal Health Centre - Lower Hutt",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000441"
+  },
+  {
+    "organisationName": "Animal Health Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023180"
+  },
+  {
+    "organisationName": "Animal Medical Centre - Johnsonville",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000250"
+  },
+  {
+    "organisationName": "Animal Orthopaedics Christchurch",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0073767"
+  },
+  {
+    "organisationName": "Animal Physio Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0039214"
+  },
+  {
+    "organisationName": "Animal Physio NZ Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0051467"
+  },
+  {
+    "organisationName": "Animal PhysioNZ Ltd - Ferrymead",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018631"
+  },
+  {
+    "organisationName": "Animal PhysioNZ Ltd - Rangiora",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0060993"
+  },
+  {
+    "organisationName": "Animal Physiotherapy and Rehabilitation Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018695"
+  },
+  {
+    "organisationName": "Animal Referral Centre - Hamilton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0033235"
+  },
+  {
+    "organisationName": "Animal Rehab Central",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0077331"
+  },
+  {
+    "organisationName": "Animals Back in Action",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018702"
+  },
+  {
+    "organisationName": "Animals with Attitude",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022528"
+  },
+  {
+    "organisationName": "Animates - Invercargill",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0034952"
+  },
+  {
+    "organisationName": "Animotion Animal Physiotherapy",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0041858"
+  },
+  {
+    "organisationName": "Aorangi Veterinary Services - Fairlie",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000434"
+  },
+  {
+    "organisationName": "Aorangi Veterinary Services - Geraldine",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000497"
+  },
+  {
+    "organisationName": "Aorangi Veterinary Services - Highfield",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000268"
+  },
+  {
+    "organisationName": "Apex Cardiology",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0058368"
+  },
+  {
+    "organisationName": "Aqua Hounds",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021664"
+  },
+  {
+    "organisationName": "Aqua Paws",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0065964"
+  },
+  {
+    "organisationName": "ARC - Animal Referral Centre - Auckland",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0028912"
+  },
+  {
+    "organisationName": "At The Vets Veterinary Clinic - Christchurch",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000101"
+  },
+  {
+    "organisationName": "Athletic Equine and Acupuncture Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019398"
+  },
+  {
+    "organisationName": "Auckland Animal Eye Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000687"
+  },
+  {
+    "organisationName": "Auckland Pet Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0068558"
+  },
+  {
+    "organisationName": "Auckland Veterinary Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000428"
+  },
+  {
+    "organisationName": "Auckland Veterinary Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000084"
+  },
+  {
+    "organisationName": "Avonhead Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018885"
+  },
+  {
+    "organisationName": "Avonside Wainoni Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000209"
+  },
+  {
+    "organisationName": "Azur Integrative Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018998"
+  },
+  {
+    "organisationName": "Balanced Beings",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022062"
+  },
+  {
+    "organisationName": "Balmoral Veterinary Care Ltd - Auckland",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020475"
+  },
+  {
+    "organisationName": "Balmoral Veterinary Services - Balclutha",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000694"
+  },
+  {
+    "organisationName": "Barb's Homeopathy",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018691"
+  },
+  {
+    "organisationName": "Barkes Corner Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000273"
+  },
+  {
+    "organisationName": "Barrowman Goodman Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0064074"
+  },
+  {
+    "organisationName": "Bay After Hours Veterinary Hospital Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0078066"
+  },
+  {
+    "organisationName": "Bay of Islands Veterinary Services  - Paihia",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000453"
+  },
+  {
+    "organisationName": "Bay of Islands Veterinary Services - Kaikohe",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000697"
+  },
+  {
+    "organisationName": "Bay of Islands Veterinary Services - Kawakawa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000699"
+  },
+  {
+    "organisationName": "Bay of Islands Veterinary Services - Kerikeri",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000701"
+  },
+  {
+    "organisationName": "Bay of Islands Veterinary Services - Waipapa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000703"
+  },
+  {
+    "organisationName": "Bay Veterinary Group Ltd - Edgecumbe",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000705"
+  },
+  {
+    "organisationName": "Bayfair and Papamoa Vets - Bayfair",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000097"
+  },
+  {
+    "organisationName": "Bayfair and Papamoa Vets - Papamoa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000401"
+  },
+  {
+    "organisationName": "Bayvet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000051"
+  },
+  {
+    "organisationName": "Beach Road Veterinary Clinic - Papamoa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000709"
+  },
+  {
+    "organisationName": "Belfast Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000232"
+  },
+  {
+    "organisationName": "Bell Block Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000711"
+  },
+  {
+    "organisationName": "Belmont Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000178"
+  },
+  {
+    "organisationName": "Blockhouse Bay Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000091"
+  },
+  {
+    "organisationName": "Brookfield Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000150"
+  },
+  {
+    "organisationName": "Bucklands Beach Veterinary Hospital Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000044"
+  },
+  {
+    "organisationName": "Buller Vets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000270"
+  },
+  {
+    "organisationName": "C G Boyce Veterinary Surgeon",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023956"
+  },
+  {
+    "organisationName": "Cahill Animal Hospital Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000085"
+  },
+  {
+    "organisationName": "Cambridge Pet Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000468"
+  },
+  {
+    "organisationName": "Cambridge Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000285"
+  },
+  {
+    "organisationName": "Cameron Road Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000235"
+  },
+  {
+    "organisationName": "Canine Physio NZ",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0044529"
+  },
+  {
+    "organisationName": "Canterbury Osteopaths Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021435"
+  },
+  {
+    "organisationName": "Canterbury Vets - Ashburton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000197"
+  },
+  {
+    "organisationName": "Canterbury Vets - Methven",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000447"
+  },
+  {
+    "organisationName": "CareVets - Chartwell",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000454"
+  },
+  {
+    "organisationName": "CareVets - Gisborne",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000763"
+  },
+  {
+    "organisationName": "CareVets - Glen Eden",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000511"
+  },
+  {
+    "organisationName": "CareVets - Hamilton South",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000306"
+  },
+  {
+    "organisationName": "CareVets - Hobsonville",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0064264"
+  },
+  {
+    "organisationName": "CareVets - Horsham Downs",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0073425"
+  },
+  {
+    "organisationName": "CareVets - Johnsonville",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000507"
+  },
+  {
+    "organisationName": "CareVets - Kapiti",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000043"
+  },
+  {
+    "organisationName": "CareVets - Kilbirnie",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000138"
+  },
+  {
+    "organisationName": "CareVets - Mt Wellington",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000419"
+  },
+  {
+    "organisationName": "CareVets - Napier",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000610"
+  },
+  {
+    "organisationName": "CareVets - Parnell",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000087"
+  },
+  {
+    "organisationName": "CareVets - Pokeno",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0031657"
+  },
+  {
+    "organisationName": "CareVets - Porirua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000615"
+  },
+  {
+    "organisationName": "CareVets - Rototuna",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000435"
+  },
+  {
+    "organisationName": "CareVets - Takanini",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0026435"
+  },
+  {
+    "organisationName": "CareVets - Te Atatu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000003"
+  },
+  {
+    "organisationName": "CareVets - Wainuiomata Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0028255"
+  },
+  {
+    "organisationName": "CareVets Beach Road - Papakura",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000339"
+  },
+  {
+    "organisationName": "Carlyle Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000257"
+  },
+  {
+    "organisationName": "Cashmere Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000240"
+  },
+  {
+    "organisationName": "Cat Doctor North Shore",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0047724"
+  },
+  {
+    "organisationName": "Cattery / Kennels Provider",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019628"
+  },
+  {
+    "organisationName": "Central City Vets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000184"
+  },
+  {
+    "organisationName": "Central Hutt Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000137"
+  },
+  {
+    "organisationName": "Central Vet Hospital Ltd - Wellington",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000082"
+  },
+  {
+    "organisationName": "Central Vets and Pets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022205"
+  },
+  {
+    "organisationName": "CHB Vet Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022679"
+  },
+  {
+    "organisationName": "Churton Park Village Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000750"
+  },
+  {
+    "organisationName": "Clive Cottage Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0025953"
+  },
+  {
+    "organisationName": "Clutha Vets Animal Health Centre - Balclutha",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000343"
+  },
+  {
+    "organisationName": "Clutha Vets Animal Health Centre - Lawrence",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0068609"
+  },
+  {
+    "organisationName": "Clutha Vets Animal Health Centre - Milton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000752"
+  },
+  {
+    "organisationName": "Coast to Coast Vets Wellsford",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022198"
+  },
+  {
+    "organisationName": "Coast Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000754"
+  },
+  {
+    "organisationName": "Coastal Pet Vet - Papamoa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0064059"
+  },
+  {
+    "organisationName": "Coastal Veterinary Services Ltd - Kaponga",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0042667"
+  },
+  {
+    "organisationName": "Coastal Veterinary Services Ltd - Opunake",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000755"
+  },
+  {
+    "organisationName": "Combined Vet Services Gore Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000513"
+  },
+  {
+    "organisationName": "Companion Vets Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0064714"
+  },
+  {
+    "organisationName": "CoroVets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000608"
+  },
+  {
+    "organisationName": "Crofton Downs Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000280"
+  },
+  {
+    "organisationName": "Dairy Flat Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000424"
+  },
+  {
+    "organisationName": "Darfield Chiropractic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022883"
+  },
+  {
+    "organisationName": "Dargaville Veterinary Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000223"
+  },
+  {
+    "organisationName": "Devonport Vet Clinic Ltd (Shore Vets)",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000621"
+  },
+  {
+    "organisationName": "Diamond Harbour Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0075002"
+  },
+  {
+    "organisationName": "District Council",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019694"
+  },
+  {
+    "organisationName": "Doggy Paddle",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021931"
+  },
+  {
+    "organisationName": "East Coast Bays Veterinary Clinic Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000090"
+  },
+  {
+    "organisationName": "Eastland Veterinary Services Gisborne",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000411"
+  },
+  {
+    "organisationName": "Ellerslie Veterinary Clinic & Cattery",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024209"
+  },
+  {
+    "organisationName": "Elles Road Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000170"
+  },
+  {
+    "organisationName": "Eltham District Veterinary Service",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000445"
+  },
+  {
+    "organisationName": "Energy Vets Taranaki - Inglewood",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000297"
+  },
+  {
+    "organisationName": "Energy Vets Taranaki - Waitara",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023027"
+  },
+  {
+    "organisationName": "Equinox Animal Chiropractic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018947"
+  },
+  {
+    "organisationName": "Estuary Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018898"
+  },
+  {
+    "organisationName": "Evolution Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0052186"
+  },
+  {
+    "organisationName": "Eyevet Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0025122"
+  },
+  {
+    "organisationName": "Family Vets Rotorua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0025624"
+  },
+  {
+    "organisationName": "Far North Vets & Pets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024242"
+  },
+  {
+    "organisationName": "First Vets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0034435"
+  },
+  {
+    "organisationName": "Forrest Hill Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000025"
+  },
+  {
+    "organisationName": "Franklin Vets - Beachlands",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022204"
+  },
+  {
+    "organisationName": "Franklin Vets - Karaka",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0043756"
+  },
+  {
+    "organisationName": "Franklin Vets - Kopu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000770"
+  },
+  {
+    "organisationName": "Franklin Vets - Paeroa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000925"
+  },
+  {
+    "organisationName": "Franklin Vets - Papakura",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000436"
+  },
+  {
+    "organisationName": "Franklin Vets - Pukekohe",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000479"
+  },
+  {
+    "organisationName": "Franklin Vets - Taupiri",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000774"
+  },
+  {
+    "organisationName": "Franklin Vets - Te Kauwhata",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0027711"
+  },
+  {
+    "organisationName": "Franklin Vets - The Small Animal Surgeon",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0070774"
+  },
+  {
+    "organisationName": "Franklin Vets - Waiuku",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000452"
+  },
+  {
+    "organisationName": "Funeral Benefit Provider",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019255"
+  },
+  {
+    "organisationName": "Galatea Veterinary Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000783"
+  },
+  {
+    "organisationName": "Gateway Vets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018908"
+  },
+  {
+    "organisationName": "Glenbrook Beach Vet Wellness Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0075575"
+  },
+  {
+    "organisationName": "Glendowie - St Heliers Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000034"
+  },
+  {
+    "organisationName": "Glenfield Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000239"
+  },
+  {
+    "organisationName": "Glenorchy Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000788"
+  },
+  {
+    "organisationName": "Global Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000790"
+  },
+  {
+    "organisationName": "Great Barrier Island Veterinary Service",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000793"
+  },
+  {
+    "organisationName": "Great South Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000598"
+  },
+  {
+    "organisationName": "Green Bay Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000198"
+  },
+  {
+    "organisationName": "Green Island Veterinary Clinic Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000796"
+  },
+  {
+    "organisationName": "Greenhithe Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000425"
+  },
+  {
+    "organisationName": "Greenlane Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000212"
+  },
+  {
+    "organisationName": "Halifax Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000064"
+  },
+  {
+    "organisationName": "Hamilton Small Animal Vet Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000244"
+  },
+  {
+    "organisationName": "Happy Hound Vet Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0067116"
+  },
+  {
+    "organisationName": "Harewood Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000056"
+  },
+  {
+    "organisationName": "Hauraki Vets - Ngatea",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000803"
+  },
+  {
+    "organisationName": "Hauraki Vets - Paeora",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0054824"
+  },
+  {
+    "organisationName": "Hauraki Vets - Thames",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000613"
+  },
+  {
+    "organisationName": "Hautapu Veterinary Clinic Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000806"
+  },
+  {
+    "organisationName": "Helen The Physio",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0061398"
+  },
+  {
+    "organisationName": "Helensburgh Veterinary Clinic Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000173"
+  },
+  {
+    "organisationName": "Henderson Valley Vet & Pet Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000544"
+  },
+  {
+    "organisationName": "Henderson Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000107"
+  },
+  {
+    "organisationName": "Herne Bay Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000189"
+  },
+  {
+    "organisationName": "Hibiscus Coast Vet Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022199"
+  },
+  {
+    "organisationName": "Highway Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000259"
+  },
+  {
+    "organisationName": "Hobsonville Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000227"
+  },
+  {
+    "organisationName": "Holistic Vet Services - Auckland",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0078294"
+  },
+  {
+    "organisationName": "Holistic Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000457"
+  },
+  {
+    "organisationName": "Homevet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0076337"
+  },
+  {
+    "organisationName": "Hornby Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000013"
+  },
+  {
+    "organisationName": "HUHA Vets - Stokes Valley",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000542"
+  },
+  {
+    "organisationName": "Humanimals",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019246"
+  },
+  {
+    "organisationName": "Hunterville Veterinary Club Inc",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000354"
+  },
+  {
+    "organisationName": "Hydropaws",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020777"
+  },
+  {
+    "organisationName": "Ian Scott - Veterinary Surgeon",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000821"
+  },
+  {
+    "organisationName": "Integrative Veterinary Therapies Consultant",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020153"
+  },
+  {
+    "organisationName": "Island Bay Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000144"
+  },
+  {
+    "organisationName": "JB VisserVets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000824"
+  },
+  {
+    "organisationName": "Just 4 Cats Veterinary Clinic Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000321"
+  },
+  {
+    "organisationName": "K B Keene",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000828"
+  },
+  {
+    "organisationName": "K9 Aqua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019064"
+  },
+  {
+    "organisationName": "K9 HQ",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0049086"
+  },
+  {
+    "organisationName": "Kaimai Vets - Matamata",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000552"
+  },
+  {
+    "organisationName": "Kaimai Vets - Tauranga",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0043712"
+  },
+  {
+    "organisationName": "Kaimai Vets - Te Aroha",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0043710"
+  },
+  {
+    "organisationName": "Kamo Veterinary Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000337"
+  },
+  {
+    "organisationName": "Karori Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000009"
+  },
+  {
+    "organisationName": "Kaukapakapa Veterinary Service",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000120"
+  },
+  {
+    "organisationName": "Kauri Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000271"
+  },
+  {
+    "organisationName": "Keinzley Agvet Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0047290"
+  },
+  {
+    "organisationName": "King Country Vets - Piopio",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000685"
+  },
+  {
+    "organisationName": "King Country Vets - Te Kuiti",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0042663"
+  },
+  {
+    "organisationName": "Kohimarama Veterinary Clinic Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000182"
+  },
+  {
+    "organisationName": "Koru Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0043385"
+  },
+  {
+    "organisationName": "Laingholm & Districts Veterinary Service",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000008"
+  },
+  {
+    "organisationName": "Lakeside Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000450"
+  },
+  {
+    "organisationName": "Laser 4 Motion",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0047532"
+  },
+  {
+    "organisationName": "Levin and Horowhenua Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000139"
+  },
+  {
+    "organisationName": "Lincoln Village Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000634"
+  },
+  {
+    "organisationName": "Little River Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000646"
+  },
+  {
+    "organisationName": "Lynfield Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000399"
+  },
+  {
+    "organisationName": "Maidstone Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000071"
+  },
+  {
+    "organisationName": "Mangere Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000295"
+  },
+  {
+    "organisationName": "Manly Whangaparaoa Vet Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0065676"
+  },
+  {
+    "organisationName": "Manukau After Hours Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000856"
+  },
+  {
+    "organisationName": "Manukau Veterinary Referral Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0035658"
+  },
+  {
+    "organisationName": "Marshall and Pringle Petmed Kaiapoi",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000341"
+  },
+  {
+    "organisationName": "Massey Heights Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000256"
+  },
+  {
+    "organisationName": "Massey University Vet Clinic - IVABS",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000433"
+  },
+  {
+    "organisationName": "Matamata Veterinary Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000133"
+  },
+  {
+    "organisationName": "Mates4Life",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0076105"
+  },
+  {
+    "organisationName": "McMaster and Heap Veterinary Practice",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000075"
+  },
+  {
+    "organisationName": "Merivale Papanui Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000122"
+  },
+  {
+    "organisationName": "Mill Road Veterinary Clinic - Maunu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020481"
+  },
+  {
+    "organisationName": "Mill Road Veterinary Clinic - Whangarei",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000080"
+  },
+  {
+    "organisationName": "Millwater Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022916"
+  },
+  {
+    "organisationName": "Mobile Vetcare Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000868"
+  },
+  {
+    "organisationName": "Mobile Veterinarian Dr Evan Kendon",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000494"
+  },
+  {
+    "organisationName": "Mornington Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000289"
+  },
+  {
+    "organisationName": "Mount Vet Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000241"
+  },
+  {
+    "organisationName": "Murchison Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000876"
+  },
+  {
+    "organisationName": "Murray's Veterinary Clinic Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000509"
+  },
+  {
+    "organisationName": "MVP Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0046999"
+  },
+  {
+    "organisationName": "MyVet Ltd - Whangamata",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022646"
+  },
+  {
+    "organisationName": "Natural Veterinary Solutions",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019729"
+  },
+  {
+    "organisationName": "New Brighton Mall Vet & Pet Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000058"
+  },
+  {
+    "organisationName": "New Plymouth District Vet Group",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000221"
+  },
+  {
+    "organisationName": "Newflands Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023185"
+  },
+  {
+    "organisationName": "Newstead Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000148"
+  },
+  {
+    "organisationName": "Normanby Road Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000276"
+  },
+  {
+    "organisationName": "North Canterbury Veterinary Clinic - Culverden",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000884"
+  },
+  {
+    "organisationName": "North Canterbury Veterinary Clinics Ltd - Amberley",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000461"
+  },
+  {
+    "organisationName": "North Canterbury Veterinary Clinics Ltd - Cheviot",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000888"
+  },
+  {
+    "organisationName": "North Canterbury Veterinary Clinics Ltd - Waikari",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000887"
+  },
+  {
+    "organisationName": "North Harbour Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000370"
+  },
+  {
+    "organisationName": "North Shore After Hours Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018685"
+  },
+  {
+    "organisationName": "North Shore Vet Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000093"
+  },
+  {
+    "organisationName": "North Western Veterinary Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000891"
+  },
+  {
+    "organisationName": "Northcote Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000140"
+  },
+  {
+    "organisationName": "Northland Referral Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0048023"
+  },
+  {
+    "organisationName": "Northland Veterinary Group - Hikurangi",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000489"
+  },
+  {
+    "organisationName": "Northland Veterinary Group - Maunu Rd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000893"
+  },
+  {
+    "organisationName": "Northland Veterinary Group - Onerahi",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000895"
+  },
+  {
+    "organisationName": "Northlands Animal Care Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000040"
+  },
+  {
+    "organisationName": "Norvet Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0045978"
+  },
+  {
+    "organisationName": "NS Vets - Riversdale",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000900"
+  },
+  {
+    "organisationName": "NS Vets - Te Anau",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000546"
+  },
+  {
+    "organisationName": "Okato Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000903"
+  },
+  {
+    "organisationName": "Onehunga Vet and Pet Supplies",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000554"
+  },
+  {
+    "organisationName": "Onewa Road Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000046"
+  },
+  {
+    "organisationName": "Orewa Beach Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020482"
+  },
+  {
+    "organisationName": "Orewa Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000432"
+  },
+  {
+    "organisationName": "Otaki Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000533"
+  },
+  {
+    "organisationName": "Otautau Vets Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000917"
+  },
+  {
+    "organisationName": "Our Pet's Goodbye",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0052184"
+  },
+  {
+    "organisationName": "OurVets - Halswell",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020477"
+  },
+  {
+    "organisationName": "Ourvets - Parklands",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000160"
+  },
+  {
+    "organisationName": "Ourvets - Riccarton-Ilam",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000060"
+  },
+  {
+    "organisationName": "Ourvets - St Albans",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000016"
+  },
+  {
+    "organisationName": "Overseas Provider",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020650"
+  },
+  {
+    "organisationName": "Paddock Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000923"
+  },
+  {
+    "organisationName": "Pakuranga Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000146"
+  },
+  {
+    "organisationName": "Palmy Pets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0074870"
+  },
+  {
+    "organisationName": "Parkhill Veterinary Hospital Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018795"
+  },
+  {
+    "organisationName": "PAWS - Pegasus and Woodend Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0025950"
+  },
+  {
+    "organisationName": "Peninsula Bay Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000933"
+  },
+  {
+    "organisationName": "Pet & Vet Ltd - Milford",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000293"
+  },
+  {
+    "organisationName": "Pet Doctors - Barrington",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000004"
+  },
+  {
+    "organisationName": "Pet Doctors - Botany",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000283"
+  },
+  {
+    "organisationName": "Pet Doctors - Dinsdale",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000466"
+  },
+  {
+    "organisationName": "Pet Doctors - Flagstaff",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000467"
+  },
+  {
+    "organisationName": "Pet Doctors - Hillcrest",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000465"
+  },
+  {
+    "organisationName": "Pet Doctors - Howick",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000033"
+  },
+  {
+    "organisationName": "Pet Doctors - Kelburn",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000541"
+  },
+  {
+    "organisationName": "Pet Doctors - Manurewa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000372"
+  },
+  {
+    "organisationName": "Pet Doctors - Mt Eden",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000526"
+  },
+  {
+    "organisationName": "Pet Doctors - Palmerston North",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000625"
+  },
+  {
+    "organisationName": "Pet Doctors - St Lukes Exotics and Wildlife",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0025323"
+  },
+  {
+    "organisationName": "Pet Doctors - Templeton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000202"
+  },
+  {
+    "organisationName": "Pet Doctors - The Gardens",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000020"
+  },
+  {
+    "organisationName": "Pet Doctors - Thorndon",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023579"
+  },
+  {
+    "organisationName": "Pet Doctors - Tristram Street",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000204"
+  },
+  {
+    "organisationName": "Pet Doctors - West Harbour",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000164"
+  },
+  {
+    "organisationName": "Pet Eye Care",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0055372"
+  },
+  {
+    "organisationName": "Pet Shop",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021006"
+  },
+  {
+    "organisationName": "Pet Vets Papatoetoe",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0049946"
+  },
+  {
+    "organisationName": "Pet.co.nz",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023287"
+  },
+  {
+    "organisationName": "Petersen's Homeopathics Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000629"
+  },
+  {
+    "organisationName": "Pets @ Rest",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020989"
+  },
+  {
+    "organisationName": "Pets @ Wintec",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0044154"
+  },
+  {
+    "organisationName": "Pets and Care Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000838"
+  },
+  {
+    "organisationName": "PETstock Vet - Constellation Drive",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0026587"
+  },
+  {
+    "organisationName": "PetVet - Lower Hutt",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000055"
+  },
+  {
+    "organisationName": "PetVet - Silverstream",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000591"
+  },
+  {
+    "organisationName": "Pharmacy",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0026337"
+  },
+  {
+    "organisationName": "Phoenix Animal Wellness Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0077198"
+  },
+  {
+    "organisationName": "Physio for Pets NZ",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0054015"
+  },
+  {
+    "organisationName": "Piano Hill Vets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000500"
+  },
+  {
+    "organisationName": "Picton Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000362"
+  },
+  {
+    "organisationName": "Ponsonby Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000070"
+  },
+  {
+    "organisationName": "Prebbleton Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000460"
+  },
+  {
+    "organisationName": "Press Paws Mobile Veterinary Services  Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0031550"
+  },
+  {
+    "organisationName": "Pt Chevalier Vet Care",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000143"
+  },
+  {
+    "organisationName": "Queenstown Eye Vet Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0031819"
+  },
+  {
+    "organisationName": "Rangiora Veterinary Centre - Kaiapoi",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000086"
+  },
+  {
+    "organisationName": "Rangiora Veterinary Centre - Rangiora",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000018"
+  },
+  {
+    "organisationName": "Rappaw Veterinary Care - Paremata",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000125"
+  },
+  {
+    "organisationName": "Rappaw Veterinary Care - Plimmerton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0046285"
+  },
+  {
+    "organisationName": "Rappaw Veterinary Care - Tawa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000042"
+  },
+  {
+    "organisationName": "Rappaw Veterinary Care - Titahi Bay",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000330"
+  },
+  {
+    "organisationName": "Rappaw Veterinary Care - Whitby",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018646"
+  },
+  {
+    "organisationName": "Raumati Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000302"
+  },
+  {
+    "organisationName": "Raw Essentials",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000962"
+  },
+  {
+    "organisationName": "Red Dog Rehabilitation",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0043548"
+  },
+  {
+    "organisationName": "Redwood Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000226"
+  },
+  {
+    "organisationName": "Reefton Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000964"
+  },
+  {
+    "organisationName": "Remarkable Vets - Arrowtown",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000109"
+  },
+  {
+    "organisationName": "Remarkable Vets - Frankton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0077015"
+  },
+  {
+    "organisationName": "Remarkable Vets - Queenstown",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000415"
+  },
+  {
+    "organisationName": "Remuera Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020484"
+  },
+  {
+    "organisationName": "Remuera Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000052"
+  },
+  {
+    "organisationName": "Replacement Pet Provider",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018860"
+  },
+  {
+    "organisationName": "Richmond",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018685"
+  },
+  {
+    "organisationName": "Richmond Mall Pharmacy 2001 Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024442"
+  },
+  {
+    "organisationName": "Rob Bloomfield Veterinary Surgeon",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000531"
+  },
+  {
+    "organisationName": "Robinsons Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000656"
+  },
+  {
+    "organisationName": "Rolleston Veterinary Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000156"
+  },
+  {
+    "organisationName": "Rothesay Bay Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000605"
+  },
+  {
+    "organisationName": "Ruapehu Veterinary Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000587"
+  },
+  {
+    "organisationName": "RVC Woodend Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0047341"
+  },
+  {
+    "organisationName": "Sandringham Village Pharmacy Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022359"
+  },
+  {
+    "organisationName": "SCPI Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0072802"
+  },
+  {
+    "organisationName": "Selwyn Rakaia Vet Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000318"
+  },
+  {
+    "organisationName": "Selwyn Veterinary Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018952"
+  },
+  {
+    "organisationName": "Shirley Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020485"
+  },
+  {
+    "organisationName": "Simply The Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0077685"
+  },
+  {
+    "organisationName": "SmartVets Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0028481"
+  },
+  {
+    "organisationName": "Sommerville Veterinary Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000118"
+  },
+  {
+    "organisationName": "South Waikato Veterinary Services Ltd - Putaruru",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0063051"
+  },
+  {
+    "organisationName": "South Waikato Veterinary Services Ltd - Tokoroa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000982"
+  },
+  {
+    "organisationName": "South Wairarapa Veterinary Services - Carterton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000593"
+  },
+  {
+    "organisationName": "South Wairarapa Veterinary Services - Featherston",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000574"
+  },
+  {
+    "organisationName": "South Wairarapa Veterinary Services - Masterton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024569"
+  },
+  {
+    "organisationName": "South Wairarapa Veterinary Services -Martinborough",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000594"
+  },
+  {
+    "organisationName": "Southern Rangitikei Veterinary Services - Bulls",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000333"
+  },
+  {
+    "organisationName": "Southern Rangitikei Veterinary Services - Marton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020487"
+  },
+  {
+    "organisationName": "Southern Veterinary Centre (VetSouth)",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000301"
+  },
+  {
+    "organisationName": "SPCA Auckland Animal Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0063658"
+  },
+  {
+    "organisationName": "SPCA Christchurch Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0045979"
+  },
+  {
+    "organisationName": "SPCA Wellington - Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000588"
+  },
+  {
+    "organisationName": "Springlands Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000124"
+  },
+  {
+    "organisationName": "St Aubyn Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000281"
+  },
+  {
+    "organisationName": "St Kilda Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000214"
+  },
+  {
+    "organisationName": "St Lukes Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020499"
+  },
+  {
+    "organisationName": "Stoke Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000032"
+  },
+  {
+    "organisationName": "Supermarket",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021723"
+  },
+  {
+    "organisationName": "Sustainable Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0069045"
+  },
+  {
+    "organisationName": "SVS",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0025817"
+  },
+  {
+    "organisationName": "Swanson Road Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000167"
+  },
+  {
+    "organisationName": "Taihape Veterinary Services (Ltd) - Taihape",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000236"
+  },
+  {
+    "organisationName": "Taradale Veterinary Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000067"
+  },
+  {
+    "organisationName": "Taranaki Veterinary Centre - Hawera",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001000"
+  },
+  {
+    "organisationName": "Taranaki Veterinary Centre - Manaia",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001002"
+  },
+  {
+    "organisationName": "Taranaki Veterinary Centre - Patea",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001004"
+  },
+  {
+    "organisationName": "Taranaki Veterinary Centre -Stratford",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000496"
+  },
+  {
+    "organisationName": "Tararua Veterinary Services Ltd - Dannevirke",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0042860"
+  },
+  {
+    "organisationName": "Tararua Veterinary Services Ltd - Pahiatua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020488"
+  },
+  {
+    "organisationName": "Tasman Street Vet Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000265"
+  },
+  {
+    "organisationName": "Taupo Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000208"
+  },
+  {
+    "organisationName": "Tauranga Veterinary Services Ltd - Katikati",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001013"
+  },
+  {
+    "organisationName": "Tauranga Veterinary Services Ltd - Papamoa Village",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021619"
+  },
+  {
+    "organisationName": "Tauranga Veterinary Services Ltd - Tauranga",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000361"
+  },
+  {
+    "organisationName": "Tauranga Veterinary Services Ltd - Te Puna",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000575"
+  },
+  {
+    "organisationName": "Te Aroha Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000243"
+  },
+  {
+    "organisationName": "Te Puke Veterinary Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000487"
+  },
+  {
+    "organisationName": "The Ardmore Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000633"
+  },
+  {
+    "organisationName": "The Balanced Dog",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0075057"
+  },
+  {
+    "organisationName": "The Cat Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0034333"
+  },
+  {
+    "organisationName": "The Chiropractice",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020200"
+  },
+  {
+    "organisationName": "The Dental Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001018"
+  },
+  {
+    "organisationName": "The Doggery",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024203"
+  },
+  {
+    "organisationName": "The Hydrotherapy Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0077197"
+  },
+  {
+    "organisationName": "The Pet Doctors Northcross",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000012"
+  },
+  {
+    "organisationName": "The Pet Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0065162"
+  },
+  {
+    "organisationName": "The Referral Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0048018"
+  },
+  {
+    "organisationName": "The Rural Service Centre Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000422"
+  },
+  {
+    "organisationName": "The Skin Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0026434"
+  },
+  {
+    "organisationName": "The Strand Veterinarian",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000572"
+  },
+  {
+    "organisationName": "The Straven Road Veterinary Centre Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000134"
+  },
+  {
+    "organisationName": "The Vet Centre - Mangawhai",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018946"
+  },
+  {
+    "organisationName": "The Vet Centre - Mapua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000475"
+  },
+  {
+    "organisationName": "The Vet Centre - Marlborough",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000348"
+  },
+  {
+    "organisationName": "The Vet Centre - Maungaturoto",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000912"
+  },
+  {
+    "organisationName": "The Vet Centre - Motueka",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000145"
+  },
+  {
+    "organisationName": "The Vet Centre - Pukekohe",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0035334"
+  },
+  {
+    "organisationName": "The Vet Centre - Richmond",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000367"
+  },
+  {
+    "organisationName": "The Vet Centre - Ruawai",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000914"
+  },
+  {
+    "organisationName": "The Vet Centre - Waipu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000516"
+  },
+  {
+    "organisationName": "The Vet Centre - Waiuku",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000094"
+  },
+  {
+    "organisationName": "The Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020473"
+  },
+  {
+    "organisationName": "The Village Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021511"
+  },
+  {
+    "organisationName": "Timaru's Family Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019533"
+  },
+  {
+    "organisationName": "Tirau Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001029"
+  },
+  {
+    "organisationName": "Tokoroa & District Veterinary Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000609"
+  },
+  {
+    "organisationName": "TopVets - Coopers Beach",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0042861"
+  },
+  {
+    "organisationName": "TopVets - Kaitaia",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001034"
+  },
+  {
+    "organisationName": "Total Physiotherapy",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018820"
+  },
+  {
+    "organisationName": "Total Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000112"
+  },
+  {
+    "organisationName": "Totally Vets Ltd - Awapuni",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0069329"
+  },
+  {
+    "organisationName": "Totally Vets Ltd - Feilding",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000417"
+  },
+  {
+    "organisationName": "Totally Vets Ltd - Palmerston North",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001038"
+  },
+  {
+    "organisationName": "Totally Vets Ltd - Taumarunui",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001040"
+  },
+  {
+    "organisationName": "Town & Country Vets - Drury",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000316"
+  },
+  {
+    "organisationName": "Town & Country Vets - Richmond",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000472"
+  },
+  {
+    "organisationName": "Town & Country Vets - Wakefield",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000474"
+  },
+  {
+    "organisationName": "Tram Road Animal Care Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000384"
+  },
+  {
+    "organisationName": "True Vets Ormiston",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0077960"
+  },
+  {
+    "organisationName": "Upper Hutt Veterinary Care",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019067"
+  },
+  {
+    "organisationName": "Upper Hutt Veterinary Hospital & Cattery",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000199"
+  },
+  {
+    "organisationName": "Valley Cottage Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0069514"
+  },
+  {
+    "organisationName": "Valley Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024899"
+  },
+  {
+    "organisationName": "VE Veterinary Services - Te Awamutu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000309"
+  },
+  {
+    "organisationName": "Venture Vets",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0047234"
+  },
+  {
+    "organisationName": "Vet 2 You",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022562"
+  },
+  {
+    "organisationName": "Vet Care Kaikoura Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000292"
+  },
+  {
+    "organisationName": "Vet Farm & Pet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000538"
+  },
+  {
+    "organisationName": "Vet Post",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0032309"
+  },
+  {
+    "organisationName": "Vet Services Hawkes Bay - Dannevirke",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001049"
+  },
+  {
+    "organisationName": "Vet Services Hawkes Bay - Hastings",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000458"
+  },
+  {
+    "organisationName": "Vet Services Hawkes Bay - Napier",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018740"
+  },
+  {
+    "organisationName": "Vet Services Hawkes Bay - Waipukurau",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000319"
+  },
+  {
+    "organisationName": "Vet Services Wairarapa - Masterton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023534"
+  },
+  {
+    "organisationName": "Vet Smart - Plimmerton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000413"
+  },
+  {
+    "organisationName": "Vet2Pet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001054"
+  },
+  {
+    "organisationName": "Vet2U",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023314"
+  },
+  {
+    "organisationName": "Vetcall Animal Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020489"
+  },
+  {
+    "organisationName": "VetCare - Botany Downs",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000484"
+  },
+  {
+    "organisationName": "VetCare - Dunedin",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0036197"
+  },
+  {
+    "organisationName": "VetCare - Glen Innes",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0035331"
+  },
+  {
+    "organisationName": "VetCare - Glenfield",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000443"
+  },
+  {
+    "organisationName": "VetCare - Grey Lynn",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000054"
+  },
+  {
+    "organisationName": "VetCare - Greytown",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000376"
+  },
+  {
+    "organisationName": "VetCare - Hokowhitu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000287"
+  },
+  {
+    "organisationName": "VetCare - Kaiwharawhara",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000584"
+  },
+  {
+    "organisationName": "VetCare - Khandallah",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000279"
+  },
+  {
+    "organisationName": "VetCare - Lincoln Road",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000558"
+  },
+  {
+    "organisationName": "VetCare - Masterton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000396"
+  },
+  {
+    "organisationName": "VetCare - Miramar",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000459"
+  },
+  {
+    "organisationName": "Vetcare - Palmerston North",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0044406"
+  },
+  {
+    "organisationName": "VetCare - Paraparaumu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000286"
+  },
+  {
+    "organisationName": "VetCare - Petone",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000590"
+  },
+  {
+    "organisationName": "VetCare - Pitama Road - Anderson's Vet Hospital",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000158"
+  },
+  {
+    "organisationName": "Vetcare - Richmond Road",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0035771"
+  },
+  {
+    "organisationName": "VetCare - Takanini",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000647"
+  },
+  {
+    "organisationName": "VetCare - Te Rapa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000651"
+  },
+  {
+    "organisationName": "VetCare - Waikanae",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024008"
+  },
+  {
+    "organisationName": "VetCare Mount Albert",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023135"
+  },
+  {
+    "organisationName": "VetCare Tauranga - Bethlehem",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000207"
+  },
+  {
+    "organisationName": "VetCare Tauranga - Cherrywood",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000504"
+  },
+  {
+    "organisationName": "Vetco Ltd - Edendale",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001061"
+  },
+  {
+    "organisationName": "Vetco Ltd - Kennington",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001063"
+  },
+  {
+    "organisationName": "VetEnt - Alexandra",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000603"
+  },
+  {
+    "organisationName": "VetEnt - Aspiring",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000682"
+  },
+  {
+    "organisationName": "VetEnt - Cromwell",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000416"
+  },
+  {
+    "organisationName": "VetEnt - Darfield",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001066"
+  },
+  {
+    "organisationName": "VetEnt - Ferrymead",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000438"
+  },
+  {
+    "organisationName": "VetEnt - Gisborne",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000353"
+  },
+  {
+    "organisationName": "VetEnt - Havelock North",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000388"
+  },
+  {
+    "organisationName": "VetEnt - King Country",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000515"
+  },
+  {
+    "organisationName": "VetEnt - Leeston",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000261"
+  },
+  {
+    "organisationName": "VetEnt - Lincoln",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000174"
+  },
+  {
+    "organisationName": "VetEnt - Mayfield",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001146"
+  },
+  {
+    "organisationName": "VetEnt - Mosgiel",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018699"
+  },
+  {
+    "organisationName": "VetEnt - Otorohanga",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000431"
+  },
+  {
+    "organisationName": "VetEnt - Queenstown",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000639"
+  },
+  {
+    "organisationName": "VetEnt - Rakaia",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001145"
+  },
+  {
+    "organisationName": "VetEnt - Ranfurly",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000745"
+  },
+  {
+    "organisationName": "VetEnt - Rangiora West",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000334"
+  },
+  {
+    "organisationName": "VetEnt - Redcliffs",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000036"
+  },
+  {
+    "organisationName": "VetEnt - Riverside (Ashburton)",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000636"
+  },
+  {
+    "organisationName": "VetEnt - Te Awamutu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020490"
+  },
+  {
+    "organisationName": "VetEnt - Te Kuiti",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000430"
+  },
+  {
+    "organisationName": "VetEnt - Timaru",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001070"
+  },
+  {
+    "organisationName": "VetEnt - Turangi",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001144"
+  },
+  {
+    "organisationName": "VetEnt - Wairoa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001072"
+  },
+  {
+    "organisationName": "Veterinary Associates Takanini Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000161"
+  },
+  {
+    "organisationName": "Veterinary Care - Royal Oak",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000073"
+  },
+  {
+    "organisationName": "Veterinary Centre Ltd - Glenavy",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001149"
+  },
+  {
+    "organisationName": "Veterinary Centre Ltd - Kurow",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000571"
+  },
+  {
+    "organisationName": "Veterinary Centre Ltd - Oamaru",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000403"
+  },
+  {
+    "organisationName": "Veterinary Centre Ltd - Omarama",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001150"
+  },
+  {
+    "organisationName": "Veterinary Centre Ltd - Palmerston",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001148"
+  },
+  {
+    "organisationName": "Veterinary Centre Ltd - Ranfurly",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001151"
+  },
+  {
+    "organisationName": "Veterinary Centre Ltd - Waimate",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000326"
+  },
+  {
+    "organisationName": "Veterinary Clinic Morrinsville Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000490"
+  },
+  {
+    "organisationName": "Veterinary Health Centre - Opotiki",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000463"
+  },
+  {
+    "organisationName": "Veterinary Health Centre - Whakatane",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0042865"
+  },
+  {
+    "organisationName": "Veterinary Internal Medicine - VIMS",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0048098"
+  },
+  {
+    "organisationName": "Veterinary Referral Centre Lts",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018949"
+  },
+  {
+    "organisationName": "Veterinary Referral Service (VRS)",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0069295"
+  },
+  {
+    "organisationName": "Veterinary Services Aotearoa - Christchurch VSA",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0076482"
+  },
+  {
+    "organisationName": "Veterinary Specialists Auckland Ltd VSA",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0026197"
+  },
+  {
+    "organisationName": "Veterinary Surgical Specialties Vetspecs",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000002"
+  },
+  {
+    "organisationName": "Vetlife - Alexandra",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000418"
+  },
+  {
+    "organisationName": "Vetlife - Ashburton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000612"
+  },
+  {
+    "organisationName": "Vetlife - Cromwell",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0044462"
+  },
+  {
+    "organisationName": "Vetlife - Culverden",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0037111"
+  },
+  {
+    "organisationName": "Vetlife - Dunsandel",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001090"
+  },
+  {
+    "organisationName": "Vetlife - Fairlie",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001091"
+  },
+  {
+    "organisationName": "Vetlife - Little River",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001093"
+  },
+  {
+    "organisationName": "Vetlife - Methven",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001095"
+  },
+  {
+    "organisationName": "Vetlife - Oamaru",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000602"
+  },
+  {
+    "organisationName": "Vetlife - Omarama",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001097"
+  },
+  {
+    "organisationName": "Vetlife - Oxford",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000616"
+  },
+  {
+    "organisationName": "Vetlife - Pleasant Point",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000586"
+  },
+  {
+    "organisationName": "Vetlife - Rangiora",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018561"
+  },
+  {
+    "organisationName": "Vetlife - Temuka",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000019"
+  },
+  {
+    "organisationName": "Vetlife - Timaru",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000129"
+  },
+  {
+    "organisationName": "Vetlife - Twizel",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022203"
+  },
+  {
+    "organisationName": "Vetlife - Waikouaiti",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001101"
+  },
+  {
+    "organisationName": "VetLife - Wanaka",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000407"
+  },
+  {
+    "organisationName": "Vetora - Cambridge",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023561"
+  },
+  {
+    "organisationName": "Vetora - Hamilton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000644"
+  },
+  {
+    "organisationName": "VetOra - Ngongotaha",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022201"
+  },
+  {
+    "organisationName": "Vetora - Otorohanga",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001086"
+  },
+  {
+    "organisationName": "Vetora - Putaruru",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000357"
+  },
+  {
+    "organisationName": "VetOra - Reporoa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001024"
+  },
+  {
+    "organisationName": "Vetora - Rotorua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000476"
+  },
+  {
+    "organisationName": "VetOra - Taupo",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0023560"
+  },
+  {
+    "organisationName": "Vetora - Te Awamutu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000643"
+  },
+  {
+    "organisationName": "Vetphysio Limited",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018553"
+  },
+  {
+    "organisationName": "VETPlus - Reporoa",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001102"
+  },
+  {
+    "organisationName": "VETPlus - Rotorua",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001104"
+  },
+  {
+    "organisationName": "VETPlus - Taupo",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000540"
+  },
+  {
+    "organisationName": "Vets @ St Clair",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000057"
+  },
+  {
+    "organisationName": "Vets 4 Petz - Kawerau",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001107"
+  },
+  {
+    "organisationName": "Vets 4 Petz  -Whakatane",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001108"
+  },
+  {
+    "organisationName": "Vets at Animates Silverdale",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000568"
+  },
+  {
+    "organisationName": "Vets for Pets on Worcester",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000296"
+  },
+  {
+    "organisationName": "Vets North - Helensville",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000310"
+  },
+  {
+    "organisationName": "Vets North - Huapai",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0042867"
+  },
+  {
+    "organisationName": "Vets North - Kumeu",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000186"
+  },
+  {
+    "organisationName": "Vets North - Silverdale",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0036272"
+  },
+  {
+    "organisationName": "Vets North - Waimauku",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000194"
+  },
+  {
+    "organisationName": "Vets on Alabama",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000123"
+  },
+  {
+    "organisationName": "VETS on Carlton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000237"
+  },
+  {
+    "organisationName": "Vets on Riverbank (Equine and Farm Vet Services)",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020659"
+  },
+  {
+    "organisationName": "Vets on Waiheke Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000614"
+  },
+  {
+    "organisationName": "Vets4Pets - New Plymouth",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0024797"
+  },
+  {
+    "organisationName": "VetsOne Hastings",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0001074"
+  },
+  {
+    "organisationName": "VetSOS",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0050201"
+  },
+  {
+    "organisationName": "VetSouth - Gore",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000576"
+  },
+  {
+    "organisationName": "VetSouth - Tapanui",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0021320"
+  },
+  {
+    "organisationName": "VetSouth Ltd - Winton",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000580"
+  },
+  {
+    "organisationName": "Victory Square Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000029"
+  },
+  {
+    "organisationName": "Village Vets - Newlands",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0022746"
+  },
+  {
+    "organisationName": "Wadestown Veterinary Clinic & Cattery",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000253"
+  },
+  {
+    "organisationName": "Waiheke Veterinary Service",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000331"
+  },
+  {
+    "organisationName": "Waihi Beach Veterinary Clinic Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000478"
+  },
+  {
+    "organisationName": "Waihi Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000258"
+  },
+  {
+    "organisationName": "Waikato After Hours Vet Hospital Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018645"
+  },
+  {
+    "organisationName": "Waikiwi Vet Services - South City",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0068589"
+  },
+  {
+    "organisationName": "Waikiwi Vet Services Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000440"
+  },
+  {
+    "organisationName": "Wairakei Road Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000079"
+  },
+  {
+    "organisationName": "Wanganui Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000231"
+  },
+  {
+    "organisationName": "Warkworth Veterinary Services",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000188"
+  },
+  {
+    "organisationName": "Water Woofs",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0019651"
+  },
+  {
+    "organisationName": "Welcome Bay Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000233"
+  },
+  {
+    "organisationName": "Wellsford District Veterinary Club",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000632"
+  },
+  {
+    "organisationName": "West Coast Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000534"
+  },
+  {
+    "organisationName": "West Coast Vets Ltd - Greymouth",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000325"
+  },
+  {
+    "organisationName": "West Coast Vets Ltd - Hokitika",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000274"
+  },
+  {
+    "organisationName": "West Melton Vet Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0036179"
+  },
+  {
+    "organisationName": "Western After Hours Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0018647"
+  },
+  {
+    "organisationName": "Western Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000153"
+  },
+  {
+    "organisationName": "Whangaparaoa Veterinary Centre",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000147"
+  },
+  {
+    "organisationName": "Whitford Vet Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0029883"
+  },
+  {
+    "organisationName": "Whitianga Vets Ltd",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0000181"
+  },
+  {
+    "organisationName": "Wigram Veterinary Clinic",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0046174"
+  },
+  {
+    "organisationName": "Your Mobile Vet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0034767"
+  },
+  {
+    "organisationName": "YourVet",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0020746"
+  },
+  {
+    "organisationName": "Zoominals",
+    "phoneNumber": "",
+    "address": "",
+    "organisationId": "CT0068510"
+  }
+]

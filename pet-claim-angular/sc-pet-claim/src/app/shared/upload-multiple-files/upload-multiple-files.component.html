@@ -1,0 +1,37 @@
+<div class ="upload-multi-documents " style="width:100%" *ngIf='!hideNotSelected'>
+    <label for="{{fieldName}}"  
+        [ngClass]="{ 'drop-area-active': isDraggedOver }"
+        (drop)="handleDrop($event)"
+        (dragover)="handleDragOver($event)"
+        (dragenter)="handleDragEnter()"
+        (dragleave)="handleDragLeave()">
+    </label>
+    <div class="field">
+        <input #fileInput id="{{fieldName}}" 
+        name="{{fieldName}}" 
+        type="file"
+        onclick='this.value = null'        
+        multiple="multiple"
+        accept=".doc,.docx,.pdf,.jpeg,.jpg,.png">
+    </div>
+    <div class="caption">Drag and drop your files here, or</div><br>
+    <div class="upload-cta" >Add your files </div>  
+</div>
+
+<div class ="uploaded-doclist"  >
+    <div class="caption" *ngIf="fileList?.length > 0 && !hideNotSelected && uploadType == 'invoice'">Invoices added <span class="icon"></span></div>
+    <div class="caption" *ngIf="fileList?.length > 0 && !hideNotSelected && uploadType == 'history'">History records added <span class="icon"></span></div>
+
+    <div class="caption" *ngIf="fileList?.length == 0 && !hideNotSelected && uploadType == 'invoice'">No invoices added yet</div>
+    <div class="caption" *ngIf="fileList?.length == 0 && !hideNotSelected && uploadType == 'history'">No history records added yet</div>
+    <span class="nofileIcon" *ngIf="fileList?.length == 0 && !hideNotSelected"></span>
+    <div class="uploaded-doc" *ngFor="let uploadObj of fileList;index as i;"> 
+        <div class="document" >
+            <div class="icon {{uploadObj?.file?.name.split('.').pop().toLowerCase()}}"></div>
+         </div>       
+        <div class="file-name">{{uploadObj?.file?.name}}</div>
+        <div class="delete" >
+            <span class="icon-clear"  (click)="remove(i)"></span>
+        </div>
+    </div>
+</div>

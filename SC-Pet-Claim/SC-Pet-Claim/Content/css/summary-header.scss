@@ -1,0 +1,62 @@
+﻿.summary-header {
+
+
+    .title {
+        padding: 0 0 20px;
+        border-bottom: solid 1px #eaeaea;
+        font-size: 24px;
+        font-weight: 500;
+
+        span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            background-color: #007db9;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 600;
+            color: #FFFFFF;
+            text-align: center;
+            position: relative;
+            top: -3px;
+        }
+
+        div {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    .show-claims {
+        position: absolute;
+        right: 0px;
+        top: 15px;
+        font-size: 16px;
+        cursor: pointer;
+
+        span {
+            background: url("/make-a-claim/Content/images/icon-chevron-grey.svg") no-repeat center center;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            transform: rotate(90deg);
+            position: relative;
+            top: 5px;
+        }
+    }
+
+
+    &.claim-details {
+        display: none;
+        width: calc(100% + 40px);
+        margin: -10px -20px 20px;
+
+        .title {
+            padding: 0 20px 20px;
+        }
+
+        @media all and (max-width:650px) {
+            display: block;
+        }
+    }
+}

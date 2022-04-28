@@ -1,0 +1,24 @@
+﻿@using SC_Pet_Claim.Models
+@using SC_Pet_Claim.Common
+@model BrowserDetectionModel
+
+@if (Model.ShowApp)
+{
+    string UploadSize = System.Configuration.ConfigurationManager.AppSettings["MaximiumUploadFileMBSize"];
+    string UploadTotal = System.Configuration.ConfigurationManager.AppSettings["MaximiumUploadFiles"];
+    string InvoiceTotal = System.Configuration.ConfigurationManager.AppSettings["MaximiumInvoices"];
+    string RecpatchaKey = ConfigurationHelper.GetValue("PetClaim_RecaptchaClientToken");
+
+    <main >
+        <app-root uploadSize="@UploadSize"
+                  uploadTotal="@UploadTotal"
+                  invoiceTotal="@InvoiceTotal"
+                  recpatchaKey="@RecpatchaKey">
+        </app-root>
+    </main>
+
+}
+else
+{
+    @Html.Partial("_BrowserOSError", Model)
+}

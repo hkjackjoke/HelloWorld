@@ -1,0 +1,10 @@
+<div [class]="show ? 'tooltip show ' + helpId : 'tooltip' " #tooltip [style.top.px]="top"  [style.left.px]="left">
+    <div class="help-modal">
+        <div class="help-close" (click)="close()"></div>
+        <p *ngIf="helpId !== 'co-payment'" [innerHTML]="copy  | safe: 'html'"></p>
+        <p *ngIf="helpId === 'co-payment'">
+            For eligible vet care you pay 20% of the cost and we look after the rest. This helps reduce your premium. <a (click)="showPopup()">Tell me more</a>.
+        </p>
+    </div>
+    <div #arrow class="arrow"  [style.left.px]="arrowLeft"></div>
+</div>

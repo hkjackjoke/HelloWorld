@@ -1,0 +1,48 @@
+<div [class]="hasCart ? 'progress-bar has-cart' : 'progress-bar'" *ngIf="show">
+    <div class="apply-steps">
+        <div class="step {{stepStates[0].state}} {{stepStates[1].completed && !applicationComplete ? 'can-view' : ''}}">
+            <div>
+                <span>1</span>
+            </div>
+            <span class="title">
+                Your<br> details
+            </span>
+        </div>
+        <div class="line {{stepStates[0].completed ? 'complete' : ''}}"></div>
+        <div class="step {{stepStates[1].state}} {{stepStates[1].completed && !applicationComplete ? 'can-view' : ''}}">
+            <div>
+                <span>2</span>
+            </div>
+            <span class="title">
+                Invoice<br> details
+            </span>
+        </div>
+        <div class="line {{stepStates[1].completed ? 'complete' : ''}}"></div>
+        <div class="step {{stepStates[2].state}} {{stepStates[1].completed && !applicationComplete ? 'can-view' : ''}}">
+            <div>
+                <span>3</span>
+            </div>
+            <span class="title">
+                Upload<br> documents
+            </span>
+        </div>
+        <div class="line {{stepStates[2].completed ? 'complete' : ''}}"></div>
+        <div class="step {{stepStates[3].state}} {{stepStates[1].completed && !applicationComplete ? 'can-view' : ''}}">
+            <div>
+                <span>4</span>
+            </div>
+            <span class="title">
+                Review and<br> confirm
+            </span>
+        </div>
+    </div>
+    <div>
+        <span [class]="cartIn ? 'cart-label cart-in' : cartEnabled ? 'cart-label' : 'cart-label disabled'" (click)="showCart()" *ngIf="allowShowCart">
+            {{cartIn ? 'Hide cart' : 'View cart'}}
+        </span>
+        <span [class]="cartIn ? 'cart-button cart-in' : cartEnabled ? 'cart-button' : 'cart-button disabled'" (click)="showCart()" *ngIf="allowShowCart">
+            <div class="chevron"></div>
+            <span>${{cartTotal}}</span>
+        </span>
+    </div>
+</div>

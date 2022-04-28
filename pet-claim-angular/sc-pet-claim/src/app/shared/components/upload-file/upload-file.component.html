@@ -1,0 +1,27 @@
+<div [class]="fileSelected ? 'upload-document selected' : (disabled ? 'upload-document disabled' : 'upload-document')" *ngIf="!hideNotSelected || upload.selected">
+    <label for="{{fieldName}}_{{index}}"  *ngIf="!fileSelected"
+        [ngClass]="{ 'drop-area-active': isDraggedOver }"
+        (drop)="handleDrop($event)"
+        (dragover)="handleDragOver($event)"
+        (dragenter)="handleDragEnter()"
+        (dragleave)="handleDragLeave()"
+    ></label>
+    <div class="add-icon"></div>
+    <div class="field">
+        <input *ngIf="!disabled" #fileInput id="{{fieldName}}_{{index}}" 
+        name="{{fieldName}}[{{index}}}]" 
+        type="file" 
+        accept=".doc,.docx,.pdf,.jpeg,.jpg,.png">
+    </div>
+    <div class="cta" *ngIf="!fileSelected">Upload a file</div>
+    <div class="cta name" *ngIf="fileSelected">
+        <span>{{filename}}</span>
+        <div class="bin"  (click)="remove()"></div>
+    </div>
+    <div class="image" *ngIf="displayImg">
+        <img src="{{imageSrc}}">
+    </div>
+    <div class="document" *ngIf="displayDoc">
+       <div class="icon {{docType}}"></div>
+    </div>
+</div>

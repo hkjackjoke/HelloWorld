@@ -1,0 +1,776 @@
+﻿@import "variables.scss";
+.claim-section {
+
+    &.npb {
+        padding: 30px 0 0;
+    }
+
+    &.npt {
+        padding: 0 0 30px;
+    }
+
+    &.np {
+        padding: 0;
+    }
+
+    &.your-details {
+        padding: 25px 0 30px;
+
+        h1 {
+            margin: 0 0 54px;
+        }
+    }
+
+    @media all and (max-width:650px) {
+        &.npb {
+            padding: 25px 0 0;
+        }
+    }
+
+    .no-docs-selected {
+        p {
+            font-size: 16px;
+            float: left;
+            width: calc(100% - 230px);
+            margin: 0;
+            max-width: 315px;
+        }
+
+        a {
+            float: right;
+            margin: 0;
+        }
+
+        margin-bottom: 50px;
+
+        @media all and (max-width:767px) {
+            p {
+                float: none;
+                width: 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            a {
+                float: none;
+                width: 100%;
+                max-width: 295px;
+                margin: 30px auto;
+            }
+
+            margin-bottom: 20px;
+        }
+    }
+
+
+    hr {
+        border-bottom: 1px solid #eaeaea;
+        border-top: none;
+        margin: 30px 0;
+    }
+
+    ul {
+        padding: 0 0 0 10px;
+        font-weight: 500;
+        font-size: 16px;
+
+        &.normal {
+            font-weight: 400;
+        }
+
+        li {
+            padding-left: 5px;
+            margin-bottom: 10px;
+
+            &::marker {
+                font-size: 7px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .intro {
+        text-align: center;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 30px;
+
+        h1 {
+            margin: 0 0 20px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0 0 30px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .upload-invoices {
+        padding: 40px 0;
+
+        @media all and (max-width:650px) {
+            padding: 40px 0 0;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+
+
+        p {
+            strong {
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+
+        .receipts {
+            margin-top: 40px;
+            border: solid 1px #e1f4fe;
+            background-color: rgba(225, 244, 254, 0.4);
+            padding: 28px 20px;
+            height: 166px;
+            position: relative;
+
+            p {
+                margin: 0;
+                max-width: 316px;
+                font-size: 16px;
+                line-height: 1.38;
+            }
+
+            .receipts-invoices {
+                width: 191px;
+                height: 118px;
+                background: url("/make-a-claim/Content/images/invoice-reciept.png?ver=3");
+                position: absolute;
+                right: 22px;
+                top: 24px;
+            }
+
+            @media all and (max-width:767px) {
+                p {
+                    max-width: 100%;
+                }
+
+                .receipts-invoices {
+                    position: relative;
+                    right: auto;
+                    top: auto;
+                    margin-top: 20px;
+                }
+
+                height: auto;
+            }
+        }
+    }
+
+    .document-list {
+        width: 666px;
+        margin: 0 -5px;
+
+        .upload-document {
+            float: left;
+            margin: 0 5px 12px;
+        }
+
+        @media all and (max-width:767px) {
+            width: calc(100% + 10px);
+
+            .upload-document {
+                float: left;
+                margin: 0 5px 10px;
+            }
+        }
+    }
+
+    .uploaded-doclist {
+        width: 100%;
+        display: grid;
+
+        .nofileIcon {
+            background: url("/make-a-claim/Content/images/icon-no-files.svg");
+            width: 32px;
+            height: 37px;
+            margin: 1px 313px 1px calc(50% - 16px);
+        }
+
+        .caption {
+            text-align: center;
+            margin: 16px 8px 23px 1px;
+
+            .icon {
+                background: url("/make-a-claim/Content/images/icon-tick.svg");
+                width: 12px;
+                height: 10px;
+                position: absolute;
+                margin: 8px 80.5px 28px 8px;
+            }
+        }
+
+        .uploaded-doc {
+            position: relative;
+
+            .document {
+                background-color: #FFFFFF;
+                border-radius: 6px;
+
+                .icon {
+                    &.pdf {
+                        background: url("/make-a-claim/Content/images/icon-pdf-gold-2x.svg");
+                        background-size: 32px;
+                    }
+
+                    &.jpg {
+                        background: url("/make-a-claim/Content/images/icon-jpg-gold.svg");
+                        background-size: 32px;
+                    }
+
+                    &.jpeg {
+                        background: url("/make-a-claim/Content/images/icon-jpg-gold.svg");
+                        background-size: 32px;
+                    }
+
+                    &.doc {
+                        background: url("/make-a-claim/Content/images/icon-doc-gold-2x.svg");
+                        background-size: 32px;
+                    }
+
+                    &.docx {
+                        background: url("/make-a-claim/Content/images/icon-docx-gold-2x.svg");
+                        background-size: 32px;
+                    }
+
+                    &.png {
+                        background: url("/make-a-claim/Content/images/icon-png-gold-2x.svg");
+                        background-size: 32px;
+                    }
+
+                    width: 32px;
+                    height: 37px;
+                    margin: 3px 9px 8px 158px;
+
+                    @media all and (max-width:767px) {
+                        margin: 3px 9px 8px 10%;
+                    }
+                }
+            }
+
+            .file-name {
+                padding-left: 25%;
+                top: 5px;
+                left: 45px;
+                display: inline;
+                position: absolute;
+                margin: 4 px 160 px 16px 9px;
+
+                @media all and (max-width:767px) {
+                    left: 1px;
+                }
+            }
+
+            .delete {
+                float: right;
+                top: 25px;
+                padding-right: 20%;
+                right: 42 px;
+
+                .icon-clear {
+                    background: url("/make-a-claim/Content/images/icon-clear-field.svg") no-repeat center center;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .upload-multi-documents {
+        position: relative;
+        width: 210px;
+        height: 146px;
+        border-radius: 6px;
+        border: solid 1px #eeeeee;
+        background-color: #f7f7f7;
+
+        .field {
+            position: absolute;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 146px;
+            cursor: pointer;
+            z-index: 3;
+
+            &.drop-area-active {
+                background-color: grey;
+                opacity: 0.3;
+            }
+        }
+
+        .caption {
+            text-align: center;
+            margin-bottom: 16px;
+            margin-top: 28px;
+
+            @media all and (max-width:767px) {
+                display: none;
+            }
+        }
+
+        .upload-cta {
+            display: block;
+            text-align: center;
+            width: 220px;
+            height: 42px;
+            margin: 0 0 40px calc(50% - 110px);
+            border-radius: 0 0 5px 5px;
+            background-color: #f8b60d;
+            color: #FFFFFF;
+            position: absolute;
+            bottom: 0;
+            padding: 10px 13px;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 2;
+            cursor: pointer;
+
+
+            &.name {
+                text-align: left;
+                background-color: rgba(49,49,49,0.85);
+                cursor: default;
+
+                span {
+                    position: relative;
+                    display: block;
+                    white-space: nowrap;
+                    width: calc(100% - 30px);
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        @media all and (max-width:767px) {
+            width: calc(50% - 10px);
+
+            .image {
+                width: 100%;
+            }
+        }
+    }
+
+    .upload-document {
+        position: relative;
+        width: 210px;
+        height: 281px;
+        border-radius: 6px;
+        border: solid 1px #eeeeee;
+        background-color: #f7f7f7;
+
+
+
+
+        .not-id {
+            position: absolute;
+            z-index: 20;
+        }
+
+        .field {
+            position: absolute;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 281px;
+            cursor: pointer;
+            z-index: 3;
+
+            &.drop-area-active {
+                background-color: grey;
+                opacity: 0.3;
+            }
+        }
+
+        .cta {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 42px;
+            margin: 90px 0 0;
+            border-radius: 0 0 5px 5px;
+            background-color: #f8b60d;
+            color: #FFFFFF;
+            position: absolute;
+            bottom: 0;
+            padding: 10px 13px;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 2;
+            cursor: pointer;
+
+            &.name {
+                text-align: left;
+                background-color: rgba(49,49,49,0.85);
+                cursor: default;
+
+                span {
+                    position: relative;
+                    display: block;
+                    white-space: nowrap;
+                    width: calc(100% - 30px);
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+
+            .bin {
+                width: 42px;
+                height: 42px;
+                cursor: pointer;
+                background: url('/make-a-claim/Content/images/icon-bin-grey.svg') no-repeat center center;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+        }
+
+        .image, .doc {
+            position: absolute;
+            top: 0;
+            bottom: 42px;
+            width: 100%;
+            z-index: 1;
+            overflow: hidden;
+            text-align: center;
+            border-radius: 6px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .document {
+            background-color: #FFFFFF;
+            border-radius: 6px;
+
+            .icon {
+                &.pdf {
+                    background: url("/make-a-claim/Content/images/icon-pdf-gold.svg");
+                }
+
+                &.doc {
+                    background: url("/make-a-claim/Content/images/icon-doc-gold.svg");
+                }
+
+                &.docx {
+                    background: url("/make-a-claim/Content/images/icon-docx-gold.svg");
+                }
+
+                width: 64px;
+                height: 73px;
+                position: relative;
+                margin: auto;
+                top: 87px;
+            }
+        }
+
+        .add-icon {
+            position: relative;
+            margin: auto;
+            top: 89px;
+            background: url("/make-a-claim/Content/images/icon-btn-add.svg");
+            width: 60px;
+            height: 60px;
+        }
+
+        &.selected {
+            border: solid 1px #d2d2d2;
+            background-color: #FFFFFF;
+
+            .add-icon {
+                display: none;
+            }
+        }
+
+        &.disabled {
+            opacity: 0.5;
+
+            .cta {
+                cursor: default;
+            }
+
+            label {
+                cursor: default;
+            }
+        }
+
+        @media all and (max-width:767px) {
+            width: calc(50% - 10px);
+
+            .image {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .review-claim {
+        margin-top: 25px;
+
+        h2 {
+            font-size: 22px;
+            font-weight: 500;
+
+            @media all and (max-width:767px) {
+                text-align: center;
+            }
+        }
+
+        .invoices {
+            .review-invoice {
+                height: 70px;
+                position: relative;
+
+                .name {
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding-left: 20px;
+                    position: relative;
+                    white-space: nowrap;
+                    width: calc(100% - 100px);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .date {
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                }
+
+                .amount {
+                    position: absolute;
+                    top: 25px;
+                    right: 22px;
+                    width: 230px;
+
+                    .price {
+                        width: 100px;
+                        text-align: right;
+                    }
+
+                    .view-edit {
+                        position: absolute;
+                        right: 40px;
+                        top: 2px;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+
+                    .bin {
+                        background: url("/make-a-claim/Content/images/icon-bin.svg") no-repeat center center;
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        right: 0px;
+                        top: 1px;
+                        cursor: pointer;
+                    }
+                }
+
+                @media all and (max-width:767px) {
+                    height: 100px;
+
+                    .name {
+                        padding-left: 0;
+                    }
+
+                    .date {
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                    }
+
+                    .amount {
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+
+                        .price {
+                            position: absolute;
+                            right: 0px;
+                        }
+
+                        .view-edit {
+                            top: 50px;
+                        }
+
+                        .bin {
+                            top: 46px;
+                            background-size: cover;
+                            height: 23px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .total {
+            position: relative;
+            border-radius: 4px;
+            background-color: #f7f7f7;
+            height: 56px;
+            font-size: 18px;
+            font-weight: 500;
+
+            .label {
+                position: absolute;
+                top: 15px;
+                left: 20px;
+            }
+
+            .total-amount {
+                position: absolute;
+                top: 15px;
+                right: 150px;
+            }
+
+            @media all and (max-width:767px) {
+                width: calc(100% + 40px);
+                margin: 0 -20px;
+
+                .label {
+                    left: 20px;
+                }
+
+                .total-amount {
+                    right: 20px;
+                }
+            }
+        }
+
+        .add-more {
+            font-size: 16px;
+            margin-top: 30px;
+            text-align: center;
+
+            .link {
+                cursor: pointer;
+                color: #007db9;
+
+                &.disabled {
+                    opacity: 0.3;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+    .bank-account-number-sub {
+        width: 213px;
+        margin: 4px 21px 24px 0;
+        font-size: 12px;
+    }
+
+    .privacy {
+        margin-top: 35px;
+        width: calc(100% + 45px);
+
+        .delcare {
+            margin-top: 35px;
+            border: solid 1px #e1f4fe;
+            background-color: rgba(225, 244, 254, 0.4);
+            padding: 11px;
+        }
+
+        @media all and (max-width:767px) {
+            width: 100%;
+        }
+    }
+
+    .confirmation {
+        position: relative;
+        max-width: 520px;
+        margin: auto;
+
+        p {
+            font-size: 16px;
+            text-align: center;
+            margin: 0 0 60px;
+        }
+
+        .button {
+            width: 295px;
+            margin: auto;
+
+            &.outline {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .show-claim {
+        float: right;
+        cursor: pointer;
+    }
+
+    .txt-center {
+        text-align: center;
+    }
+
+    .txt-inline {
+        display: inline;
+    }
+
+    .sub-title-spacer {
+        height: 40px;
+    }
+
+    @media all and (max-width:767px) {
+        .sub-title-spacer {
+            height: 0;
+        }
+    }
+}
+
+@media all and (max-width:650px) {
+
+    .show-cart {
+        .claim-section {
+            display: none;
+        }
+    }
+}
+
+.dog-cat{
+    text-align:center;
+    margin-top:40px;
+    .cat{
+        margin-left:40px;
+        position:relative;
+        top:15px;
+        height:100px;
+    }
+}

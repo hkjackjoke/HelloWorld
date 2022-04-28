@@ -1,0 +1,217 @@
+﻿@import "variables.scss";
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 27px;
+    color: #007db9;
+    line-height: 1.14;
+}
+h2 {
+    &.align-mobile{
+        @media all and (max-width:767px) { 
+            text-align:center;
+        }
+    }
+}
+p {
+
+    @media all and (max-width:767px) {
+        &.pad-left {
+            padding-left: 0;
+        }
+
+        &.center {
+            &.not-mobile {
+                text-align: left;
+            }
+        }
+
+    }
+}
+@media all and (max-width:767px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+.button {
+
+    &.small-text {
+        font-size: 14px;
+        padding: 9px 30px;
+
+        @media all and (max-width: 650px) {
+            font-size: 16px;
+            padding: 6px 0 !important;
+        }
+    }
+
+    &.claim-form {
+        max-width: 335px;
+    }
+
+    .plus {
+        background: url(/make-a-claim/Content/images/icon-plus-white.svg) no-repeat center center;
+        display: inline-block;
+        width: 12px;
+        height: 10px;
+    }
+
+
+    &.add-file {
+        max-width: 295px;
+        margin: 48px auto;
+        width: 220px;
+
+        @media all and (max-width: 767px) {
+            margin: 20px auto 30px;
+        }
+
+        .plus {
+            margin-right: 10px;
+        }
+
+        &.large {
+            width: 295px;
+        }
+    }
+
+    .chevron-next {
+        background: url(/make-a-claim/Content/images/icon-chevron-white.svg) no-repeat center center;
+        display: inline-block;
+        width: 12px;
+        height: 15px;
+        margin-left: 5px;
+        position: relative;
+        top: 2px;
+    }
+
+    &.small-text {
+        .chevron-next {
+            top: 3px;
+        }
+
+        .plus {
+            position: relative;
+            top: 1px;
+            margin-right: 3px;
+        }
+    }
+
+    .chevron-back {
+        background: url(/make-a-claim/Content/images/icon-chevron-gold.svg) no-repeat center center;
+        display: inline-block;
+        width: 12px;
+        height: 15px;
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    }
+
+
+
+    &.disabled {
+        opacity: 0.3;
+        cursor: default;
+        pointer-events: none;
+    }
+
+
+    &:hover {
+        @media all and (min-width: 991px) {
+            background: darken(#f8b60d, 5);
+        }
+    }
+
+    &.focused {
+        border: solid 1px darken(#f8b60d, 18);
+        background: darken(#f8b60d, 18);
+    }
+
+    &.clear {
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    &.outline {
+
+        .plus {
+            background: url(/make-a-claim/Content/images/icon-plus-gold.svg) no-repeat center center;
+            display: inline-block;
+            width: 12px;
+            height: 10px;
+        }
+
+        &:hover {
+            @media all and (min-width: 991px) {
+                background: #f8b60d;
+                color: #ffffff;
+            }
+
+            .plus {
+                background: url(/make-a-claim/Content/images/icon-plus-white.svg) no-repeat center center;
+                display: inline-block;
+                width: 12px;
+                height: 10px;
+            }
+
+            .download {
+                background: url(/make-a-claim/Content/images/icon-download-white.svg) no-repeat center center;
+                display: inline-block;
+                width: 12px;
+                height: 15px;
+                margin-left: 5px;
+                position: relative;
+                top: 2px;
+            }
+
+            .chevron-back {
+                background: url(/make-a-claim/Content/images/icon-chevron-back-white.svg) no-repeat center center;
+                display: inline-block;
+                width: 12px;
+                height: 15px;
+                margin-right: 5px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}
+button {
+    &.button {
+        padding: 0 30px;
+        line-height:0.5;
+    }
+}
+.list-item {
+    display: table;
+    margin: 0 0 33px 0;
+
+    @media all and (max-width:767px) {
+        margin: 0 0 30px 0px;
+    }
+
+}
+.home{
+    @media all and (max-width:480px){
+        .button{
+            width:100%;
+        }
+    }
+
+}
+.confirm-tick {
+    position: relative;
+    margin: 20px auto;
+    background: url('/make-a-claim/Content/images/icon-animated-tick.svg') no-repeat center center;
+    width: 45px;
+    height: 45px;
+}
+.w-c {
+
+    @media all and (max-width: 767px) {
+        width: calc(100% - 40px);
+    }
+}

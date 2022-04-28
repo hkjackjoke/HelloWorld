@@ -1,0 +1,243 @@
+﻿@import "variables.scss";
+.progress-bar {
+    height: 104px;
+    background-color: #f7f7f7;
+    position: relative;
+    text-align: center;
+
+    .cart-button {
+        width: 122px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        cursor: pointer;
+        background-color: #e7f6fe;
+        z-index: 5001;
+        @include easeInOutQuart(500ms,all);
+
+        &.disabled {
+            opacity: 0.5;
+        }
+
+        .chevron {
+            position: absolute;
+            left: 20px;
+            top: 18px;
+            background: url('/make-a-claim/Content/images/icon-chevron-blue.svg') no-repeat;
+            font-size: 14px;
+            width: 14px;
+            height: 14px;
+            @include easeInOutQuart(500ms,all);
+        }
+
+        font-size: 14px;
+        font-weight: 500;
+        padding: 15px 15px 0 0;
+        text-align: right;
+        color: #125687;
+
+        span {
+            opacity: 1;
+            @include easeInOutQuart(500ms,opacity);
+        }
+
+        &.cart-in {
+            span {
+                opacity: 0;
+            }
+
+            right: 225px;
+            width: 50px;
+
+            .chevron {
+                transform: rotate(180deg);
+                left: 15px;
+            }
+
+            @media all and (max-width:1320px) {
+                right: 50px;
+            }
+        }
+    }
+
+    .cart-label {
+        position: absolute;
+        top: 35px;
+        right: 180px;
+        font-size: 14px;
+        color: #007db9;
+        cursor: pointer;
+        @include easeInOutQuart(500ms,all);
+
+        &.disabled {
+            opacity: 0.5;
+        }
+
+        &.cart-in {
+            right: 285px;
+
+            @media all and (max-width:1320px) {
+                right: 110px;
+            }
+        }
+    }
+
+    @media all and (max-width:990px) {
+        height: 110px;
+
+        .cart-button {
+            right: 20px;
+        }
+
+        .cart-label {
+            right: 150px;
+        }
+    }
+
+    @media all and (max-width:650px) {
+
+
+        .cart-button {
+            display: none;
+        }
+
+        .cart-label {
+            display: none;
+        }
+    }
+
+    .apply-steps {
+        position: absolute;
+        display: block;
+        left: 50%;
+        margin-left: -321px;
+        top: 31px;
+
+
+        .step {
+            float: left;
+            width: 160px;
+            text-align: center;
+            color: #8e8e8e;
+            font-size: 14px;
+
+
+            > div {
+                position: relative;
+                margin: auto;
+                width: 30px;
+                height: 30px;
+                border: 2px solid #d8d8d8;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 1;
+                color: #d8d8d8;
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                padding-top: 5px;
+            }
+
+            .title {
+                br {
+                    display: none;
+                }
+
+                line-height: 1.29;
+            }
+
+            &.current {
+                color: #525252;
+
+                > div {
+                    border: 2px solid #4fa93c;
+                    color: #4fa93c;
+                }
+            }
+
+            &.complete {
+                color: #8e8e8e;
+
+
+                > div {
+                    background: #f7f7f7 url("/make-a-claim/Content/images/icon-progress-tick-white.svg") no-repeat center;
+                    color: #f7f7f7;
+                    border: solid 2px #4fa93c;
+                    background-color: #4fa93c;
+
+                    span {
+                        display: none !important;
+                    }
+                }
+
+                &.forward {
+                    > div {
+                        background: #f7f7f7 url("/make-a-claim/Content/images/icon-progress-tick-green.svg") no-repeat center;
+                        border: solid 2px #4fa93c;
+                        background-color: transparent;
+
+                        span {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+
+            &.can-view {
+            }
+        }
+
+        .line {
+            float: left;
+            height: 2px;
+            background: #d8d8d8;
+            width: 131px;
+            margin: 13px -65px;
+
+            &.complete {
+                background: #4fa93c;
+            }
+        }
+
+        @media all and (max-width:990px) {
+            top: 20px;
+            margin-left: -151px;
+
+            .step {
+                width: 50px;
+                text-align: center;
+
+                .title {
+                    display: block;
+                    width: 80px;
+                    margin: 0 -15px;
+
+                    br {
+                        display: block;
+                    }
+                }
+            }
+
+            .line {
+                width: 54px;
+                margin: 13px -10px;
+            }
+        }
+    }
+
+    @media all and (max-width:650px) {
+        &.has-cart {
+            margin-top: 83px;
+        }
+    }
+}
+@media all and (max-width:650px) {
+    .show-cart {
+        .progress-bar {
+            display: none;
+        }
+    }
+}

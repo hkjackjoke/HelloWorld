@@ -1,0 +1,20 @@
+<div class="loading-ntoification">    
+    <div class="message">
+        <div class="image">
+            <app-pet-animation #petAnimation size="petItem" type="{{randomnumber === 1 ? 'cat' : 'dog'}}"></app-pet-animation>
+        </div>
+        <br><br>
+        <div class="fade-in display" *ngIf="displayFlag == 'message1'">
+            Checking your data...
+        </div>
+        <div class="fade-in" *ngIf="displayFlag == 'message2'">
+            Uploading your files...
+        </div>
+        <div class="fade-in" *ngIf="displayFlag == 'message3'">
+            Submitting your claim...
+        </div>
+        <div class="fade-in" *ngIf="displayFlag == 'message4'">
+            This can take up to 2 minutes, please stay on this page.
+        </div>
+    </div>
+</div>
